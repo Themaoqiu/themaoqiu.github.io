@@ -9,8 +9,7 @@
 <h3 id="😄-research-interests" tabindex="-1"><a class="header-anchor" href="#😄-research-interests"><span>😄 Research Interests</span></a></h3>
 <p>My primary research interests lie at the intersection of:</p>
 <ul>
-<li><strong>Large Language Models (LLMs)</strong></li>
-<li><strong>Multimodal Learning</strong></li>
+<li><strong>Multimodal Large Language Models (MLLMs)</strong></li>
 <li><strong>Data-centric AI</strong></li>
 <li>Deep Learning</li>
 </ul>

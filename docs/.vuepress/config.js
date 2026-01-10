@@ -6,9 +6,22 @@ export default defineUserConfig({
   // 站点配置
   lang: "zh-CN",
   title: "Xingjian Wang",
-  description: "Themaoqiu的个人页面",
+  description: "Xingjian Wang's Personal Website | Undergraduate Student at Shanghai University of Electric Power, IMIS. Focus on AI Research, Deep Learning, and Multimodal Large Language Models",
   base: "/", // 仓库是 themaoqiu.github.io
   bundler: viteBundler(),
+
+  // Head 配置 - SEO 优化
+  head: [
+    ['meta', { name: 'keywords', content: 'Xingjian Wang, AI Research, Deep Learning, MLLM, Machine Learning, VuePress' }],
+    ['meta', { name: 'author', content: 'Xingjian Wang' }],
+    ['meta', { property: 'og:title', content: 'Xingjian Wang - Undergraduate @ Shanghai University of Electric Power, IMIS' }],
+    ['meta', { property: 'og:description', content: 'Personal website of Xingjian Wang, Undergraduate Student at Shanghai University of Electric Power, IMIS. Research interests in AI, Deep Learning, and Multimodal Large Language Models.' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: 'https://themaoqiu.github.io' }],
+    ['meta', { property: 'og:image', content: 'https://themaoqiu.github.io/avatar.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['link', { rel: 'canonical', href: 'https://themaoqiu.github.io' }],
+  ],
 
   theme: hopeTheme({
     hostname: "https://themaoqiu.github.io",
@@ -50,6 +63,14 @@ export default defineUserConfig({
     },
     
     plugins: {
+      // SEO 优化
+      seo: true,
+      
+      // Sitemap 生成
+      sitemap: {
+        hostname: "https://themaoqiu.github.io",
+      },
+
       // 博客插件的详细配置
       blog: {
         filter: (page) => {

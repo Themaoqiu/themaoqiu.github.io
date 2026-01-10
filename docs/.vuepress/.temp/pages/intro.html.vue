@@ -38,6 +38,9 @@
 <p>[10/28/2025] A new preprint is released! Check <a href="https://www.arxiv.org/abs/2510.23473" target="_blank" rel="noopener noreferrer">Video-Thinker: Sparking &quot;Thinking with Videos&quot; via Reinforcement Learning</a> for more details!</p>
 </li>
 <li>
+<p>[08/21/2025] A new preprint is released! Check <a href="https://arxiv.org/abs/2508.15361" target="_blank" rel="noopener noreferrer">A Survey on Large Language Model Benchmarks</a> for more details!</p>
+</li>
+<li>
 <p>[05/21/2025] Our paper <a href="https://arxiv.org/pdf/2505.14552" target="_blank" rel="noopener noreferrer"><em>KORGym: A Dynamic Game Platform for LLM Reasoning Evaluation</em></a> submitted to NeurIPS 2025 is now on arXiv!</p>
 </li>
 <li>
@@ -56,6 +59,10 @@ Submitted to ICLR 2026</p>
 <p><a href="">Expanding Scaling Boundary of Compositional Text-to-Image Generation via Composition Curriculum</a>
 Shijian Wang, Runhao Fu, Siyi Zhao, Qingqin Zhan, <strong>Xingjian Wang</strong>, Jiarui Jin, Yuan Lu, Hanqian Wu, Cunjian Chen
 Submitted to CVPR 2026</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2508.15361" target="_blank" rel="noopener noreferrer">A Survey on Large Language Model Benchmarks</a>
+Shiwen Ni, Guhong Chen, Shuaimin Li, Xuanang Chen, Siyi Li, Bingli Wang, Qiyao Wang, <strong>Xingjian Wang</strong>, Yifan Zhang, Liyang Fan, Chengming Li, Ruifeng Xu, Le Sun, Min Yang</p>
 </li>
 <li>
 <p><a href="https://arxiv.org/abs/2505.14552" target="_blank" rel="noopener noreferrer">KORGym: A Dynamic Game Platform for LLM Reasoning Evaluation</a>
