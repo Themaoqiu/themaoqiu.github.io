@@ -16,12 +16,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Upload artifact
+
+      - name: Upload artifact (prebuilt static site)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          # 上传仓库中已生成的静态文件。根据仓库内容列出主要静态目录/文件以避免上传不必要的元数据。
+          path: |
+            404.html
+            _astro
+            _noop-middleware.mjs
+            manifest_Bc0J-RTD.mjs
+            noop-entrypoint.mjs
+            renderers.mjs
+            about
+            academic
+            archives
+            blog
+            chunks
+            collection
+            en
+            favicon
+            fonts
+            icons
+            images
+            links.json
+            pages
+            scripts
+            styles
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
