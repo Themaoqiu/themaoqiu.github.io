@@ -1,0 +1,42 @@
+<!DOCTYPE html><!-- <PageLayout title='Projects' {headings} info={{ slug: '/projects', hideComment: true }}> --><!-- Sponsorship section removed --><!-- <h2 id='projects' class='mb-8 text-2xl font-semibold'>Projects</h2>
+  <ProjectSection
+    project={[
+      {
+        name: '项目 1',
+        description: '项目描述 1。你可以在这里介绍项目的主要功能。',
+        image: 'lumina.webp',
+        links: [{ type: 'site', href: '#' }]
+      },
+      {
+        name: '项目 2',
+        description: '项目描述 2。你可以在这里介绍项目的主要功能。',
+        image: 'byddl.webp',
+        links: [
+          { type: 'site', href: '#' },
+          { type: 'github', href: '#' }
+        ]
+      }
+    ]}
+  /> --><!-- Sponsorship section removed --><!-- </PageLayout>
+
+<script
+  is:inline
+  type='module'
+  data-astro-rerun
+  define:vars={{ npmCDN: config.npmCDN, walineServer: config.integ.waline.server }}
+>
+  const normalizePath = (path) => {
+    if (path === '/') return path
+    return path.endsWith('/') ? path.slice(0, -1) : path
+  }
+
+  const loadPageviewCount = async () => {
+    const pageview = await import(`${npmCDN}/@waline/client@v3/dist/pageview.js`)
+    pageview.pageviewCount({
+      serverURL: walineServer,
+      path: normalizePath(window.location.pathname)
+    })
+  }
+
+  await loadPageviewCount()
+</script> -->
