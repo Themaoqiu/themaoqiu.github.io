@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://xingjianwang.com</link><item><title>Axi Theme 基础使用与配置</title><link>https://xingjianwang.com/blog/axi-theme-basics</link><guid isPermaLink="true">https://xingjianwang.com/blog/axi-theme-basics</guid><description>从本地启动到站点配置：了解内容结构、配置入口与常见改动点。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 前置条件&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Axi Theme 基础使用与配置</title><link>https://themaoqiu.github.io/blog/axi-theme-basics</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/axi-theme-basics</guid><description>从本地启动到站点配置：了解内容结构、配置入口与常见改动点。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 前置条件&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Node.js 18+（建议 20+）&lt;/li&gt;
 &lt;li&gt;包管理器：&lt;code&gt;pnpm&lt;/code&gt;&lt;/li&gt;
@@ -48,98 +48,7 @@ pnpm preview
 &lt;p&gt;建议使用 GitHub 托管代码 + Vercel 自动部署（PR 预览、回滚、CDN、HTTPS 都更省心）。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;部署思路与注意事项：&lt;a href=&quot;https://axi404.top/blog/website-vercel&quot;&gt;Website on Vercel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>MDX 组件使用：User &amp; Advanced</title><link>https://xingjianwang.com/blog/mdx-components</link><guid isPermaLink="true">https://xingjianwang.com/blog/mdx-components</guid><description>文章内组件（Aside/Tabs 等）与高级组件（LinkPreview/GithubCard 等）的使用方式。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import { Aside, Tabs, TabItem, Spoiler } from &apos;@/components/user&apos;
-import { GithubCard, LinkPreview, QRCode, ImageGroup, WebVideo } from &apos;@/components/advanced&apos;&lt;/p&gt;
-&lt;h2&gt;1. 必须使用 MDX&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;.md&lt;/code&gt; 文章无法 &lt;code&gt;import&lt;/code&gt; 组件；请使用 &lt;code&gt;.mdx&lt;/code&gt;（如 &lt;code&gt;src/content/blogs/&amp;#x3C;slug&gt;/index.mdx&lt;/code&gt;）。&lt;/p&gt;
-&lt;h2&gt;2. User 组件示例&lt;/h2&gt;
-&lt;h2&gt;3. Advanced 组件示例&lt;/h2&gt;
-&lt;h3&gt;GitHub 卡片&lt;/h3&gt;
-&lt;h3&gt;链接预览&lt;/h3&gt;
-&lt;h3&gt;二维码&lt;/h3&gt;
-&lt;h3&gt;图片组（等高拼图）&lt;/h3&gt;
-&lt;p&gt;&amp;#x3C;ImageGroup
-images={[
-{ src: &apos;https://picr2.axi404.top/1767811093734_image.webp&apos;, alt: &apos;Image A&apos;, aspectRatio: 16 / 9 },
-{ src: &apos;https://picr2.axi404.top/1767811093734_image.webp&apos;, alt: &apos;Image B&apos;, aspectRatio: 1 },
-]}
-/&gt;&lt;/p&gt;
-&lt;h3&gt;内嵌视频&lt;/h3&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>写作指南：Markdown / MDX</title><link>https://xingjianwang.com/blog/writing-markdown-mdx</link><guid isPermaLink="true">https://xingjianwang.com/blog/writing-markdown-mdx</guid><description>主题内支持的 Markdown 扩展、数学公式、代码高亮与一些写作约定。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Markdown 支持范围&lt;/h2&gt;
-&lt;p&gt;主题默认启用了常用扩展：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GFM：表格、删除线、任务列表等&lt;/li&gt;
-&lt;li&gt;数学公式：KaTeX（&lt;code&gt;$...$&lt;/code&gt; / &lt;code&gt;$$...$$&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;代码高亮：Shiki（支持标题、差异标注等）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;2. 数学公式（KaTeX）&lt;/h2&gt;
-&lt;p&gt;行内：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;欧拉公式：$e^{i\\pi}+1=0$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;块级：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;$$
-\\int_0^1 x^2 dx = \\frac{1}{3}
-$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;3. 代码块增强（差异/高亮）&lt;/h2&gt;
-&lt;p&gt;你可以在代码中使用注释标记来展示变更（示例来自主题的高亮 transformer）：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ts&quot;&gt;const a = 1 // [!code --]
-const a = 2 // [!code ++]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;也可以做行高亮：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ts&quot;&gt;const token = &apos;secret&apos; // [!code highlight]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;4. 什么时候用 MDX&lt;/h2&gt;
-&lt;p&gt;当你需要在文章里使用组件（例如 &lt;code&gt;Aside&lt;/code&gt;、&lt;code&gt;Tabs&lt;/code&gt;、&lt;code&gt;GithubCard&lt;/code&gt; 等）时，请使用 &lt;code&gt;.mdx&lt;/code&gt;，并在文件顶部 &lt;code&gt;import&lt;/code&gt; 组件。&lt;/p&gt;
-&lt;p&gt;组件用法示例文档：见 “MDX 组件使用”。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>Waline 评论系统：部署与接入</title><link>https://xingjianwang.com/blog/waline</link><guid isPermaLink="true">https://xingjianwang.com/blog/waline</guid><description>部署 Waline 服务端，并在 Axi Theme 中启用评论与访问量统计。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 部署 Waline 服务端&lt;/h2&gt;
-&lt;p&gt;请参考这篇完整教程（包含服务端部署与配置项说明）：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://axi404.top/blog/waline-install&quot;&gt;Waline Comments: Deploy &amp;#x26; Integrate&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;部署完成后你会得到一个服务端地址，例如：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;https://waline.example.com/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;2. 在主题中启用 Waline&lt;/h2&gt;
-&lt;p&gt;编辑 &lt;code&gt;src/site.config.ts&lt;/code&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;integ.waline.enable&lt;/code&gt;: 设为 &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;integ.waline.server&lt;/code&gt;: 填你的 Waline Server URL&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ts&quot;&gt;waline: {
-  enable: true,
-  server: &apos;https://waline.example.com/&apos;,
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;3. 常见说明&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;评论区组件：&lt;code&gt;src/components/advanced/Comment.astro&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;页面访问量/评论数：部分页面会加载 Waline 的 &lt;code&gt;pageview&lt;/code&gt; 统计（见 &lt;code&gt;src/pages/*&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;单篇文章是否显示评论：由文章 Frontmatter 的 &lt;code&gt;comment&lt;/code&gt; 控制（默认 &lt;code&gt;true&lt;/code&gt;）&lt;/li&gt;
-&lt;/ul&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>Friend Circle（朋友圈）：接入与配置</title><link>https://xingjianwang.com/blog/friend-circle</link><guid isPermaLink="true">https://xingjianwang.com/blog/friend-circle</guid><description>使用 Friend-Circle-Lite 生成数据源，并在 Links 页面展示朋友圈动态。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Friend Circle 是什么&lt;/h2&gt;
-&lt;p&gt;“朋友圈”页面会展示友链站点的最新文章聚合，适合在 Links 页让访问者快速看到朋友们的新内容。&lt;/p&gt;
-&lt;p&gt;本主题的 Links 页集成入口在：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;src/pages/links/index.astro&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;2. 先准备数据源（Friend-Circle-Lite）&lt;/h2&gt;
-&lt;p&gt;本主题使用 Friend-Circle-Lite 的接口数据（&lt;code&gt;all.json&lt;/code&gt; 等）。搭建与使用方式建议参考：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.liushen.fun/posts/4dc716ec/&quot;&gt;Friend Circle 参考文档&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;你需要得到一个可访问的域名，例如：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;fc.example.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;并确保以下地址可访问：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;https://fc.example.com/all.json
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;3. 在主题中启用&lt;/h2&gt;
-&lt;p&gt;编辑 &lt;code&gt;src/site.config.ts&lt;/code&gt;，设置：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;theme.personal.domains.friendCircle = &apos;fc.example.com&apos;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;配置完成后，&lt;code&gt;/links&lt;/code&gt; 页面会自动显示 “Small Circle / 朋友圈” 区块。&lt;/p&gt;
-&lt;h2&gt;4. 友链 RSS 建议&lt;/h2&gt;
-&lt;p&gt;如果某个站点在友链里但朋友圈里没有内容，通常是该站点未提供 RSS 或 RSS 不可访问。建议为友链站点补全 RSS。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>GitHub + Vercel 部署（推荐）</title><link>https://xingjianwang.com/blog/deploy-vercel</link><guid isPermaLink="true">https://xingjianwang.com/blog/deploy-vercel</guid><description>使用 GitHub 管理代码，并用 Vercel 自动构建与部署（含环境变量与常见坑）。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 为什么推荐 GitHub + Vercel&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>GitHub + Vercel 部署（推荐）</title><link>https://themaoqiu.github.io/blog/deploy-vercel</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/deploy-vercel</guid><description>使用 GitHub 管理代码，并用 Vercel 自动构建与部署（含环境变量与常见坑）。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 为什么推荐 GitHub + Vercel&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;PR 预览：每个分支/PR 都能拿到可访问的预览链接&lt;/li&gt;
 &lt;li&gt;自动构建：push 即部署&lt;/li&gt;
@@ -173,4 +82,95 @@ pnpm build
 &lt;p&gt;如果你希望生成纯静态站点（例如 GitHub Pages），使用：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;DEPLOYMENT_PLATFORM=github
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;并确保你的部署平台支持静态产物 &lt;code&gt;dist/&lt;/code&gt;。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item></channel></rss>
+&lt;p&gt;并确保你的部署平台支持静态产物 &lt;code&gt;dist/&lt;/code&gt;。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>Friend Circle（朋友圈）：接入与配置</title><link>https://themaoqiu.github.io/blog/friend-circle</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/friend-circle</guid><description>使用 Friend-Circle-Lite 生成数据源，并在 Links 页面展示朋友圈动态。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Friend Circle 是什么&lt;/h2&gt;
+&lt;p&gt;“朋友圈”页面会展示友链站点的最新文章聚合，适合在 Links 页让访问者快速看到朋友们的新内容。&lt;/p&gt;
+&lt;p&gt;本主题的 Links 页集成入口在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;src/pages/links/index.astro&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. 先准备数据源（Friend-Circle-Lite）&lt;/h2&gt;
+&lt;p&gt;本主题使用 Friend-Circle-Lite 的接口数据（&lt;code&gt;all.json&lt;/code&gt; 等）。搭建与使用方式建议参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.liushen.fun/posts/4dc716ec/&quot;&gt;Friend Circle 参考文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你需要得到一个可访问的域名，例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;fc.example.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;并确保以下地址可访问：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;https://fc.example.com/all.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;3. 在主题中启用&lt;/h2&gt;
+&lt;p&gt;编辑 &lt;code&gt;src/site.config.ts&lt;/code&gt;，设置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;theme.personal.domains.friendCircle = &apos;fc.example.com&apos;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;配置完成后，&lt;code&gt;/links&lt;/code&gt; 页面会自动显示 “Small Circle / 朋友圈” 区块。&lt;/p&gt;
+&lt;h2&gt;4. 友链 RSS 建议&lt;/h2&gt;
+&lt;p&gt;如果某个站点在友链里但朋友圈里没有内容，通常是该站点未提供 RSS 或 RSS 不可访问。建议为友链站点补全 RSS。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>MDX 组件使用：User &amp; Advanced</title><link>https://themaoqiu.github.io/blog/mdx-components</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/mdx-components</guid><description>文章内组件（Aside/Tabs 等）与高级组件（LinkPreview/GithubCard 等）的使用方式。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import { Aside, Tabs, TabItem, Spoiler } from &apos;@/components/user&apos;
+import { GithubCard, LinkPreview, QRCode, ImageGroup, WebVideo } from &apos;@/components/advanced&apos;&lt;/p&gt;
+&lt;h2&gt;1. 必须使用 MDX&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;.md&lt;/code&gt; 文章无法 &lt;code&gt;import&lt;/code&gt; 组件；请使用 &lt;code&gt;.mdx&lt;/code&gt;（如 &lt;code&gt;src/content/blogs/&amp;#x3C;slug&gt;/index.mdx&lt;/code&gt;）。&lt;/p&gt;
+&lt;h2&gt;2. User 组件示例&lt;/h2&gt;
+&lt;h2&gt;3. Advanced 组件示例&lt;/h2&gt;
+&lt;h3&gt;GitHub 卡片&lt;/h3&gt;
+&lt;h3&gt;链接预览&lt;/h3&gt;
+&lt;h3&gt;二维码&lt;/h3&gt;
+&lt;h3&gt;图片组（等高拼图）&lt;/h3&gt;
+&lt;p&gt;&amp;#x3C;ImageGroup
+images={[
+{ src: &apos;https://picr2.axi404.top/1767811093734_image.webp&apos;, alt: &apos;Image A&apos;, aspectRatio: 16 / 9 },
+{ src: &apos;https://picr2.axi404.top/1767811093734_image.webp&apos;, alt: &apos;Image B&apos;, aspectRatio: 1 },
+]}
+/&gt;&lt;/p&gt;
+&lt;h3&gt;内嵌视频&lt;/h3&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>Waline 评论系统：部署与接入</title><link>https://themaoqiu.github.io/blog/waline</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/waline</guid><description>部署 Waline 服务端，并在 Axi Theme 中启用评论与访问量统计。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 部署 Waline 服务端&lt;/h2&gt;
+&lt;p&gt;请参考这篇完整教程（包含服务端部署与配置项说明）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://axi404.top/blog/waline-install&quot;&gt;Waline Comments: Deploy &amp;#x26; Integrate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;部署完成后你会得到一个服务端地址，例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;https://waline.example.com/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;2. 在主题中启用 Waline&lt;/h2&gt;
+&lt;p&gt;编辑 &lt;code&gt;src/site.config.ts&lt;/code&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;integ.waline.enable&lt;/code&gt;: 设为 &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;integ.waline.server&lt;/code&gt;: 填你的 Waline Server URL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-ts&quot;&gt;waline: {
+  enable: true,
+  server: &apos;https://waline.example.com/&apos;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;3. 常见说明&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;评论区组件：&lt;code&gt;src/components/advanced/Comment.astro&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;页面访问量/评论数：部分页面会加载 Waline 的 &lt;code&gt;pageview&lt;/code&gt; 统计（见 &lt;code&gt;src/pages/*&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;单篇文章是否显示评论：由文章 Frontmatter 的 &lt;code&gt;comment&lt;/code&gt; 控制（默认 &lt;code&gt;true&lt;/code&gt;）&lt;/li&gt;
+&lt;/ul&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>写作指南：Markdown / MDX</title><link>https://themaoqiu.github.io/blog/writing-markdown-mdx</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/writing-markdown-mdx</guid><description>主题内支持的 Markdown 扩展、数学公式、代码高亮与一些写作约定。</description><pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Markdown 支持范围&lt;/h2&gt;
+&lt;p&gt;主题默认启用了常用扩展：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GFM：表格、删除线、任务列表等&lt;/li&gt;
+&lt;li&gt;数学公式：KaTeX（&lt;code&gt;$...$&lt;/code&gt; / &lt;code&gt;$$...$$&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;代码高亮：Shiki（支持标题、差异标注等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. 数学公式（KaTeX）&lt;/h2&gt;
+&lt;p&gt;行内：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;欧拉公式：$e^{i\\pi}+1=0$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;块级：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;$$
+\\int_0^1 x^2 dx = \\frac{1}{3}
+$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;3. 代码块增强（差异/高亮）&lt;/h2&gt;
+&lt;p&gt;你可以在代码中使用注释标记来展示变更（示例来自主题的高亮 transformer）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-ts&quot;&gt;const a = 1 // [!code --]
+const a = 2 // [!code ++]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;也可以做行高亮：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-ts&quot;&gt;const token = &apos;secret&apos; // [!code highlight]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;4. 什么时候用 MDX&lt;/h2&gt;
+&lt;p&gt;当你需要在文章里使用组件（例如 &lt;code&gt;Aside&lt;/code&gt;、&lt;code&gt;Tabs&lt;/code&gt;、&lt;code&gt;GithubCard&lt;/code&gt; 等）时，请使用 &lt;code&gt;.mdx&lt;/code&gt;，并在文件顶部 &lt;code&gt;import&lt;/code&gt; 组件。&lt;/p&gt;
+&lt;p&gt;组件用法示例文档：见 “MDX 组件使用”。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item></channel></rss>

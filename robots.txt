@@ -5,4 +5,4 @@ User-agent: Claude-Web
 User-agent: *
 Allow: /
 
-Sitemap: https://xingjianwang.com/sitemap-index.xml
+Sitemap: https://themaoqiu.github.io/sitemap-index.xml
