@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-01</title><link>https://themaoqiu.github.io/blog/papers-2026-04-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-01</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-02</title><link>https://themaoqiu.github.io/blog/papers-2026-04-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-02</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Unify-Agent: A Unified Multimodal Agent for World-Grounded Image Synthesis&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2603.29620&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2603.29620&quot;}
+summary={&quot;Unify-Agent提出了一个面向世界级图像合成的统一多模态智能体框架，把生成过程拆解为提示理解、多模态证据检索、落地重述和最终合成四个agentic步骤。为此构建了专门的数据管道，收集了143K条agent轨迹用于训练整条流水线，并引入FactIP基准涵盖12类文化意义和长尾知识点，评估生成与外部知识一致性。结果显示在多项公开与现实任务上，Unify-Agent相比基线模型有明显提升，并在知识丰富性上接近最强闭源大模型，说明紧耦合搜索、推理与合成有助于开放世界图像生成。该工作验证了agent式建模在知识密集图像合成场景中的价值。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CutClaw: Agentic Hours-Long Video Editing via Music Synchronization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2603.29664&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2603.29664&quot;}
+summary={&quot;CutClaw构建一个多agent框架，用于自动将数小时素材剪辑成与音乐节奏同步的短视频艺术作品。它首先通过层级多模态分解捕捉视觉与音频的细节与全局结构，再由Playwriter Agent统筹叙事节奏、把视觉场景与音乐变化对齐，最后Editor和Reviewer Agents协作依据美学与语义标准筛选画面优化剪辑。实验表明CutClaw在生成节奏感强、叙事一致的视频方面显著优于现有最先进方法，验证了agent协作策略在长视频剪辑中的有效性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;3D Agent&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-01</title><link>https://themaoqiu.github.io/blog/papers-2026-04-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-01</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks&quot;}
