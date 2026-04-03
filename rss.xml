@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-02</title><link>https://themaoqiu.github.io/blog/papers-2026-04-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-02</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-03</title><link>https://themaoqiu.github.io/blog/papers-2026-04-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-03</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2603.28407&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2603.28407&quot;}
+summary={&quot;MiroEval 构建了适配深度研究代理的评估基准，覆盖 100 个真实用户任务并允许周期性更新，填补以往静态文本评测的空白。方法包括对结果的自适应合成评估、通过检索与多模态附件核验事实的机制、以及审计代理的搜索、推理再迭代过程三个维度套件。多维度评估揭示不同系统在结果与过程上的差异，流程质量成为预测最终表现的可靠指标。实验在 13 个系统上运行，发现多模态任务普遍难度上升 3 至 10 分，MiroThinker-H1 在两种设定中表现最均衡。人工验证与鲁棒性测试确保基准的信度，为下一代研究代理提供诊断工具。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Reasoning Shift: How Context Silently Shortens LLM Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.01161&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.01161&quot;}
+summary={&quot;Reasoning Shift 研究多种推理模型在不同上下文条件下的表现稳健性，发现上下文会悄然压缩推理轨迹长度。方法设计了三种情境：加长的无关上下文、多轮对话中的独立任务和作为复杂任务子步骤的问题，并分析推理轨迹、自我验证与不确定性管理。结果显示相比孤立呈现，同一问题在上下文干扰下推理步骤最多减半，同时自证与双重检查行为显著减少。虽然对简单问题仍保持性能，但在更难问题上可能削弱模型的可靠性，提示需要加强上下文管理机制。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HippoCamp: Benchmarking Contextual Agents on Personal Computers&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.01221&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.01221&quot;}
+summary={&quot;HippoCamp在个人电脑级别上构建了真实用户文件系统的多模态文件管理基准，涵盖42.4GB、2K+文件、581条问答和46.1K条用于故障诊断的结构化轨迹，逼近真实的用户画像、搜索与逻辑推理需求。它针对用户画像、跨模态证据感知与多步语境推理设计评价流程，强调在密集个人文件系统中对长程检索与跨模态理解的考察。实验表明即使顶级商用模型在用户画像任务也仅拿到48.3%准确率，并由分步轨迹指出多模态感知与证据落地是主要瓶颈，提示当前个人助手能力仍难满足现实需求。(&lt;a href=&quot;https://huggingface.co/papers/2604.01221&quot;&gt;huggingface.co&lt;/a&gt;)&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Brevity Constraints Reverse Performance Hierarchies in Language Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.00025&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.00025&quot;}
+summary={&quot;研究发现大模型因自发冗长的回答而在部分基准上落后小模型，但限定简短输出能揭示其更强的潜在能力。通过在5个数据集、1485道题上对31种模型（0.5B-405B）系统评估，作者把过度展开归因于尺度相关的“overthinking”，并用“50词内回答”之类的brevity constraints干预。结果表明简短约束使大模型准确率提升26.3个百分点、性能差距缩小67%，在GSM8K与MMLU-STEM等集上甚至从输掉13.1/27.3个百分点反转为赢7.7/15.9个百分点，并在多家族模型上复现，强调需尺度感知的提示工程。(&lt;a href=&quot;https://huggingface.co/papers/2604.00025&quot;&gt;huggingface.co&lt;/a&gt;)&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Universal YOCO for Efficient Depth Scaling&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.01220&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.01220&quot;}
+summary={&quot;Universal YOCO将YOCO的解码器-解码器结构与递归计算结合，构造具有参数共享的Universal Self-Decoder，在有限的高效注意力层内反复迭代以控制KV缓存与预填充开销。该方案在保持常量全局KV缓存、线性预填充的同时通过部分递归拓展表示深度，从而实现YOCO与递归各自无法达到的能力-效率权衡。实验证实YOCO-U在通用与长上下文基准上依旧具备竞争力，说明高效注意力架构与递归计算的整合是可扩展LLM的有希望方向。(&lt;a href=&quot;https://huggingface.co/papers/2604.01220&quot;&gt;huggingface.co&lt;/a&gt;)&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-02</title><link>https://themaoqiu.github.io/blog/papers-2026-04-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-02</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
