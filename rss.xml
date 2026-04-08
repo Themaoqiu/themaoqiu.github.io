@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-07</title><link>https://themaoqiu.github.io/blog/papers-2026-04-07</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-07</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-08</title><link>https://themaoqiu.github.io/blog/papers-2026-04-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-08</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;FileGram: Grounding Agent Personalization in File-System Behavioral Traces&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.04901&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.04901&quot;}
+summary={&quot;FileGram提出以文件系统行为轨迹为根基的个性化记忆框架，解决协同AIagent在本地文件系统中的个性化与数据稀缺问题。核心包括FileGramEngine用于模拟现实工作流与生成细粒度多模态动作序列、FileGramBench评价多种记忆任务（如画像恢复、轨迹解缠、人格漂移检测与多模态对齐）、以及FileGramOS以原子动作与内容增量构建过程、语义、情节三个信息通道并在查询时抽象化。该架构直接从行为痕迹学习用户特征，减少对对话摘要的依赖。实验结果表明FileGramBench对现有记忆系统仍具挑战性，同时FileGramEngine与FileGramOS可提升个性化表现，证实框架对未来记忆中心文件系统agent的支撑价值。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LightThinker++: From Reasoning Compression to Memory Management&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.03679&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.03679&quot;}
+summary={&quot;LightThinker++从推理压缩演化为显式自适应记忆管理，旨在维持LLM长链思维的效率与稳定性。方法通过内建记忆原语与轨迹合成流水线训练记忆调度器，在行为层面动态管理中间思考并避免固定压缩丢失关键信息。结果显示LightThinker在标准推理中峰值令牌量减少69.9%并在相同上下文预算下带来2.42%的准确率提升；在长时序agent任务中保持80轮以上稳定占用、减少60%~70%资源，平均性能提升14.8%。此外LightThinker整体减少峰值词元70%与推理时长26%，证明框架能在持续推理中保持极低开销。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.02288&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.02288&quot;}
+summary={&quot;SRPO统一GRPO与SDPO中的群体相对与自蒸馏优化策略，通过样本路由机制分别将正确回合分发给与奖励对齐的强化学习模块，而将失败样本交给强调logit级纠错的自蒸馏模块，并辅以熵感知动态加权以弱化高熵不可靠的蒸馏目标。该框架解决了SDPO长期训练中信号退化与已正确样本带来的优化歧义，同时保留SDPO的密集指令与GRPO的稳定性。五个基准与两种模型规模上实验表明，SRPO兼具快速早期提升与长周期稳定性，在Qwen3-8B上平均性能比GRPO高3.4%、比SDPO高6.3%，并在响应长度与每步算力上分别有所节省（最高达17.2%）。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142154272_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142154272_p0.jpg"/></item><item><title>Papers - 2026-04-07</title><link>https://themaoqiu.github.io/blog/papers-2026-04-07</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-07</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
@@ -9,7 +32,7 @@ arxivUrl={&quot;https://arxiv.org/abs/2604.02368&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.02368&quot;}
 summary={&quot;XpertBench 构建了一个包含 1,346 个跨金融、医疗、法务、教育、STEM 和人文等 80 个专业领域任务的高保真基准，所有题目均由顶尖研究者或资深从业者提交，因而具备优越的生态效度。每个任务配套 15-40 项加权评分细则，以确保评估聚焦专业严谨度。作者提出 ShotJudge，即用专家 few-shot 示例调校的 LLM 评审器，避免模型自评带来的偏差，实现可扩展的人类对齐评估。实验揭示即使是最先进模型也只在某些任务取得约 66% 的峰值成功率、平均得分约 55%，且在定量推理与语言整合任务上表现出非重叠的领域强项。该基准揭示当前通用模型与真实专家能力之间的“专家差距”，为专业协作型系统的训练与评价提供了重要工具。&quot;}
 /&gt;&lt;/p&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-06</title><link>https://themaoqiu.github.io/blog/papers-2026-04-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-06</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-05</title><link>https://themaoqiu.github.io/blog/papers-2026-04-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-05</guid><description>吾能观之数千而面色如故</description><pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-04</title><link>https://themaoqiu.github.io/blog/papers-2026-04-04</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-04</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/141912166_p0_scale.png"/><enclosure url="https://cdn.someacg.top/graph/origin/141912166_p0_scale.png"/></item><item><title>Papers - 2026-04-04</title><link>https://themaoqiu.github.io/blog/papers-2026-04-04</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-04</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
