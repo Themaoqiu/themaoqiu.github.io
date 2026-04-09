@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-08</title><link>https://themaoqiu.github.io/blog/papers-2026-04-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-08</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-09</title><link>https://themaoqiu.github.io/blog/papers-2026-04-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-09</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Learning to Retrieve from Agent Trajectories&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.04949&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.04949&quot;}
+summary={&quot;LRAT提出从代理搜索轨迹直接挖掘监督信号的新训练范式，通过分析代理的浏览动作、未浏览拒绝与后续推理痕迹等行为揭示文档效用，并在优化中引入相关强度的加权机制。该框架无需依赖传统面向人的点击/停留日志，而是让检索器对真实代理的查询模式更敏感，并能支持自我迭代的数据飞轮。跨域与跨架构的深度研究基准均显示轨迹训练的检索器在证据召回、端到端任务成功率与执行效率方面持续优于人类中心的检索器，彰显面向代理的检索训练的可行性与收益。(&lt;a href=&quot;https://huggingface.co/papers/2604.04949?utm_source=openai&quot;&gt;huggingface.co&lt;/a&gt;)&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ThinkTwice: Jointly Optimizing Large Language Models for Reasoning and Self-Refinement&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.01591&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.01591&quot;}
+summary={&quot;ThinkTwice提出一种双阶段训练框架，在同一批问题上先优化LLM解题能力再优化自我修正能力，通过Group Relative Policy Optimization统一使用相同的二元正确性奖励。第一阶段强化模型的推理解答，第二阶段再用仅依赖模型自身答案进行自我修正，避免需要额外的批注或人类评价。训练过程中自然形成先纠错再稳固的学习课程序列，随着模型变强修正阶段逐渐转向维护已有正确答案，从而稳定提升奖励信号。相比于GRPO基线，在Qwen3-4B上p站AIME任务的pass@4在修正前后分别提升5个点与11.5个点，充分验证了联合训练策略的有效性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Beyond Accuracy: Unveiling Inefficiency Patterns in Tool-Integrated Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.05404&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.05404&quot;}
+summary={&quot;Beyond Accuracy通过引入PTE（Prefill Token Equivalents）指标，量化Tool-Integrated Reasoning中KV-Cache失效和长工具响应带来的实时推理开销，补足传统token数量与tool调用次数无法反映延迟的不足。该指标在高并发工业部署中显著与实际墙钟时间对齐，并在不同硬件上保持一致的效率排名。作者对5个TIR基准做实验，基于PTE分析总结出四类低效模式，还发现高PTE成本轨迹往往对应较低的推理正确率，说明频繁调用工具未必带来质量提升。论文强调关注整体KV管理与工具输出字数，才能在最少资源下保证TIR系统的响应效率和推理质量。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.04323&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.04323&quot;}
+summary={&quot;How Well Do Agentic Skills Work in the Wild系统评估现实场景下LLM代理在从3.4万条真实技能库中检索与筛选技能时的表现，逐步加大挑战性至无手工定制技能。结果表明技能收益在设定越真实时越脆弱，最困难条件下通过技能的通关率接近无技能基线，凸显当前技能工具链的局限。为此，作者提出查询特定与查询无关的技能精炼策略，其中查询特定精炼能够显著恢复当初始技能尚具相关性与质量时的性能。在Terminal-Bench 2.0上，检索+精炼分别将Claude Opus 4.6的通关率从57.7%提高到65.5%，展示了在现实技能检索场景中恢复与扩展技能效用的可行路径。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-08</title><link>https://themaoqiu.github.io/blog/papers-2026-04-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-08</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
