@@ -26,7 +26,7 @@ title={&quot;Fast Spatial Memory with Elastic Test-Time Training&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2604.07350&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.07350&quot;}
 summary={&quot;FAST Spatial Memory (FSM)在此前LaCT长上下文3D重建的基础上，提出弹性测试时训练机制以提升快权重更新的稳定性。方法引入灵感来自弹性权重巩固的Fisher加权弹性先验，并将锚点状态设为过去快权重的指数移动平均，从而在稳定与可塑之间取得平衡。该架构支持在多个小块上进行快速适应，使模型能用更短的块处理长序列数据，避免简单的相机插值捷径。通过在大规模3D/4D数据上预训练并学习时空表示，实验显示FSM在长序列上的自适应能力显著，能渲染高质量的3D/4D重建结果并缓解激活记忆瓶颈。&quot;}
-/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-09</title><link>https://themaoqiu.github.io/blog/papers-2026-04-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-09</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/HEjCwdibMAA8MsD.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/HEjCwdibMAA8MsD.jpg"/></item><item><title>Papers - 2026-04-09</title><link>https://themaoqiu.github.io/blog/papers-2026-04-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-09</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
@@ -55,7 +55,7 @@ arxivUrl={&quot;https://arxiv.org/abs/2604.04323&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.04323&quot;}
 summary={&quot;How Well Do Agentic Skills Work in the Wild系统评估现实场景下LLM代理在从3.4万条真实技能库中检索与筛选技能时的表现，逐步加大挑战性至无手工定制技能。结果表明技能收益在设定越真实时越脆弱，最困难条件下通过技能的通关率接近无技能基线，凸显当前技能工具链的局限。为此，作者提出查询特定与查询无关的技能精炼策略，其中查询特定精炼能够显著恢复当初始技能尚具相关性与质量时的性能。在Terminal-Bench 2.0上，检索+精炼分别将Claude Opus 4.6的通关率从57.7%提高到65.5%，展示了在现实技能检索场景中恢复与扩展技能效用的可行路径。&quot;}
 /&gt;&lt;/p&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-08</title><link>https://themaoqiu.github.io/blog/papers-2026-04-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-08</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/135029138_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/135029138_p0.jpg"/></item><item><title>Papers - 2026-04-08</title><link>https://themaoqiu.github.io/blog/papers-2026-04-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-08</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
@@ -106,7 +106,7 @@ title={&quot;VOID: Video Object and Interaction Deletion&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2604.02296&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.02296&quot;}
 summary={&quot;VOID 通过物体删除后保持物理合理性来提升视频编辑的世界建模能力。方法建立 Kubric+HUMOTO 生成的反事实配对数据集，训练模型在删掉物体时同时修改后续交互结果。推理时借助视觉语言模型定位受影响区域，再用视频 diffusion 模型在这些区域生成一致的反事实结果，确保动力学连贯。合成与真实数据上对比显示，VOID 在保留场景动态一致性方面明显优于原有视频物体删除方法。&quot;}
-/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-03</title><link>https://themaoqiu.github.io/blog/papers-2026-04-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-03</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142652402_p0_scale.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142652402_p0_scale.jpg"/></item><item><title>Papers - 2026-04-03</title><link>https://themaoqiu.github.io/blog/papers-2026-04-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-03</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
