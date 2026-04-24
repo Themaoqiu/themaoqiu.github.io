@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-24</title><link>https://themaoqiu.github.io/blog/papers-2026-04-24</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-24</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DeVI: Physics-based Dexterous Human-Object Interaction via Synthetic Video Imitation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.20841&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.20841&quot;}
+summary={&quot;这篇论文提出 DeVI，用合成视频来做基于物理的精细人-物交互控制。方法上，作者利用文本条件生成的视频作为模仿信号，并设计融合 3D 人体跟踪与鲁棒 2D 物体跟踪的混合奖励，以弥补生成视频在物理精度和三维信息上的不足。与依赖高质量 3D 示范的方法不同，DeVI 只需要生成视频即可进行零样本泛化，适用于不同目标物体和交互类型。实验结果表明，DeVI 在多种任务上优于现有的 3D 人-物交互模仿方法，尤其在灵巧手-物体交互建模上提升明显，并且在多物体场景和文本驱动动作多样性上也验证了有效性。&quot;}
+/&gt;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;DR-Venus: Towards Frontier Edge-Scale Deep Research Agents with Only 10K Open Data&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2604.19859&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2604.19859&quot;}
-summary={&quot;这篇工作面向边缘端深度研究代理，提出仅用约 1 万条开源数据训练 4B 级强代理的 DR-Venus。方法上分两阶段：先用 agentic SFT 结合严格清洗与长轨迹重采样提升基础能力，再用 agentic RL 和基于信息增益的转级奖励、格式正则化来提高长链路任务的执行可靠性。实验显示，DR-Venus-4B 在多个深度研究基准上显著优于参数低于 9B 的既有代理模型，并缩小了与 30B 级系统的差距。作者还指出，4B 模型本身具有很强潜力，测试时扩展对这类任务也很重要。&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2604.15093&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2604.15093&quot;}
-summary={&quot;这篇论文提出 OpenMobile，一个用于构建开源移动代理的数据与轨迹合成框架。它先通过探索构建全局环境记忆，再利用该记忆生成更丰富且有 grounding 的任务指令，同时采用 learner/expert 交替的策略切换轨迹采样，以补足标准模仿学习中常缺失的纠错数据。基于这些数据训练的代理在多个动态移动任务基准上取得了有竞争力的结果，其中微调后的 Qwen2.5-VL 和 Qwen3-VL 在 AndroidWorld 上分别达到 51.7% 和 64.7%。作者还分析了合成指令与测试集的重叠，说明性能提升主要来自覆盖面扩大而非过拟合。&quot;}
-/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;A Self-Evolving Framework for Efficient Terminal Agents via Observational Context Compression&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2604.19572&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.19572&quot;}
-summary={&quot;这篇论文面向长程终端智能体任务，提出了 TACO，一个自我演化的观测上下文压缩框架，用于减少终端环境反馈在多轮交互中带来的冗余和 token 开销。方法会从历史轨迹中自动发现并迭代压缩规则，从而适配不同终端环境，而不是依赖固定启发式或人工提示。作者在 TerminalBench 1.0/2.0 以及 SWE-Bench Lite、CompileBench、DevEval、CRUST-Bench 上进行了评测。结果显示，TACO 在多种主流智能体框架和强基座模型上都能稳定提升性能，在 MiniMax-2.5 上还能将 token 开销降低约 10%，并在 TerminalBench 上带来约 1% 到 4% 的一致增益。&quot;}
+summary={&quot;这篇论文提出 TACO，用于为终端智能体做观测上下文压缩，以缓解长链路多轮交互中历史反馈冗余和 token 成本快速增长的问题。方法上，TACO 是一个可插拔、自演化的压缩框架，会从交互轨迹中自动发现并迭代压缩规则，适配不同终端环境。作者在 TerminalBench（1.0 和 2.0）以及 SWE-Bench Lite、CompileBench、DevEval、CRUST-Bench 上进行了系统评测。结果显示，TACO 在主流 agent 框架和强基座模型上都能稳定提升性能，在减少约 10% token 开销的同时，TerminalBench 上普遍带来 1% 到 4% 的增益。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;SWE-chat: Coding Agent Interactions From Real Users in the Wild&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2604.20779&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.20779&quot;}
-summary={&quot;这篇工作提出了 SWE-chat，一个来自真实开源开发者使用场景的大规模编码代理交互数据集，用来研究人们在野外如何使用 coding agent。作者构建了持续发现和处理公开仓库会话的流水线，当前包含 6000 个会话、超过 6.3 万条用户提示和 35.5 万次代理工具调用。基于该数据集的分析显示，真实编码模式呈现明显双峰：一类会话几乎完全由代理写代码，另一类则完全由人类自己写代码。实验和统计结果还表明，代理生成代码只有 44% 会进入最终提交，且其引入的安全漏洞更多，用户也会在 44% 的轮次中对代理输出进行纠正、报告失败或中断。&quot;}
+summary={&quot;这篇论文提出了 SWE-chat，一个来自真实开源开发者使用场景的大规模编码代理交互数据集，用来研究 AI 编码代理在自然工作流中的实际表现。作者通过自动化流水线持续发现并处理公开仓库中的会话，目前包含 6000 个 session、超过 6.3 万个用户提示和 35.5 万次代理工具调用。基于该数据集，论文系统分析了真实使用模式与失败方式，发现编码代理的使用呈现明显双峰：41% 的会话几乎由代理完成全部提交代码，而 23% 完全由人类自己写码。实验与统计结果还表明，代理生成代码最终只有 44% 会进入用户提交，且其引入的安全漏洞更多，用户也会在 44% 的轮次中通过纠正、报错或中断来反向约束代理输出。&quot;}
 /&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-23</title><link>https://themaoqiu.github.io/blog/papers-2026-04-23</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-23</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
