@@ -1,50 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-29</title><link>https://themaoqiu.github.io/blog/papers-2026-04-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
-&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2604.24300&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2604.24300&quot;}
-summary={&quot;Current evaluations of spatial intelligence can be systematically invalid under modern vision-language model (VLM) settings. First, many benchmarks derive question-answer (QA) pairs from point-cloud-based 3D annotations originally curated for traditional 3D perception. When such annotations are treated as ground truth for video-based evaluation, reconstruction and annotation artifacts can miss objects that are clearly visible in the video, mislabel object identities, or corrupt geometry-dependent answers (e.g., size), yielding incorrect or ambiguous QA pairs. Second, evaluations often assume full-scene access, while many VLMs operate on sparsely sampled frames (e.g., 16-64), making many questions effectively unanswerable under the actual model inputs. We improve evaluation validity by introducing ReVSI, a benchmark and protocol that ensures each QA pair is answerable and correct under the model&apos;s actual inputs. To this end, we re-annotate objects and geometry across 381 scenes from 5 datasets to improve data quality, and regenerate all QA pairs with rigorous bias mitigation and human verification using professional 3D annotation tools. We further enhance evaluation controllability by providing variants across multiple frame budgets (16/32/64/all) and fine-grained object visibility metadata, enabling controlled diagnostic analyses. Evaluations of general and domain-specific VLMs on ReVSI reveal systematic failure modes that are obscured by prior benchmarks, yielding a more reliable and diagnostic assessment of spatial intelligence.&quot;}
-/&gt;&lt;/p&gt;
-&lt;h2&gt;3D LLM&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2604.23775&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2604.23775&quot;}
-summary={&quot;Vision-Language-Action (VLA) models are emerging as a unified substrate for embodied intelligence. This shift raises a new class of safety challenges, stemming from the embodied nature of VLA systems, including irreversible physical consequences, a multimodal attack surface across vision, language, and state, real-time latency constraints on defense, error propagation over long-horizon trajectories, and vulnerabilities in the data supply chain. Yet the literature remains fragmented across robotic learning, adversarial machine learning, AI alignment, and autonomous systems safety. This survey provides a unified and up-to-date overview of safety in Vision-Language-Action models. We organize the field along two parallel timing axes, attack timing (training-time vs. inference-time and defense timing (training-time vs. inference-time, linking each class of threat to the stage at which it can be mitigated. We first define the scope of VLA safety, distinguishing it from text-only LLM safety and classical robotic safety, and review the foundations of VLA models, including architectures, training paradigms, and inference mechanisms. We then examine the literature through four lenses: Attacks, Defenses, Evaluation, and Deployment. We survey training-time threats such as data poisoning and backdoors, as well as inference-time attacks including adversarial patches, cross-modal perturbations, semantic jailbreaks, and freezing attacks. We review training-time and runtime defenses, analyze existing benchmarks and metrics, and discuss safety challenges across six deployment domains. Finally, we highlight key open problems, including certified robustness for embodied trajectories, physically realizable defenses, safety-aware training, unified runtime safety architectures, and standardized evaluation.&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2604.23781&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2604.23781&quot;}
-summary={&quot;No summary available.&quot;}
-/&gt;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2604.24198&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.24198&quot;}
-summary={&quot;No summary available.&quot;}
+summary={&quot;这篇工作研究了面向数据分析智能体的过程级奖励建模，指出通用 PRM 在动态数据分析任务中难以监督代理，因为它们既看不出不会报错的“静默错误”，也会把必要的试错探索误判为失败。为此，作者提出 DataPRM，这是一种环境感知的生成式过程奖励模型，能够主动与环境交互检查中间执行状态，并用反思感知的三值奖励区分可修正的 grounding 错误和不可挽回的错误。论文还构建了一个包含 8K+ 高质量样本的训练流水线，用于覆盖多样轨迹生成和逐步标注。实验表明，DataPRM 在 ScienceAgentBench 上为下游策略模型带来 7.21% 的提升，在 DABStep 上带来 11.28% 的提升；仅 4B 参数时也优于强基线，并在强化学习和不同测试时扩展策略下表现稳健。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2604.19548&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2604.19548&quot;}
-summary={&quot;Large Language Model agents have rapidly evolved from static text generators into dynamic systems capable of executing complex autonomous workflows. To enhance reliability, multi-agent frameworks assigning specialized roles are increasingly adopted to enable self-reflection and mutual auditing. While such role-playing effectively leverages domain expert knowledge, we find it simultaneously induces a human-like cognitive bias known as Actor-Observer Asymmetry (AOA). Specifically, an agent acting as an actor (during self-reflection) tends to attribute failures to external factors, whereas an observer (during mutual auditing) attributes the same errors to internal faults. We quantify this using our new Ambiguous Failure Benchmark, which reveals that simply swapping perspectives triggers the AOA effect in over 20% of cases for most models. To tame this bias, we introduce ReTAS (Reasoning via Thesis-Antithesis-Synthesis), a model trained through dialectical alignment to enforce perspective-invariant reasoning. By integrating dialectical chain-of-thought with Group Relative Policy Optimization, ReTAS guides agents to synthesize conflicting viewpoints into an objective consensus. Experiments demonstrate that ReTAS effectively mitigates attribution inconsistency and significantly improves fault resolution rates in ambiguous scenarios.&quot;}
-/&gt;&lt;/p&gt;
-&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;SketchVLM: Vision language models can annotate images to explain thoughts and guide users&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2604.22875&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2604.22875&quot;}
-summary={&quot;No summary available.&quot;}
+summary={&quot;这篇工作关注智能体中的 Actor-Observer Asymmetry，指出在自我反思和互相审计的多智能体框架里，模型会像人一样对同一失败给出不一致的归因，从而影响可靠性。作者提出 ReTAS（Reasoning via Thesis-Antithesis-Synthesis），通过辩证式对齐训练，让模型把不同视角的冲突信息综合成更客观的结论。为分析这一现象，论文还构建了 Ambiguous Failure Benchmark，并发现简单切换“行动者/观察者”视角会在超过 20% 的案例中触发该偏差。实验显示，ReTAS 能有效缓解归因不一致，并显著提升在歧义场景中的故障解决率。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2508.10180&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2508.10180&quot;}
-summary={&quot;No summary available.&quot;}
-/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-28</title><link>https://themaoqiu.github.io/blog/papers-2026-04-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-28</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+title={&quot;Efficient Agent Evaluation via Diversity-Guided User Simulation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.21480&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.21480&quot;}
+summary={&quot;本文提出 DIVERT，一种基于多样性引导的用户模拟评测框架，用于更高效地评估面向用户的 LLM Agent。方法上，它在关键决策点保存 agent-环境状态快照，并从这些快照继续展开分支，从而复用共享前缀、减少重复回放，同时用有针对性的多样化用户回复探索不同交互路径。这样可以比传统线性 Monte Carlo rollout 更系统地覆盖稀有用户行为和深层失败模式。实验表明，DIVERT 在相同 token 预算下能发现更多失败，并且能在更多任务上识别出问题，兼顾了效率和覆盖率。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-28</title><link>https://themaoqiu.github.io/blog/papers-2026-04-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-28</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents&quot;}
