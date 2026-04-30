@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-29</title><link>https://themaoqiu.github.io/blog/papers-2026-04-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-30</title><link>https://themaoqiu.github.io/blog/papers-2026-04-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-30</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.25914&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.25914&quot;}
+summary={&quot;这篇论文提出 DV-World，用来评测真实场景中的数据可视化智能体能力，补足了现有基准在代码沙箱、单语言、只做创建任务等方面的不足。基准共包含 260 个任务，覆盖电子表格原生操作、跨范式可视化演化改写，以及带用户模拟器的交互式意图对齐三类场景。作者还设计了结合表值对齐和 MLLM-as-a-Judge 的混合评测框架，用于同时衡量数值精度与语义视觉一致性。实验显示，当前最强模型的整体表现仍低于 50%，暴露出它们在真实企业级数据可视化工作流中的明显短板。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.25256&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.25256&quot;}
+summary={&quot;这篇工作提出 AutoResearchBench，用来评测 AI 代理在复杂科学文献发现中的自主研究能力。基准包含两类任务：Deep Research 需要通过多步线索追踪定位目标论文，Wide Research 则要求在未知数量的候选中全面收集满足条件的论文。作者强调该基准同时具备研究导向、文献细粒度理解和开放式搜索三种特征，因此比一般网页浏览类基准更难。实验结果显示，即便最强的 LLM 在 Deep Research 上也只有 9.39% 准确率，在 Wide Research 上 IoU 仅 9.31%，很多强基线甚至低于 5%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Toward Scalable Terminal Task Synthesis via Skill Graphs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.25727&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.25727&quot;}
+summary={&quot;这篇工作提出 SkillSynth，一个基于场景中介技能图的终端任务合成框架，用来缓解终端智能体训练中高质量、多样化执行轨迹不足的问题。方法上，它先构建大规模技能图，再在图上采样路径作为真实工作流抽象，最后借助多智能体执行框架把路径实例化为可运行任务。与只追求任务数量的传统合成方法不同，SkillSynth 能显式控制训练时所需的最小执行轨迹多样性。作者在 Terminal-Bench 上验证了该方法有效，合成出的任务还被用于训练 Hy3 Preview 并提升了其终端代理能力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;TCOD: Exploring Temporal Curriculum in On-Policy Distillation for Multi-turn Autonomous Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.24005&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.24005&quot;}
+summary={&quot;这篇工作研究多轮自主智能体中的 on-policy distillation，并指出朴素 OPD 在轨迹级别会出现 KL 不稳定问题。作者提出 TCOD，通过时间课程学习逐步增加学生模型暴露的轨迹深度，从短轨迹到长轨迹渐进训练，以缓解误差累积带来的监督失真。方法在 ALFWorld、WebShop 和 ScienceWorld 三个多轮基准、四组师生模型上验证，结果显示 TCOD 能显著稳定 KL 曲线并提升训练效果。相较于 vanilla OPD，智能体性能最高提升 18 个点，并且在部分任务上还能超过教师模型、泛化到教师失败的任务上。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-29</title><link>https://themaoqiu.github.io/blog/papers-2026-04-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
