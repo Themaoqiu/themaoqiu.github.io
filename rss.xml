@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-04-30</title><link>https://themaoqiu.github.io/blog/papers-2026-04-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-30</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-01</title><link>https://themaoqiu.github.io/blog/papers-2026-05-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-01</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.26091&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.26091&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Accelerating RL Post-Training Rollouts via System-Integrated Speculative Decoding&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.26779&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.26779&quot;}
+summary={&quot;RL post-training of frontier language models is increasingly bottlenecked by autoregressive rollout generation, making rollout acceleration a central systems challenge. Many existing efficiency methods improve throughput by changing the rollout or optimization regime, for example, through off-policy execution, replay, or lower-precision generation. We study speculative decoding as a lossless acceleration primitive for RL rollouts that preserves the target model&apos;s output distribution. We implement speculative decoding in NeMo-RL with a vLLM backend, supporting both synchronous and asynchronous pipelines and enabling speculation during RL rollouts. This benefit is realizable across speculation mechanisms, such as pretrained MTP heads, small external draft models or even techniques such as Eagle3, which are traditionally applied after RL phase. This yields a deployment path for state-of-the-art speculative decoding inside RL training. In a reasoning post-training workload at 8B scale under synchronous RL, speculative decoding improves rollout throughput by 1.8x. Using a high-fidelity performance simulator, we project that combining speculative decoding with asynchronous RL yields up to 2.5x end-to-end training speedup at 235B scale.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;A Survey on LLM-based Conversational User Simulation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.24977&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.24977&quot;}
+summary={&quot;User simulation has long played a vital role in computer science due to its potential to support a wide range of applications. Language, as the primary medium of human communication, forms the foundation of social interaction and behavior. Consequently, simulating conversational behavior has become a key area of study. Recent advancements in large language models (LLMs) have significantly catalyzed progress in this domain by enabling high-fidelity generation of synthetic user conversation. In this paper, we survey recent advancements in LLM-based conversational user simulation. We introduce a novel taxonomy covering user granularity and simulation objectives. Additionally, we systematically analyze core techniques and evaluation methodologies. We aim to keep the research community informed of the latest advancements in conversational user simulation and to further facilitate future research by identifying open challenges and organizing existing work under a unified framework.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-04-30</title><link>https://themaoqiu.github.io/blog/papers-2026-04-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-04-30</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Refinement via Regeneration: Enlarging Modification Space Boosts Image Refinement in Unified Multimodal Models&quot;}
