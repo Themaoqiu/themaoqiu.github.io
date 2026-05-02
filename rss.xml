@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-01</title><link>https://themaoqiu.github.io/blog/papers-2026-05-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-01</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-02</title><link>https://themaoqiu.github.io/blog/papers-2026-05-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-02</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Co-Evolving Policy Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.27083&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.27083&quot;}
+summary={&quot;本文统一分析了 RLVR 和 OPD 两类后训练范式在多能力融合中的能力损失问题，指出混合 RLVR 会产生跨能力分歧，而先训专家再做 OPD 又会因师生行为差距而吸收不充分。作者提出 Co-Evolving Policy Distillation（CoPD），让多个专家并行训练，并在专家持续进行 RLVR 时同步做双向 OPD 以共同演化。实验表明，CoPD 能把文本、图像和视频推理能力整合到一个模型中，在强基线之上取得显著提升，甚至超过了单领域专家。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.28139&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.28139&quot;}
+summary={&quot;这篇工作提出 Claw-Eval-Live，一个面向会随真实工作流变化的 LLM agent 评测基准。它把可刷新信号层与可复现实验快照分离，并结合执行轨迹、审计日志、服务状态和运行后产物进行评分，确定性检查优先，语义维度再用结构化 LLM 判定。实验覆盖 105 个任务和 13 个前沿模型，结果显示最强模型也只通过 66.7%，没有模型达到 70%，说明可靠的工作流自动化仍然没有被解决。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Synthetic Computers at Scale for Long-Horizon Productivity Simulation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.28181&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.28181&quot;}
+summary={&quot;这篇工作提出了 Synthetic Computers at Scale，用来大规模构造带有真实文件夹层级和文档、表格、演示稿等内容丰富工件的合成电脑环境。作者在每台合成电脑上运行长时程模拟：一个智能体先生成与该用户相关、需要多份专业交付物且跨度约一个月的人类工作目标，另一个智能体再以该用户身份在电脑中持续工作，进行文件系统定位、协作和产出文档。实验中他们构建了 1000 台合成电脑，每次模拟平均超过 2000 轮、运行超过 8 小时。结果表明，这些模拟产生了丰富的经验学习信号，并显著提升了智能体在领域内和领域外的生产力评测表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-01</title><link>https://themaoqiu.github.io/blog/papers-2026-05-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-01</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
