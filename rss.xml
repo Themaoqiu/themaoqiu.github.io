@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-06</title><link>https://themaoqiu.github.io/blog/papers-2026-05-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-06</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-07</title><link>https://themaoqiu.github.io/blog/papers-2026-05-07</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-07</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.04036&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.04036&quot;}
+summary={&quot;这篇工作研究如何用更简单的监督微调训练高性能搜索代理。作者通过扩大知识图谱、扩展工具集和严格的低步数过滤，构造出信息更充分、难度更高的轨迹数据，并只用 10.6k 数据点进行 SFT。实验中，OpenSeeker-v2 在 BrowseComp、BrowseComp-ZH、Humanity&apos;s Last Exam 和 xbench 上都取得了新的强基线，整体超过了依赖 CPT+SFT+RL 的 Tongyi DeepResearch。结果说明，在合适的数据轨迹设计下，纯 SFT 也能把搜索代理推到很强的性能水平。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HeavySkill: Heavy Thinking as the Inner Skill in Agentic Harness&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.02396&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.02396&quot;}
+summary={&quot;这篇工作提出 HeavySkill，把“重思考”看作 agentic harness 中的一种内化技能，而不只是外部 orchestration 的执行单元。方法上，它将这种技能形式化为“并行推理 + 总结”的两阶段流程，并分析其可作为模型参数中的内在能力被学习。作者在多个领域做了系统实验，发现 HeavySkill 明显优于传统 Best-of-N 策略，强模型甚至能接近 Pass@N 表现。进一步结果表明，这种重思考深度和宽度还能通过强化学习继续扩展，说明它具有可训练、可自演化的潜力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;PatRe: A Full-Stage Office Action and Rebuttal Generation Benchmark for Patent Examination&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.03571&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.03571&quot;}
+summary={&quot;PatRe 构建了首个覆盖专利审查完整流程的基准，包含 Office Action 生成与申请人 rebuttal 两个阶段。作者将专利审查建模为多轮交互式推理与回应任务，并提供真实案例与检索模拟两种评测设置。实验覆盖多种大语言模型，结果显示不同模型在审查分析与申请人回复上存在明显差异，闭源模型整体优于开源模型。该基准揭示了 LLM 在复杂法律与技术新颖性判断中的能力边界，并释放了代码与数据集。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SymptomAI: Towards a Conversational AI Agent for Everyday Symptom Assessment&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.04012&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.04012&quot;}
+summary={&quot;本文提出 SymptomAI，一组用于日常症状评估的对话式 AI 代理，并在 Fitbit 应用中开展大规模随机研究。系统通过端到端问诊和鉴别诊断收集真实世界对话数据，并由临床医生对部分样本进行盲评。实验显示，SymptomAI 的鉴别诊断准确率显著高于在相同对话条件下的独立临床医生，主动追问式的完整问诊策略也明显优于用户引导式对话。作者还用额外的人群数据验证了结论的泛化性，并分析了可穿戴指标与多种疾病之间的关联。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.02801&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.02801&quot;}
+summary={&quot;本文研究如何通过 orchestration traces 为基于 LLM 的多智能体系统进行强化学习训练。方法核心是利用多智能体协作过程中产生的编排轨迹，作为训练信号来优化系统级决策与协同策略。该工作强调了从真实交互日志中学习多智能体编排行为的可行性，并面向多智能体任务给出训练框架。由于当前仅给出标题，实验细节未在输入中展开，但其主题明确落在多智能体训练与评测方向。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.03596&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.03596&quot;}
+summary={&quot;本文提出 Workspace-Bench 1.0，用于评测 AI agent 在真实工作空间中处理大规模文件依赖的能力。作者构建了包含 5 种 worker profile、74 类文件类型、20,476 个文件和 388 个任务的基准，每个任务都配有文件依赖图和细粒度 rubric。方法上，基准要求 agent 做跨文件检索、上下文推理和自适应决策，并提供一个成本更低的 Lite 子集。实验显示当前 agent 仍明显不可靠，最佳系统仅达到 68.7%，低于人类的 80.7%，平均仅 47.4%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-06</title><link>https://themaoqiu.github.io/blog/papers-2026-05-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-06</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments&quot;}
