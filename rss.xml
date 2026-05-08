@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-07</title><link>https://themaoqiu.github.io/blog/papers-2026-05-07</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-07</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-08</title><link>https://themaoqiu.github.io/blog/papers-2026-05-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-08</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.04018&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.04018&quot;}
+summary={&quot;这篇工作聚焦于面向 agentic search 的“推理型检索”，目标不是单纯匹配主题，而是找出能支撑后续推理的证据组合。作者提出 BRIGHT-Pro 基准，把每个查询扩展为多方面金标准证据，并在静态检索和 agentic 搜索两种协议下评测检索器；同时构建 RTriever-Synth，通过方面拆解生成互补正样本和正样本条件下的 hard negatives，用于 LoRA 微调 RTriever-4B。实验表明，新的评测方式能暴露传统指标看不到的行为差异，而微调后的 RTriever-4B 相比基础模型有明显提升。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.02910&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.02910&quot;}
+summary={&quot;这篇工作提出了 CreativityBench，用来评估大模型在“工具再利用”场景下的创造性推理能力。作者构建了一个包含 4000 个实体和 15 万+ affordance 标注的知识库，把物体、部件、属性和可执行用途关联起来，并据此生成 1.4 万个带约束的 grounded 任务。实验覆盖 10 个主流闭源与开源模型，结果显示模型往往能选出看起来合理的物体，但常常找不到正确部件、对应 affordance 和物理机制，性能因此显著下降。研究还发现，规模扩展带来的收益很快饱和，常规 Chain-of-Thought 对这类任务帮助有限，说明创造性工具使用仍是当前模型的明显短板。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Stream-T1: Test-Time Scaling for Streaming Video Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.04461&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.04461&quot;}
+summary={&quot;这篇工作提出 Stream-T1，把测试时缩放引入流式视频生成，以更低成本提升生成质量。方法上，它围绕 chunk 级生成设计了三部分：用历史高质量噪声引导当前噪声传播、用奖励模型筛选候选以平衡局部美感和全局时序一致性、以及把被移出 KV-cache 的上下文按反馈重新注入后续生成。作者强调流式视频生成天然适合测试时搜索，因为分块合成和较少去噪步数能降低候选探索成本。实验在 5 秒和 30 秒视频基准上显示，该方法显著改善了时序一致性、运动平滑度和逐帧视觉质量。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.28196&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.28196&quot;}
+summary={&quot;这篇工作提出 HERMES++，把 3D 场景理解和未来几何预测统一到同一个驾驶世界模型中。方法上，它用 BEV 表示融合多视角空间信息，引入 LLM 增强的 world queries 做理解分支的知识迁移，并通过 Current-to-Future Link 把语义上下文连接到未来几何演化。为保证结构一致性，作者还加入联合几何优化，将显式几何约束和隐式潜表示正则结合起来。实验表明，HERMES++ 在多个基准上同时提升了未来点云预测和 3D 场景理解性能，优于专门方法。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-07</title><link>https://themaoqiu.github.io/blog/papers-2026-05-07</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-07</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories&quot;}
