@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-08</title><link>https://themaoqiu.github.io/blog/papers-2026-05-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-08</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-09</title><link>https://themaoqiu.github.io/blog/papers-2026-05-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-09</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.05242&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.05242&quot;}
+summary={&quot;这篇工作提出 direct corpus interaction（DCI），让智能体直接通过 grep、文件读取和 shell 命令等终端工具访问原始语料，而不是依赖固定的向量检索接口。方法上，它避免离线索引和 embedding 检索，把精确词项约束、稀疏线索组合和多步假设修正交给智能体在语料上直接交互完成。作者认为这种接口更适合 agentic search，因为早期被过滤掉的证据无法靠后续推理补回。实验显示，DCI 在多个 BRIGHT 和 BEIR 基准上显著优于强稀疏、稠密和重排序检索器，并在 BrowseComp-Plus 和多跳问答上取得很强表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.04523&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.04523&quot;}
+summary={&quot;这篇工作总结了 SemEval-2026 Task 8 中面向忠实多轮响应生成的获胜系统。方法上，他们采用由 7 个大模型和两种提示变体组成的异构集成，并用一个 GPT-4o-mini judge 为每个样本选择最佳候选。该系统在 Task B 上获得第 1 名，conditioned harmonic mean 达到 0.7827，明显高于最强基线 0.6390。消融实验表明，不同模型家族、规模和提示策略的多样性对性能提升至关重要。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillOS: Learning Skill Curation for Self-Evolving Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.06614&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.06614&quot;}
+summary={&quot;这篇工作研究如何学习可复用技能的整理与更新策略，让基于 LLM 的智能体能够从经验中自我演化。作者提出 SkillOS，将冻结的执行器与可训练的技能整理器分离，由后者持续更新外部 SkillRepo，并通过分组任务流和复合奖励把“前序轨迹更新技能库、后续相关任务评估更新效果”串成训练信号。实验覆盖多轮智能体任务和单轮推理任务，结果显示 SkillOS 在效果和效率上都优于无记忆和强记忆基线，并且能迁移到不同执行器骨干和不同任务域。进一步分析表明，学到的整理策略会产生更有针对性的技能调用，SkillRepo 中的 Markdown 技能也会逐步演化成更结构化的高层元技能。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.05566&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.05566&quot;}
+summary={&quot;这篇工作针对 GRPO 等 verifiable reward 强化学习中的“零优势”问题，即困难样本上所有 rollout 都失败时训练信号会塌缩为零。作者提出 LoPE，通过在原始 prompt 前加入随机拼接的 Lorem Ipsum 式无意义前缀，扰动 prompt 空间来扩大探索范围，进而诱发原本不容易出现的正交推理路径。实验在 1.7B、4B 和 7B 模型上都显示，LoPE 明显优于简单的原 prompt 重新采样。进一步分析还发现，其他低困惑度的拉丁风格随机序列也同样有效，说明方法的关键在于提供一种轻量但能打散搜索局部性的 prompt 扰动。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.06642&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.06642&quot;}
+summary={&quot;这篇工作提出了 StraTA，用于提升大语言模型在长时序任务中的代理式强化学习表现。方法上，它先从初始任务状态采样一个紧凑的策略表示，再让后续动作围绕该策略展开，并结合分层的 GRPO 式 rollout、策略多样化采样和关键自我判断来改进探索与信用分配。实验在 ALFWorld、WebShop 和 SciWorld 上进行，结果显示 StraTA 在样本效率和最终性能上都优于强基线。具体上，它在 ALFWorld 上达到 93.1% 成功率，在 WebShop 上达到 84.2%，并在 SciWorld 上取得 63.5% 的总体分数，超过了多个前沿闭源模型。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-08</title><link>https://themaoqiu.github.io/blog/papers-2026-05-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-08</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
