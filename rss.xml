@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-13</title><link>https://themaoqiu.github.io/blog/papers-2026-05-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-13</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-14</title><link>https://themaoqiu.github.io/blog/papers-2026-05-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-14</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MCP-Cosmos: World Model-Augmented Agents for Complex Task Execution in MCP Environments&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.09131&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.09131&quot;}
+summary={&quot;本文提出 MCP-Cosmos，将世界模型引入 MCP 生态，用于增强复杂任务执行中的预测式规划与自动化。方法上，框架把 MCP、World Model 和 Agent 统一起来，采用 BYOWM 思路让代理先在潜在空间中模拟状态转移，再结合 ReAct 和 SPIRAL 两类策略进行规划与执行。作者在 20 多个 MCP-Bench 任务上，结合 2 个规划模型和 3 个代表性世界模型进行实验。结果显示，该框架能提升工具成功率、工具参数准确率，并带来更好的 Execution Quality。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.12481&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.12481&quot;}
+summary={&quot;这篇工作提出 ToolCUA，用于在电脑使用智能体中更好地协调 GUI 操作和高层工具调用。作者通过分阶段训练来学习何时继续点按输入、何时切换到工具：先用交错的 GUI-Tool 轨迹扩增流程合成训练数据，再用工具引导的 GUI RFT 强化关键切换决策，最后在高保真环境中做在线 agentic RL。方法里还设计了面向路径效率的奖励，鼓励更合适的工具使用和更短的执行路径。实验在 OSWorld-MCP 上达到 46.85% 准确率，相比基线提升约 66%，并且比 GUI-only 设置高 3.9%，取得了同规模模型的新 SOTA。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-13</title><link>https://themaoqiu.github.io/blog/papers-2026-05-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-13</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;TMAS: Scaling Test-Time Compute via Multi-Agent Synergy&quot;}
