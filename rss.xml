@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-14</title><link>https://themaoqiu.github.io/blog/papers-2026-05-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-14</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-15</title><link>https://themaoqiu.github.io/blog/papers-2026-05-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-15</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;The DAWN of World-Action Interactive Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.11550&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.11550&quot;}
+summary={&quot;这篇论文提出了 World-Action Interactive Models（WAIMs），把场景演化和动作生成放在一个递归交互框架中联合建模。作者进一步在自动驾驶任务上实现了 DAWN，在紧凑的语义潜空间里结合 World Predictor 和 World-Conditioned Action Denoiser，让世界预测和动作去噪相互反馈、共同细化。方法上还采用了短程显式潜空间 rollout，而不是直接做全像素未来展开，从而支持长时域轨迹生成。实验表明，DAWN 在多个自动驾驶基准上取得了很强的规划表现，并带来更好的安全相关结果。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-14</title><link>https://themaoqiu.github.io/blog/papers-2026-05-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-14</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
