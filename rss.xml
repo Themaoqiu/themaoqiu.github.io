@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-16</title><link>https://themaoqiu.github.io/blog/papers-2026-05-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-16</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
-&lt;h2&gt;3D LLM&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2605.14892&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2605.14892&quot;}
-summary={&quot;LLM-based autonomous agents have demonstrated strong capabilities in reasoning, planning, and tool use, yet remain limited when tasks require sustained coordination across roles, tools, and environments. Multi-agent systems address this through structured collaboration among specialized agents, but tighter coordination also amplifies a less explored risk: errors can propagate across agents and interaction rounds, producing failures that are difficult to diagnose and rarely translate into structural self-improvement. Existing surveys cover individual agent capabilities, multi-agent collaboration, or agent self-evolution separately, leaving the causal dependencies among them unexamined. This survey provides a unified review organized around four causally linked stages, which we term the LIFE progression: Lay the capability foundation, Integrate agents through collaboration, Find faults through attribution, and Evolve through autonomous self-improvement. For each stage, we provide systematic taxonomies and formally characterize the dependencies between adjacent stages, revealing how each stage both depends on and constrains the next. Beyond synthesizing existing work, we identify open challenges at stage boundaries and propose a cross-stage research agenda for closed-loop multi-agent systems capable of continuously diagnosing failures, reorganizing structures, and refining agent behaviors, extending current coordination frameworks toward more self-organizing forms of collective intelligence. By bridging these previously fragmented research threads, this survey aims to offer both a systematic reference and a conceptual roadmap toward autonomous, self-improving multi-agent intelligence.&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2605.10912&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2605.10912&quot;}
-summary={&quot;Large language and vision-language models increasingly power agents that act on a user&apos;s behalf through command-line interface (CLI) harnesses. However, most agent benchmarks still rely on synthetic sandboxes, short-horizon tasks, mock-service APIs, and final-answer checks, leaving open whether agents can complete realistic long-horizon work in the runtimes where they are deployed. This work presents WildClawBench, a native-runtime benchmark of 60 human-authored, bilingual, multimodal tasks spanning six thematic categories. Each task averages roughly 8 minutes of wall-clock time and over 20 tool calls, and runs inside a reproducible Docker container hosting an actual CLI agent harness (OpenClaw, Claude Code, Codex, or Hermes Agent) with access to real tools rather than mock services. Grading is hybrid, combining deterministic rule-based checks, environment-state auditing of side effects, and an LLM/VLM judge for semantic verification. Across 19 frontier models, the best, Claude Opus 4.7, reaches only 62.2% overall under OpenClaw, while every other model stays below 60%, and switching harness alone shifts a single model by up to 18 points. These results show that long-horizon, native-runtime agent evaluation remains a far-from-resolved task for current frontier models. We release the tasks, code, and containerized tooling to support reproducible evaluation.&quot;}
-/&gt;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;MemLens: Benchmarking Multimodal Long-Term Memory in Large Vision-Language Models&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2605.14906&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2605.14906&quot;}
-summary={&quot;这篇工作提出 MEMLENS，用来系统评测大视觉语言模型在多模态长期记忆上的能力。基准包含 789 个跨多轮对话的问题，覆盖信息抽取、多会话推理、时间推理、知识更新和拒答等能力，并在 32K 到 256K 的不同上下文长度下测试。作者还做了图像消融，证明很多题目必须依赖视觉证据，去掉证据图像后两个前沿模型的准确率会降到 2% 以下。对 27 个 LVLM 和 7 个记忆增强 agent 的评估显示，长上下文模型在短场景下因直接视觉对齐表现较好，但对话变长后退化明显；记忆型 agent 更稳定，但压缩存储会损失视觉细节，说明单一路线都不足以解决问题。&quot;}
+summary={&quot;这篇论文提出了 MEMLENS，一个用于评测大视觉语言模型长期多模态记忆能力的基准。它覆盖 789 个问题，包含信息抽取、多会话推理、时间推理、知识更新和拒答等能力，并在 32K 到 256K 的多种上下文长度下测试长上下文 LVLM 和记忆增强代理。作者还做了图像消融，证明很多题目确实依赖视觉证据。实验评测了 27 个 LVLM 和 7 个记忆代理，发现长上下文模型短期效果好但会随会话增长退化，记忆代理长度稳定但会损失视觉细节，整体上都难以单独解决任务。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.15128&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.15128&quot;}
+summary={&quot;这篇工作提出了 MemEye，一个面向多模态智能体长期记忆的视觉中心评测框架。它从两个维度设计评测：一是决定性视觉证据的粒度，从场景级到像素级，二是检索到的证据如何被使用，从单证据到演化式综合推理。作者据此构建了覆盖 8 类生活场景的新基准，并加入可回答性、反捷径、视觉必要性和推理结构等验证门控。对 13 种记忆方法、4 个 VLM 骨干的评测表明，现有方法仍难以保留细粒度视觉细节并跟踪状态变化。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.10912&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.10912&quot;}
+summary={&quot;这篇论文提出 WildClawBench，用来评测真实运行环境中的长时程智能体能力。它包含 60 个人工编写的双语多模态任务，运行在真实 CLI 智能体框架和 Docker 容器里，平均每个任务约 8 分钟、20 多次工具调用。评测方式结合了规则检查、环境状态审计和 LLM/VLM 判分，尽量覆盖最终效果与副作用。实验在 19 个前沿模型上显示，最佳模型 Claude Opus 4.7 也只有 62.2% 总分，且不同 harness 会让同一模型相差最多 18 分，说明该类评测仍然很难。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;PREPING: Building Agent Memory without Tasks&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2605.13880&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2605.13880&quot;}
-summary={&quot;这篇论文研究了如何在没有目标任务经验的冷启动阶段，为智能体提前构建可用的过程记忆。作者提出 Preping 框架，用 proposer 生成合成任务、solver 执行任务、validator 过滤可写入记忆的轨迹，并用 proposer memory 作为控制状态来约束后续练习与记忆更新。该方法重点控制任务可行性、冗余和覆盖，而不是单纯堆叠更多合成数据。实验在 AppWorld、BFCL v3 和 MCP-Universe 上显示，Preping 明显优于无记忆基线，并接近基于离线或在线经验构建的强 playbook 方法，同时在 AppWorld 和 BFCL v3 上部署成本更低。&quot;}
+summary={&quot;这篇论文研究了智能体在没有目标环境任务经验时，如何先构建可用的程序性记忆。作者提出 Preping 框架，用 proposer 生成合成练习任务，solver 执行任务，validator 过滤可写入记忆的轨迹，并用反馈指导后续任务生成。该方法通过 proposer memory 作为控制状态，显式调节练习的可行性、冗余和覆盖范围，而不是单纯增加合成数据量。实验在 AppWorld、BFCL v3 和 MCP-Universe 上表明，Preping 明显优于无记忆基线，并接近基于离线或在线经验构建的强 playbook 方法；同时在 AppWorld 和 BFCL v3 上的部署成本分别比在线记忆构建低 2.99 倍和 2.23 倍。&quot;}
 /&gt;&lt;/p&gt;
 &lt;h2&gt;Multimodal World Model&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2605.15178&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2605.15178&quot;}
-summary={&quot;这篇论文提出 SANA-WM，一个面向一分钟级生成的高效开源世界模型。模型采用 2.6B 参数架构，结合 Hybrid Linear Attention、双分支相机控制、两阶段生成管线和鲁棒标注流程，以支持高分辨率、长时序和精确相机轨迹控制。作者用约 21.3 万个公开视频和 metric-scale 6-DoF 监督进行训练，并在 64 张 H100 上用 15 天完成。实验表明，SANA-WM 在视觉质量上接近大型工业基线，同时在开放源代码方案中具有更强的动作跟随能力，推理吞吐也达到约 36 倍提升。&quot;}
+summary={&quot;这篇论文提出了 SANA-WM，一个面向一分钟级视频生成的高效开源世界模型。模型采用 2.6B 参数规模，结合混合线性注意力、双分支相机控制、两阶段生成流程和鲁棒标注管线，实现了高分辨率、长时序且可精确相机控制的视频合成。作者使用约 21.3 万个公开视频剪辑进行训练，并在 64 张 H100 上用 15 天完成训练。实验显示，SANA-WM 在一分钟世界模型基准上比之前的开源方法具有更好的动作跟随能力，并以更高吞吐量达到接近工业级基线的视觉质量。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Warp-as-History: Generalizable Camera-Controlled Video Generation from One Training Video&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2605.15182&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2605.15182&quot;}
-summary={&quot;Camera-controlled video generation has made substantial progress, enabling generated videos to follow prescribed viewpoint trajectories. However, existing methods usually learn camera-specific conditioning through camera encoders, control branches, or attention and positional-encoding modifications, which often require post-training on large-scale camera-annotated videos. Training-free alternatives avoid such post-training, but often shift the cost to test-time optimization or extra denoising-time guidance. We propose Warp-as-History, a simple interface that turns camera-induced warps into camera-warped pseudo-history with target-frame positional alignment and visible-token selection. Given a target camera trajectory, we construct camera-warped pseudo-history from past observations and feed it through the model&apos;s visual-history pathway. Crucially, we align its positional encoding with the target frames being denoised and remove warped-history tokens without valid source observations. Without any training, architectural modification, or test-time optimization, this interface reveals a non-trivial zero-shot capability of a frozen video generation model to follow camera trajectories. Moreover, lightweight offline LoRA finetuning on only one camera-annotated video further improves this capability and generalizes to unseen videos, improving camera adherence, visual quality, and motion dynamics without test-time optimization or target-video adaptation. Extensive experiments on diverse datasets confirm the effectiveness of our method.&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Darwin Family: MRI-Trust-Weighted Evolutionary Merging for Training-Free Scaling of Language-Model Reasoning&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2605.14386&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2605.14386&quot;}
-summary={&quot;We present Darwin Family, a framework for training-free evolutionary merging of large language models via gradient-free weight-space recombination. We ask whether frontier-level reasoning performance can be improved without additional training, by reorganizing latent capabilities already encoded in existing checkpoints. Darwin introduces three key ideas: (i) a 14-dimensional adaptive merge genome enabling fine-grained component- and block-level recombination; (ii) MRI-Trust Fusion, which adaptively balances diagnostic layer-importance signals with evolutionary search through a learnable trust parameter; and (iii) an Architecture Mapper that enables cross-architecture breeding between heterogeneous model families. Empirically, the flagship Darwin-27B-Opus achieves 86.9% on GPQA Diamond, ranking #6 among 1,252 evaluated models, and outperforming its fully trained foundation model without any gradient-based training. Across scales from 4B to 35B parameters, Darwin models consistently improve over their parents, support recursive multi-generation evolution, and enable a training-free evolutionary merge that combines Transformer- and Mamba-based components. Together, the Darwin Family demonstrates that diagnostic-guided evolutionary merging is a practical and reproducible alternative to costly post-training pipelines for reasoning-centric language models.&quot;}
+summary={&quot;这篇工作提出 Warp-as-History，用一种无需训练的接口实现相机控制的视频生成。方法把相机诱导的几何变换改写成“伪历史”帧，并与目标帧的位置编码对齐，同时过滤掉没有有效源观测的 token，再送入模型的视觉历史通道。作者还证明，这种设计能让冻结的视频生成模型零样本跟随相机轨迹；进一步只用一段相机标注视频做轻量 LoRA 微调，就能提升相机服从性、画质和运动表现。大量跨数据集实验表明，该方法在不做测试时优化的前提下具有稳定效果与泛化能力。&quot;}
 /&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-15</title><link>https://themaoqiu.github.io/blog/papers-2026-05-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-15</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
