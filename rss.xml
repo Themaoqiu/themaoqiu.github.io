@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-19</title><link>https://themaoqiu.github.io/blog/papers-2026-05-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-19</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-20</title><link>https://themaoqiu.github.io/blog/papers-2026-05-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-20</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.18401&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.18401&quot;}
+summary={&quot;这篇工作提出 SkillsVote，用于管理智能体技能的全生命周期，包括收集、推荐和演化。方法上，它先对大规模开源技能库做环境需求、质量和可验证性分析，再进行面向可验证技能的任务合成；执行前通过结构化技能库检索暴露可用上下文，执行后把轨迹拆解为技能相关子任务并按证据门控更新技能库。作者还设计了归因机制，将结果信号分配到技能使用、智能体探索和环境因素上，减少噪声更新。实验显示，离线演化可使 GPT-5.2 在 Terminal-Bench 2.0 上最高提升 7.9 个百分点，在线演化可使 SWE-Bench Pro 提升 2.6 个百分点。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.16679&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.16679&quot;}
+summary={&quot;论文提出 CHI-Bench，用来评测 AI agent 是否能端到端自动化长链路、强政策约束的医疗工作流。作者把真实医疗流程组织成多步任务，系统考察规划、执行、合规与异常处理能力。实验表明，现有通用 agent 在这类场景下仍有明显不足，尤其是在长程依赖和政策遵循上。该基准为后续医疗 agent 的训练与评估提供了更贴近真实业务的测试场景。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OProver: A Unified Framework for Agentic Formal Theorem Proving&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.17283&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.17283&quot;}
+summary={&quot;论文提出 OProver，一个统一的 agentic formal theorem proving 框架，用于把定理证明过程组织成可搜索、可规划的多步推理与证明构造。方法将证明任务抽象为 agent 与证明环境之间的交互，并统一不同证明策略与组件以提升推理效率。实验结果表明，该框架在多个形式化定理证明设置上取得了更高的证明成功率，并带来更稳定的搜索表现。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-19</title><link>https://themaoqiu.github.io/blog/papers-2026-05-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-19</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
