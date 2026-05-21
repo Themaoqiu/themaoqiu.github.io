@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-20</title><link>https://themaoqiu.github.io/blog/papers-2026-05-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-20</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-21</title><link>https://themaoqiu.github.io/blog/papers-2026-05-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-21</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.20025&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.20025&quot;}
+summary={&quot;这篇工作提出 AutoResearchClaw，用多智能体协作来做自治科研流程。方法上结合了结构化多智能体辩论、自修复执行器、Pivot/Refine 决策循环、可验证结果报告以及跨运行经验累积。作者在 ARC-Bench 25 个任务上实验，结果比 AI Scientist v2 提升了 54.7%，并且在人机协作消融中发现定点介入比完全自治或全程监督更有效。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Process Rewards with Learned Reliability&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.15529&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.15529&quot;}
+summary={&quot;这篇工作提出 BetaPRM，用分布式过程奖励模型同时预测步骤成功概率和该预测的可靠性。方法上用 Beta-Binomial 似然来学习 Beta 信念，而不是把有限样本成功率直接回归成点估计。作者在四种 backbone 和四个推理基准上验证，BetaPRM 提升了基于 PRM 的 Best-of-N 选择效果，并保持了步骤级错误检测能力；基于该可靠性信号的 ACA 最多可减少 33.57% 的 token 同时提升最终准确率。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-20</title><link>https://themaoqiu.github.io/blog/papers-2026-05-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-20</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
