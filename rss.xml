@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-21</title><link>https://themaoqiu.github.io/blog/papers-2026-05-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-21</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-23</title><link>https://themaoqiu.github.io/blog/papers-2026-05-23</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-23</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.22012&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.22012&quot;}
+summary={&quot;这篇工作针对音频-视觉联合推理中显式文本链式思维会压缩连续感知信号、削弱时序定位的问题，提出 LatentOmni。它在文本推理和音视频潜在状态之间交替建模，用统一 latent space 保留更密集的感知信息，同时通过 feature-level supervision 对齐任务相关特征。方法还加入了 Omni-Sync Position Embedding 来保持音视频潜在状态的时间一致性，并构建 LatentOmni-Instruct-35K 作为监督数据。作者在多个音视频推理基准上验证，模型优于已评测的开源方法，也持续超过显式文本 CoT 基线。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.21467&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.21467&quot;}
+summary={&quot;这篇论文研究了可验证奖励强化学习中，响应级奖励如何转化为 token 级别的概率更新。作者从判别器视角分析 RLVR，指出标准更新会由正负样本的中心向量决定 token 概率增减，但容易被格式等高频共享模式干扰。为此提出 DelTA，通过估计 token 系数来强化更具区分性的方向、抑制共享或弱区分方向，从而重加权 self-normalized RLVR 目标。实验显示该方法在 7 个数学基准上优于同规模强基线，并在代码生成、不同骨干模型和域外设置中表现出较好的泛化性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.14678&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.14678&quot;}
+summary={&quot;这篇论文提出 π-Bench，用于评估长时序工作流中的主动式个人助理智能体。作者针对用户请求常常不完整、隐藏意图会在多轮交互中逐渐显现的问题，设计了包含 100 个多轮任务、5 类用户画像的基准，并显式加入隐藏意图、任务依赖和跨会话连续性。该基准同时衡量智能体的主动性与任务完成度。实验结果表明，主动式协助仍然困难，而且任务完成并不等同于真正的主动性，历史交互信息对后续隐含意图解决也有明显帮助。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ACC: Compiling Agent Trajectories for Long-Context Training&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.21850&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.21850&quot;}
+summary={&quot;这篇工作提出 ACC，把智能体在搜索、软件工程和数据库查询中的多轮轨迹编译成长上下文问答数据。它将原始问题、工具响应和环境观察合并为直接回答式监督，从而显式暴露跨轮次证据依赖。作者用 ACC 微调 Qwen3-30B-A3B，在 MRCR 上达到 68.3、在 GraphWalks 上达到 77.5，分别提升 18.1 和 7.6，效果接近更大的 Qwen3-235B-A22B。实验还表明模型在通用能力上基本保持不变，并出现了任务自适应注意力重组和专家 تخصص化。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.22642&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.22642&quot;}
+summary={&quot;这篇论文提出 Spreadsheet-RL，用强化学习微调真实 Excel 环境中的电子表格智能体。它建立了自动化数据管线来收集起始表与目标表对，并构建了面向金融和供应链等场景的 Domain-Spreadsheet 基准。作者还设计了 Spreadsheet Gym，把 Excel 功能通过 Python sandbox 暴露给多轮 RL，并加入了更细的工具路由规则。实验显示，该方法将 Qwen3-4B-Thinking-2507 在 SpreadsheetBench 上的 Pass@1 从 12.0% 提升到 23.4%，在自建领域数据集上从 8.4% 提升到 17.2%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-22</title><link>https://themaoqiu.github.io/blog/papers-2026-05-22</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-22</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 22 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.20682&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.20682&quot;}
+summary={&quot;这篇工作提出 IndusAgent，利用 agentic tools 强化开放词汇工业异常检测。方法上将工具调用与异常识别过程结合，让模型能借助外部工具进行更稳健的分析与判别。实验显示，该框架在工业异常检测基准上提升了开放词汇场景下的检测效果。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.19484&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.19484&quot;}
+summary={&quot;这篇论文提出了 CutVerse，一个面向媒体后期制作的组合式 GUI Agents 基准。它覆盖 7 个专业应用中的 186 个长链路复杂任务，并将原始屏幕录制和交互日志解析为结构化动作轨迹，以便系统评估代理的精确定位与多模态操作能力。实验结果显示，现有 GUI agent 在真实媒体编辑任务上的成功率只有 36.0%，说明这类长流程创意工作仍然很有挑战。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-21</title><link>https://themaoqiu.github.io/blog/papers-2026-05-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-21</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
