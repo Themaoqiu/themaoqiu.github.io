@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-24</title><link>https://themaoqiu.github.io/blog/papers-2026-05-24</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-24</guid><description>吾能观之数千而面色如故</description><pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-23</title><link>https://themaoqiu.github.io/blog/papers-2026-05-23</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-23</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-27</title><link>https://themaoqiu.github.io/blog/papers-2026-05-27</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-27</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 27 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;QUEST: Training Frontier Deep Research Agents with Fully Synthetic Tasks&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.24218&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.24218&quot;}
+summary={&quot;这篇工作提出 QUEST，一组面向深度检索研究的开源代理模型，覆盖 2B 到 35B 参数规模，目标是处理长链路搜索、事实核查、引用对齐和报告生成等任务。作者构建了一个由中间训练、监督微调和强化学习组成的训练流程，并通过统一 rubric tree 的数据合成管线，在无需人工标注的情况下生成可验证奖励的训练数据。系统还加入了内置的上下文管理机制，用于长程推理和知识综合。实验表明，QUEST 仅用 8K 合成任务就在 8 个深度研究基准上接近甚至超过闭源前沿系统，并取得近期开源代理中的最佳总体表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AutoResearch AI: Towards AI-Powered Research Automation for Scientific Discovery&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.23204&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.23204&quot;}
+summary={&quot;这是一篇关于 AI 科研自动化的综述，系统梳理了从文献检索、假设生成、实验执行到结果报告的端到端研究工作流。作者将现有系统归纳为 AutoResearch 光谱，并区分了人类主导的 Vibe Research 与更高自治的 AI-led 研究系统。论文采用五个工作流条件来组织分析，包括文献 grounding、规划、工具使用、反馈验证以及报告沟通，并进一步总结了系统、基准与基础设施的发展现状。最后，作者提出 novelty、validity、impact、reliability 和 provenance 五个评估维度，指出当前自治能力在结构化、可执行、可快速验证场景中更可信，在具身、延迟、异构和强责任场景中仍受限。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-26</title><link>https://themaoqiu.github.io/blog/papers-2026-05-26</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-26</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;PhotoFlow: Agentic 3D Virtual Photography Missions&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.23771&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.23771&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.22570&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.22570&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ETCHR: Editing To Clarify and Harness Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.23897&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.23897&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-25</title><link>https://themaoqiu.github.io/blog/papers-2026-05-25</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-25</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 25 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-24</title><link>https://themaoqiu.github.io/blog/papers-2026-05-24</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-24</guid><description>吾能观之数千而面色如故</description><pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-23</title><link>https://themaoqiu.github.io/blog/papers-2026-05-23</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-23</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
