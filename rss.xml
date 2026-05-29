@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-28</title><link>https://themaoqiu.github.io/blog/papers-2026-05-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-28</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-05-29</title><link>https://themaoqiu.github.io/blog/papers-2026-05-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-29</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 29 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Self-Improving Language Models with Bidirectional Evolutionary Search&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.28814&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.28814&quot;}
+summary={&quot;这篇工作提出双向进化搜索 BES，用于语言模型和智能体系统的自我改进。方法上，它把正向候选演化与反向目标分解结合起来，一方面通过进化算子重组部分轨迹以探索单次自回归生成难以到达的解，另一方面递归拆分任务并产生更密集的中间反馈。作者给出了理论分析，说明该方法能突破传统扩展式搜索受限的高熵壳层，并减少找到正确答案所需的样本数。实验结果显示，在若干困难后训练任务上 BES 能带来稳定提升，在三个开放式问题求解基准的推理阶段也优于现有开源框架。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DenoiseRL: Bootstrapping Reasoning Models to Recover from Noisy Prefixes&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.28421&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.28421&quot;}
+summary={&quot;这篇工作提出 DenoiseRL，用强化学习让模型直接从错误推理轨迹中学习如何恢复，而不是依赖更强教师模型或精心筛选的困难数据。方法上，它把失败样本转化为恢复式优化信号，增强探索并减少对外部监督的依赖。实验显示，DenoiseRL 在数学和通用推理基准上持续优于强 on-policy RL 基线。随着训练难度提升，模型的自我纠错能力也更强，说明这种路径更可扩展。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Learn from Weaknesses: Automated Domain Specialization for Small Computer-Use Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.28775&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.28775&quot;}
+summary={&quot;这篇工作提出 LearnWeak，用于给小型 computer-use agent 做自动化领域专化。方法上，它先用更强的参考 agent 识别学生模型在目标领域的薄弱环节，再自动合成针对性任务与监督，并设计错误感知的专化目标，将规划错误和执行错误分开优化。实验中，该方法在 OSWorld 的 8 个领域上，相比 EvoCUA-8B 和 OpenCUA-7B 平均提升 11.6 和 11.1 个百分点。结果表明，面向学生弱点的数据构造比朴素大规模合成更有效。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.26340&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.26340&quot;}
+summary={&quot;这篇工作提出了 Chain-of-Evidence（CoE）可验证性框架，要求研究结论都能追溯到证据来源，用来约束自主科研代理的检索、发现和写作全过程。作者还构建了 ScientistOne 端到端自主研究系统，并设计了 CoE Audit，从分数核验、规范违规、参考文献核验和方法-代码一致性四个维度统一检查不同系统。实验覆盖 75 篇论文、5 个系统和 5 项前沿任务，发现所有基线都存在系统性失真，如伪造引用、分数不可复现和方法描述偏离实现。ScientistOne 在 337 条引用中实现 0 篇幻觉引用，12/12 分数核验全部通过，方法-代码一致性达到 14/15，并在所有五项任务上达到或超过人类专家水平。它还泛化到 6 个额外任务，在 Parameter Golf 上取得 SOTA，并在多个 MLE-Bench 任务上拿到金牌。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AI Research Agents Narrow Scientific Exploration&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.27905&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.27905&quot;}
+summary={&quot;这篇论文研究 AI 研究代理是否真的能扩展科学探索，还是只是在既有方向上做局部延伸。作者使用 4 种研究代理框架和 6 个大语言模型，基于共同的种子文献生成了 37,802 个科学想法，并将这些想法与人类论文、后续人类研究以及种子文献进行对比分析。结果显示，AI 生成的想法比人类论文更集中，也更贴近起始文献，说明它们更偏向局部搜索而不是广泛探索。进一步分析发现，和 AI 想法最相似的论文后续引用往往更低，且 AI 的“新意”主要来自已有技术方法的重组，而不是提出全新的研究问题。总体上，当前 AI 研究代理更适合做局部扩展，而不是显著拓宽科学探索空间。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-28</title><link>https://themaoqiu.github.io/blog/papers-2026-05-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-28</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
