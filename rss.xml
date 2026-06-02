@@ -2,16 +2,16 @@
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2605.31584&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2605.31584&quot;}
-summary={&quot;这篇工作提出 LongTraceRL，用强化学习来提升长上下文推理能力。作者通过知识图谱随机游走构造多跳问题，并结合搜索代理轨迹生成分层干扰文档，把训练场景做得比随机采样或单次搜索更难。方法上还设计了基于推理链黄金实体的 rubric reward，只对最终答案正确的样本施加过程监督，以区分不同正确解法的质量并减少 reward hacking。实验覆盖 3 个推理模型和 5 个长上下文基准，结果显示该方法稳定优于强基线，且能生成更充分、基于证据的推理过程。&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;GrepSeek: Training Search Agents for Direct Corpus Interaction&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2605.29307&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2605.29307&quot;}
-summary={&quot;这篇论文提出 GrepSeek，一种直接与语料库交互的搜索代理。它不依赖传统检索器，而是让代理通过可执行 shell 命令在原始语料中查找、过滤并组合证据。训练上先用 answer-aware Tutor 和 answer-blind Planner 构造冷启动数据，再用 GRPO 做强化学习精调，并配套分片并行执行引擎提升检索速度。实验在 7 个开放域问答基准上显示，GrepSeek 在 token-level F1 和 Exact Match 上取得整体最强表现，但作者也指出其对表面形式变化很大的查询仍有局限。&quot;}
+summary={&quot;这篇论文提出 GrepSeek，将搜索代理直接放到语料库环境中，通过可执行 shell 命令查找、过滤和组合证据。为稳定训练，它先用 answer-aware Tutor 和 answer-blind Planner 构造冷启动的因果搜索轨迹，再用 GRPO 继续优化代理策略。作者还实现了语义保持的分片并行执行引擎，把 shell 检索加速最高提升到 7.6 倍。实验表明，GrepSeek 在 7 个开放域问答基准上取得了最强的总体 token-level F1 和 EM。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Mellum2 Technical Report&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.31268&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.31268&quot;}
+summary={&quot;这份技术报告介绍了 Mellum 2，一个面向软件工程的开源 12B MoE 语言模型。它采用 MoE、Grouped-Query Attention、Sliding Window Attention 和 Multi-Token Prediction 等设计，并通过三阶段预训练、128K 上下文扩展以及 SFT 加 RLVR 完成后训练。模型还发布了 Instruct 和 Thinking 两个版本，分别对应直接回答和显式推理轨迹。实验显示，Mellum 2 在代码、数学、工具使用、知识与安全等任务上，能以接近 2.5B 稠密模型的每 token 计算量达到 4B 到 14B 开源基线的有竞争力表现。&quot;}
 /&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-01</title><link>https://themaoqiu.github.io/blog/papers-2026-06-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-01</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-31</title><link>https://themaoqiu.github.io/blog/papers-2026-05-31</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-31</guid><description>吾能观之数千而面色如故</description><pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-05-30</title><link>https://themaoqiu.github.io/blog/papers-2026-05-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-05-30</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
