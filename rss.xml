@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-02</title><link>https://themaoqiu.github.io/blog/papers-2026-06-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-02</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-03</title><link>https://themaoqiu.github.io/blog/papers-2026-06-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-03</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.02404&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.02404&quot;}
+summary={&quot;本文提出 K-BrowseComp，一个面向韩国语境的网页浏览 agent 基准，共包含 400 道题。作者构建了 300 题的人工验证子集，由母语者手工编写和核验，并额外生成了 100 题合成对抗子集用于压力测试。实验表明，GPT-5.5、DeepSeek-V4-Pro、GLM-5.1 等前沿模型在验证子集上的准确率只有 30.00% 到 45.67%，明显低于 BrowseComp 水平。韩国本土模型表现更弱，仅有 0.00% 到 10.33%。在对抗过滤后的合成子集上，最强模型也只有 26.00%，说明该基准能有效暴露网页浏览与检索能力的薄弱环节。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.02373&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.02373&quot;}
+summary={&quot;本文提出 Harness-1，一种在状态外置的搜索 harness 中进行强化学习训练的 20B 搜索 agent。核心思路是把候选池、重要证据集合、验证记录和压缩后的观察等可恢复状态放到环境侧，由策略主要负责搜索决策、取舍和停止时机。这样可以减少模型在长轨迹中承担的记忆与整理负担，让 RL 更聚焦于语义搜索行为。作者在 8 个覆盖网页、金融、专利和多跳问答的检索基准上评测，Harness-1 平均 curated recall 达到 0.730，比下一个最强开源搜索子代理高 11.4 个百分点，并且在未见过的迁移基准上也表现稳健。结果表明，显式搜索状态配合 RL 能学到更可泛化的检索策略。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;X-Stream: Exploring MLLMs as Multiplexers for Multi-Stream Understanding&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.02482&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.02482&quot;}
+summary={&quot;这篇工作提出了 X-Stream，这是首个面向多流流式理解的基准，用来评估 MLLM 在多窗口、多视角和多设备场景下的在线跨流推理能力。数据集包含 932 个视频上的 4,220 个高质量问答，并通过双重验证流程避免模型过度依赖单一路流。作者还把 MLLM 视为“简单复用器”，并从信号复用理论角度系统分析其性能。实验显示，当前最先进的 MLLM 在并发流场景下表现仍然明显不足，整体得分大约只有 50%，主动推理能力也较弱。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillAdaptor: Self-Adapting Skills for LLM Agents from Trajectories&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.01311&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.01311&quot;}
+summary={&quot;这篇工作提出 SkillAdaptor，用于让 LLM Agent 从失败轨迹中自动修正外部技能，而且不需要额外训练。方法先在失败轨迹里定位第一个可行动的错误步骤，再将责任归因到候选技能，并在显式验收检查下做定点更新，同时保持基座模型冻结。作者在 WebShop、PinchBench 和 Claw-Eval 上，结合 Kimi-K2.5、GLM-5 和 GPT-5.2 进行了评测。结果显示，该方法在三套基准上都优于无技能和现有技能适配基线，最高分别提升 PinchBench 平均分 1.5、Claw-Eval 平均分 1.8、WebShop 成功率 1.7 个点。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;VideoMLA: Low-Rank Latent KV Cache for Minute-Scale Autoregressive Video Diffusion&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.30351&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.30351&quot;}
+summary={&quot;这篇工作提出 VideoMLA，用低秩潜变量共享多头 KV cache，并配合解耦的 3D-RoPE 位置键来压缩分钟级自回归视频扩散的缓存开销。作者系统分析了视频扩散中 MLA 为什么有效，指出性能并不依赖预训练注意力本身的低秩谱结构，而是由 MLA 的瓶颈容量所主导。实验表明，该方法在每个缓存层可将每 token KV 内存减少 92.7%，同时保持生成质量。它在 VBench 上与短时流式基线相当，并在长时序设置下取得评测方法中的最佳总体分数，单卡 B200 吞吐提升 1.23 倍。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-02</title><link>https://themaoqiu.github.io/blog/papers-2026-06-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-02</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
