@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-04</title><link>https://themaoqiu.github.io/blog/papers-2026-06-04</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-04</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-05</title><link>https://themaoqiu.github.io/blog/papers-2026-06-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-05</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;M$^3$Eval: Multi-Modal Memory Evaluation through Cognitively-Grounded Video Tasks&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05008&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05008&quot;}
+summary={&quot;M^3Eval 提出一个面向多模态记忆能力的综合评测框架，专门用视频任务检验模型能记住什么、记得多准，以及在干扰下是否仍然稳定。它的任务设计借鉴认知心理学，用来分离不同记忆维度并避免把记忆能力和普通感知、推理混在一起。作者在多个代表性多模态模型上做了系统实验，发现这些模型在记忆保持、表征解耦和抗干扰方面普遍存在明显弱点，并呈现出不同的记忆行为模式。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ThoughtFold: Folding Reasoning Chains via Introspective Preference Learning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.03503&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.03503&quot;}
+summary={&quot;ThoughtFold 旨在缓解大推理模型在长链式思考中的过度思考问题，通过细粒度偏好学习来识别并消除冗余探索。它先用内省式策略在正确轨迹中定位重复或多余的推理片段，再用 masked preference optimization 直接鼓励模型跨过无效步骤，压缩推理链。实验表明，该方法在保持准确率达到当前最优的同时，可将 DeepSeek-R1-Distill-Qwen-7B 的 token 使用量降低约 56%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Streaming Communication in Multi-Agent Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05158&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05158&quot;}
+summary={&quot;StreamMA 提出一种多智能体推理的流式通信框架，让中间推理步骤生成后就立即传给下游代理，从而把原本线性的端到端延迟改造成流水线式执行。它还发现早期推理步骤通常更可靠，因此利用这些早期结果反而能减少后期错误向下游传播，并给出了对流式、串行和单次协议的统一闭式分析。作者在 8 个数学、科学和代码基准上，结合两种前沿大模型与三种拓扑做了实验，平均提升 7.3 个百分点，最高在 HMMT 2026 上提升 22.4 个百分点。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Benchmarks are Not Enough: RAMP for Runtime Assessing of Agentic Models in Production Systems&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2605.27492&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2605.27492&quot;}
+summary={&quot;本文提出 RAMP，一个面向生产系统的运行时评估基础设施，用来弥补静态基准测试无法反映长链路智能体真实能力的问题。方法上，它基于 YatCC 集成平台，提供统一的运行时编排与执行接口，并引入具有串行依赖和复杂工具链交互的编译器构建类工作负载，同时设计了分阶段恢复机制与面向效用的多维指标。作者在 15 个主流模型上做了运行时评估。结果显示，模型能力在长流程中显著退化，任务完成率从初始阶段的 100% 逐步降到最终阶段的 20%，且没有任何模型能完整跑通整条流水线。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.04527&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.04527&quot;}
+summary={&quot;Echo-Infinity 提出一种用于实时无限视频生成的自回归框架，通过可学习的演化记忆动态筛选、抽象并压缩任意长度历史信息，且计算开销保持恒定。它用 Memory Query 和门控机制替代手工 KV 缓存策略，再配合统一的相对 RoPE 设计，缓解长视频生成中的历史丢失和训练测试位置外推问题。实验显示，该方法在长视频和短视频生成上都达到当前最优，并首次展示了超过 24 小时、1.3 百万帧以上的实时连续生成能力。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-04</title><link>https://themaoqiu.github.io/blog/papers-2026-06-04</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-04</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
