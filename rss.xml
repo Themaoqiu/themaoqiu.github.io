@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-05</title><link>https://themaoqiu.github.io/blog/papers-2026-06-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-05</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-06</title><link>https://themaoqiu.github.io/blog/papers-2026-06-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-06</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AdaPlanBench: Evaluating Adaptive Planning in Large Language Model Agents under World and User Constraints&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05622&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05622&quot;}
+summary={&quot;本文提出 AdaPlanBench，用于评测大模型智能体在世界约束和用户约束逐步揭示时的自适应规划能力。基准包含 307 个家务任务，并在运行时通过多轮交互逐步暴露隐藏约束，迫使智能体反复修正计划。作者在 10 个领先模型上进行了实验，结果表明这种双约束下的自适应规划仍然很难，最佳模型准确率只有 67.75%。进一步分析发现，随着约束数量增加，性能会持续下降，且用户约束带来的挑战尤为明显。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;RobotValues: Evaluating Household Robots When Human Values Conflict&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.03312&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.03312&quot;}
+summary={&quot;这篇工作提出 RobotValues，用于评估家用机器人在任务成功之外如何处理人类价值冲突。作者构建了一个包含 1 万个价值冲突场景的基准，每个样本都由真实家居图像和多种可能动作组成，并通过 LLM 辅助场景生成、价值提取、图像生成和自动质检来完成数据构建。实验表明，现有用于机器人任务的 VLM 往往带有默认价值偏好，例如更偏向安全与照顾，但会低估隐私相关选择。即便被明确要求优先考虑与其默认偏好冲突的价值，模型也经常无法成功切换，错误率高达 80%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Rethinking Continual Experience Internalization for Self-Evolving LLM Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.04703&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.04703&quot;}
+summary={&quot;这篇工作研究了自进化 LLM agent 的经验内化问题，目标是把交互中获得的上下文经验沉淀成可复用的参数能力。作者系统分析了多轮经验学习中的失效模式，发现现有方法不是持续增强，而是会出现逐步的能力塌缩。实验表明，原则级经验比实例级经验更稳定，分步注入优于全局注入，而离策略的高质量教师轨迹蒸馏比在策略蒸馏更稳健。基于这些结论，论文给出了一套更适合持续学习和自我演化 agent 的训练配方。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-05</title><link>https://themaoqiu.github.io/blog/papers-2026-06-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-05</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
