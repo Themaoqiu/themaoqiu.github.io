@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-08</title><link>https://themaoqiu.github.io/blog/papers-2026-06-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-08</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-06</title><link>https://themaoqiu.github.io/blog/papers-2026-06-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-06</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-09</title><link>https://themaoqiu.github.io/blog/papers-2026-06-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-09</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Robots Need More than VLA and World Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.06556&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.06556&quot;}
+summary={&quot;本文指出仅靠 VLA 和世界模型不足以支撑通用机器人智能。作者提出数据接口、具身接口、世界模型接口和奖励接口四个缺失模块，分别负责把非结构化行为转成监督、跨具身映射、基于物理的三维推理和从视频与语言中推断进度与成功。论文主要通过综述与研究议程梳理现有路线，没有新的机器人实验，但系统总结了跨具身数据、视频学习和奖励建模的进展与挑战。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OpenSkill: Open-World Self-Evolution for LLM Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.06741&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.06741&quot;}
+summary={&quot;本文提出 OpenSkill，用开放世界资源在没有目标任务监督的情况下让 LLM agent 自举技能与验证器。系统先从文档、仓库和网络中抽取可迁移知识与验证锚点，再合成为技能，并在由这些锚点构造的虚拟任务上迭代改进。作者在三个基准和两个目标 agent 上验证，OpenSkill 取得最佳自动化通过率，并且其技能可跨模型迁移，自建验证器与真实结果高度一致。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05761&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05761&quot;}
+summary={&quot;本文提出 SubtleMemory，用于评测长周期 AI agent 对细粒度关系型记忆的辨别能力。基准通过构造带有互补、细微差异或冲突关系的记忆变体，并嵌入真实用户交互历史，考察后续问答和指令执行中的记忆关系恢复。作者在 1,522 个样本上评测了 6 个独立记忆系统和 5 个 Claw 风格 agent，发现现有系统在关系辨别上仍然薄弱，并给出了记忆保留、检索和下游推理的诊断结果。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05806&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05806&quot;}
+summary={&quot;本文提出 ToolMaze，用来评测 LLM Agent 在工具调用过程中面对动态失败时的重规划与异常恢复能力。作者将任务设计为 DAG 拓扑复杂度与工具扰动类型的二维组合，覆盖显式/隐式、瞬时/永久等不同故障情形，以区分系统性重规划和盲目试错。实验显示，几乎所有模型在遭遇扰动后性能都会明显下降，其中隐式语义故障带来的退化最严重。结果还表明，模型的故障恢复能力随规模提升的速度远慢于基础任务执行能力，说明动态重规划是当前 Agent 的独立瓶颈。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-08</title><link>https://themaoqiu.github.io/blog/papers-2026-06-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-08</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-06</title><link>https://themaoqiu.github.io/blog/papers-2026-06-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-06</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
