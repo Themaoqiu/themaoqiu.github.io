@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-09</title><link>https://themaoqiu.github.io/blog/papers-2026-06-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-09</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-10</title><link>https://themaoqiu.github.io/blog/papers-2026-06-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-10</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Agents&apos; Last Exam&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05405&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05405&quot;}
+summary={&quot;这篇论文提出 Agents&apos; Last Exam（ALE），用于评测 AI 代理在长链路、真实且有经济价值任务上的表现。作者与 250 多位行业专家合作，围绕 O*NET / SOC 2018 构建了 13 个行业簇、55 个子领域、1000 多个任务的层级 taxonomy。ALE 强调可验证结果，并作为持续扩展的活体基准来追踪新工作流。实验显示，当前主流 harness 与 backbone 组合的平均 full pass rate 只有 2.6%，说明最难任务仍远未饱和。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.06087&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.06087&quot;}
+summary={&quot;这篇工作提出 LatentSkill，把原本以文本形式注入上下文的可复用技能，转换为通过预训练超网络生成的 LoRA 权重适配器。这样做把技能知识从上下文空间迁移到权重空间，减少了每步都要拼接技能提示的开销，也降低了明文暴露风险。作者在 ALFWorld 和 Search-QA 上验证了方法有效性，在 seen/unseen split 上分别提升 21.4 和 13.4 个百分点，并减少 64.1% 的 prefill tokens，同时在 Search-QA 上 exact match 提升 3.0 个百分点。进一步分析显示，这些技能 LoRA 具有结构化语义几何，且可通过缩放系数和参数空间组合进行控制。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.09826&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.09826&quot;}
+summary={&quot;本文提出 OmniGameArena，一个面向 VLM 游戏智能体的统一 UE5 基准，覆盖 12 个新构建的实时游戏，包含 Solo、PvP 和 Coop 三种场景。作者还提出 Improvement Dynamics Curve（IDC），通过一个可调用工具的反思器 LLM 在多轮中自动改写受限技能提示，从而观察智能体在冷启动之后的能力提升轨迹。该基准不仅报告 (agent, game) 对的首轮成绩，还评估多轮反思后的分数变化，以及学到的技能在未见任务变体上的泛化表现。实验在 12 个 VLM 智能体上给出了冷启动榜单，并对 4 个顶尖智能体进行了 IDC 评测，展示了不同模型在可改进性和泛化性上的差异。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Echo-Memory: A Controlled Study of Memory in Action World Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.09803&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.09803&quot;}
+summary={&quot;这篇论文系统研究了动作条件世界模型中的记忆机制，聚焦于镜头离开再返回场景时对象或状态被悄然改变的问题。作者在固定视频扩散骨干、优化器、动作表示、采样器和评测管线的前提下，只比较历史信息的存储与读取方式，从而将容量、压缩、读出和递归四个因素拆开分析。实验采用重放质量、域内循环回访和开放域返回三条评测分支，发现这些指标经常并不一致，说明仅看重放并不能代表真正的记忆能力。结果表明，原始上下文是很强的容量基线，但压缩并非免费的替代方案，过强压缩会丢失返回所需的关键信息。最终，块级状态空间递归在开放域返回任务上表现最好，说明记忆结构本身和是否使用记忆同样重要。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-09</title><link>https://themaoqiu.github.io/blog/papers-2026-06-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-09</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
