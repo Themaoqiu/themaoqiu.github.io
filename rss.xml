@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-10</title><link>https://themaoqiu.github.io/blog/papers-2026-06-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-10</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-11</title><link>https://themaoqiu.github.io/blog/papers-2026-06-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-11</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.07512&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.07512&quot;}
+summary={&quot;这篇论文提出 MemDreamer，用层级图记忆和 agentic retrieval 来解决超长视频理解中的 token 爆炸与注意力稀释问题。方法上，它把视频流式输入并增量构建三层 Hierarchical Graph Memory，再在推理阶段通过观察-推理-行动循环进行节点搜索、层级导航和逻辑边遍历，从而将感知与推理解耦。实验表明，该方法在四个主流基准上取得 SOTA，且只需保留约 2% 的完整上下文窗口就能带来 12.5 个百分点的绝对准确率提升。作者还发现，模型在逻辑推理基准上的表现与长视频理解能力呈显著正相关，提示 agentic 能力扩展是多模态理解的新范式。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.11180&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.11180&quot;}
+summary={&quot;提出 Lip Forcing，这是首个面向视频到视频口型同步的自回归扩散方法，将一个 14B 的双向音频条件视频扩散教师蒸馏为因果学生。作者基于教师轨迹分析设计了 Sync-Window DMD、两步推理调度和基于 SyncNet 的奖励，使模型在推理时每个片段只需两次去噪且无需 CFG。实验中，1.3B 学生达到 31 FPS 的实时流式速度，并比同尺度双向模型快 17.6 倍；14B 学生在相近参考保真下也比教师快 39.8 倍。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SearchSwarm: Towards Delegation Intelligence in Agentic LLMs for Long-Horizon Deep Research&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.09730&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.09730&quot;}
+summary={&quot;这篇工作聚焦长程深度研究中的“delegation intelligence”，即主 agent 如何分解任务、委派子任务并整合结果。作者设计了一个 harness 来引导高质量的任务分解与委派，同时约束子 agent 返回适合主流程使用的结果，再把这些轨迹转化为监督微调数据以将委派能力内化到模型参数中。实验显示，训练后的 SearchSwarm-30B-A3B 在 BrowseComp 上取得 68.1、在 BrowseComp-ZH 上取得 73.3，达到同规模模型中的最佳结果。论文还释放了 harness、模型权重与训练数据，便于后续研究。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.10917&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.10917&quot;}
+summary={&quot;这篇工作提出 Role-Agent，把同一个 LLM 同时作为智能体和环境，进行自举式的双角色协同进化。WIA 分支让模型预测动作后的未来状态，并用预测与真实状态的一致性构造过程奖励，强化环境感知推理；AIW 分支则从失败轨迹中归纳失误模式并检索相似任务，重塑训练数据分布。多项基准实验显示，该框架相较强基线平均提升超过 4%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-10</title><link>https://themaoqiu.github.io/blog/papers-2026-06-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-10</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
