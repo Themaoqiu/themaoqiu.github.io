@@ -1,33 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-11</title><link>https://themaoqiu.github.io/blog/papers-2026-06-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-11</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-12</title><link>https://themaoqiu.github.io/blog/papers-2026-06-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-12</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2606.07512&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2606.07512&quot;}
-summary={&quot;这篇论文提出 MemDreamer，用层级图记忆和 agentic retrieval 来解决超长视频理解中的 token 爆炸与注意力稀释问题。方法上，它把视频流式输入并增量构建三层 Hierarchical Graph Memory，再在推理阶段通过观察-推理-行动循环进行节点搜索、层级导航和逻辑边遍历，从而将感知与推理解耦。实验表明，该方法在四个主流基准上取得 SOTA，且只需保留约 2% 的完整上下文窗口就能带来 12.5 个百分点的绝对准确率提升。作者还发现，模型在逻辑推理基准上的表现与长视频理解能力呈显著正相关，提示 agentic 能力扩展是多模态理解的新范式。&quot;}
-/&gt;&lt;/p&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
-&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2606.11180&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2606.11180&quot;}
-summary={&quot;提出 Lip Forcing，这是首个面向视频到视频口型同步的自回归扩散方法，将一个 14B 的双向音频条件视频扩散教师蒸馏为因果学生。作者基于教师轨迹分析设计了 Sync-Window DMD、两步推理调度和基于 SyncNet 的奖励，使模型在推理时每个片段只需两次去噪且无需 CFG。实验中，1.3B 学生达到 31 FPS 的实时流式速度，并比同尺度双向模型快 17.6 倍；14B 学生在相近参考保真下也比教师快 39.8 倍。&quot;}
-/&gt;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.12344&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.12344&quot;}
+summary={&quot;这篇论文提出 Claw-SWE-Bench，用于公平评测 OpenClaw 风格的通用代理 harness 在编码任务上的能力。作者设计了一个多语言 SWE-bench 风格基准和 adapter 协议，统一固定提示、运行预算、工作区契约、补丁提取和评测流程，共包含 350 个来自 8 种语言、43 个仓库的实例。实验显示，OpenClaw 在最小直接 diff adapter 下只有 19.1% Pass@1，但使用完整 adapter 后在相同 GLM 5.1 backbone 上可达 73.4%，说明 adapter 设计对结果影响极大。跨模型和跨 harness 的 sweep 还表明，模型选择与 harness 选择都会显著改变 Pass@1 和总 API 成本。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DeNovoSWE: Scaling Long-Horizon Environments for Generating Entire Repositories from Scratch&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.10728&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.10728&quot;}
+summary={&quot;这篇工作提出 DeNovoSWE，用于构建从零生成整个软件仓库的长时程环境和训练数据。作者自动化生成了 4,818 个高质量样本，每个样本都要求模型根据文档创建完整仓库，并通过 sandboxed agentic workflow 结合 divide-and-conquer 与 critic-repair 策略完成数据构造。为了兼顾质量和多样性，论文还引入了 difficulty-aware trajectory filtering。实验表明，用 DeNovoSWE 微调 Qwen3-30B-A3B 后，在 BeyondSWE-Doc2Repo 上的成绩从 5.8% 提升到 47.2%，说明该数据集能显著增强长时程软件工程能力。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-11</title><link>https://themaoqiu.github.io/blog/papers-2026-06-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-11</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Kwai Keye-VL-2.0 Technical Report&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.10651&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.10651&quot;}
+summary={&quot;We introduce Kwai Keye-VL-2.0-30B-A3B, an open-source Mixture-of-Experts (MoE) multimodal foundation model designed to advance long-video understanding and agentic intelligence. To address the challenges of ultra-long contexts, information redundancy, and prohibitive computational costs inherent in hour-level videos, Keye-VL-2.0 is the first to adapt DeepSeek Sparse Attention (DSA) to GQA-based multimodal architectures, enabling lossless 256K context processing while capturing critical frames and long-range temporal dependencies. This architecture is underpinned by a highly optimized training and inference infrastructure, including scalable video I/O, heterogeneous ViT-LM parallelism, and custom DSA kernels that significantly maximize throughput and minimize computational overhead. Furthermore, to overcome the algorithmic dilemma of catastrophic forgetting during multi-task alignment, we introduce Cross-Modal Multi-Teacher On-Policy Distillation (MOPD) paired with Context-RL and Video-RL. By distilling dense token-level teacher feedback from on-policy rollouts back into the MoE backbone, which activates only 3B parameters, Keye-VL-2.0 natively empowers advanced agent collaboration across Code, Tool, and Search scenarios with multimodal self-correction. Extensive evaluations across video understanding, temporal grounding, reasoning, STEM, and agent benchmarks demonstrate that Keye-VL-2.0-30B-A3B achieves state-of-the-art performance among models of similar scale, particularly excelling in fine-grained temporal localization on TimeLens and long-video comprehension on Video-MME-v2 and LongVideoBench. We release our model checkpoints to accelerate community progress toward scalable and robust multimodal agentic applications.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05922&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05922&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;SearchSwarm: Towards Delegation Intelligence in Agentic LLMs for Long-Horizon Deep Research&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2606.09730&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2606.09730&quot;}
-summary={&quot;这篇工作聚焦长程深度研究中的“delegation intelligence”，即主 agent 如何分解任务、委派子任务并整合结果。作者设计了一个 harness 来引导高质量的任务分解与委派，同时约束子 agent 返回适合主流程使用的结果，再把这些轨迹转化为监督微调数据以将委派能力内化到模型参数中。实验显示，训练后的 SearchSwarm-30B-A3B 在 BrowseComp 上取得 68.1、在 BrowseComp-ZH 上取得 73.3，达到同规模模型中的最佳结果。论文还释放了 harness、模型权重与训练数据，便于后续研究。&quot;}
+summary={&quot;No summary available.&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2606.10917&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2606.10917&quot;}
-summary={&quot;这篇工作提出 Role-Agent，把同一个 LLM 同时作为智能体和环境，进行自举式的双角色协同进化。WIA 分支让模型预测动作后的未来状态，并用预测与真实状态的一致性构造过程奖励，强化环境感知推理；AIW 分支则从失败轨迹中归纳失误模式并检索相似任务，重塑训练数据分布。多项基准实验显示，该框架相较强基线平均提升超过 4%。&quot;}
+summary={&quot;No summary available.&quot;}
 /&gt;&lt;/p&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-10</title><link>https://themaoqiu.github.io/blog/papers-2026-06-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-10</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Flow-DPPO: Divergence Proximal Policy Optimization for Flow Matching Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.11025&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.11025&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.10804&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.10804&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.11180&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.11180&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;WorldOlympiad: Can Your World Model Survive a Triathlon?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.11129&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.11129&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-10</title><link>https://themaoqiu.github.io/blog/papers-2026-06-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-10</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
