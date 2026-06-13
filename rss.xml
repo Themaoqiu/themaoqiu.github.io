@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-12</title><link>https://themaoqiu.github.io/blog/papers-2026-06-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-12</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-13</title><link>https://themaoqiu.github.io/blog/papers-2026-06-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-13</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.13289&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.13289&quot;}
+summary={&quot;这篇论文提出 HYDRA-X，一个把图像和视频 tokenization 统一到单一 Vision Transformer 中的原生统一多模态模型。作者围绕时空重建能力和图像/视频语义一致性两个问题设计了整体视觉 tokenizer，并通过分层时间压缩与轻量解压器来构建紧凑而共享的潜在空间。论文还指出，编辑流程中更好的做法是在 tokenizer 的潜空间内完成源目标交互，而不是在 LLM 语义层中交互，这能显著提升编辑一致性并加快收敛。实验表明，7B dense 版本在图像和视频理解、生成等任务上表现强劲，说明该统一 tokenizer 路线具有较好的可扩展性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.12087&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.12087&quot;}
+summary={&quot;这篇论文提出了面向深度搜索智能体训练的 FORT-Searcher，核心目标是生成更难被“走捷径”解决的可验证搜索任务。作者先形式化了搜索难度与真实搜索难度之间的差距，并总结出证据共覆盖、单线索选择性、显式常量和先验知识绑定四类捷径风险。基于此，他们设计了 FORT 框架，在实体选择、证据图构建、问题表述和对抗式精炼等环节抑制捷径。实验显示，FORT 生成的数据能带来更长的答案前搜索过程和更少的捷径模式，仅用监督微调训练出的 FORT-Searcher 在同规模开源搜索智能体中取得了最佳整体表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.09426&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.09426&quot;}
+summary={&quot;这篇工作提出了 WeaveBench，一个面向 computer-use agent 的长程真实世界基准，用来评估跨 GUI、CLI、代码编辑器和浏览器等混合接口的协同能力。作者构建了 114 个任务，覆盖 8 个真实工作域，任务均来源于真实用户需求且带有可公开验证的产物。评测时在真实 Ubuntu 桌面上运行，并配套一个轨迹感知的裁判，能够检查文件、截图、日志和操作轨迹，同时识别伪造视觉证据或硬编码指标等捷径行为。实验表明，最好的模型-运行时组合 PassRate 只有 41.2%，且仅看最终结果的评分会明显高估智能体能力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.13662&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.13662&quot;}
+summary={&quot;这篇工作提出 EurekAgent，认为自主科学发现的瓶颈正在从“设计智能体流程”转向“设计智能体环境”。作者从权限、工件管理、预算控制和人机协作四个维度构建环境工程框架，以促进开放式探索、系统化产物管理和多智能体协作，同时抑制奖励投机和高摩擦人工干预。基于该框架，EurekAgent 能在可执行环境中进行提出、验证和迭代式搜索，用于数学、内核工程和机器学习等任务。实验结果显示，它在多个任务上刷新了最优结果，包括在 26-circle packing 问题上以不到 11 美元的总 API 成本取得新 SOTA。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-12</title><link>https://themaoqiu.github.io/blog/papers-2026-06-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-12</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
