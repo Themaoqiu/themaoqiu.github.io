@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-13</title><link>https://themaoqiu.github.io/blog/papers-2026-06-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-13</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-16</title><link>https://themaoqiu.github.io/blog/papers-2026-06-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-16</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.14502&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.14502&quot;}
+summary={&quot;这篇文章把 LLM 从聊天机器人走向“数字同事”的演进，概括为认知核心与工具执行两条主线。作者围绕思维链、反思、过程监督、强化学习以及 OpenClaw 式工作站系统，提出持久化工作空间、技能复用和验证闭环等关键机制。文中主要是在统一框架和评测范式上做系统归纳，并指出从静态基准走向可审计沙箱评测的方向。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;APPO: Agentic Procedural Policy Optimization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.12384&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.12384&quot;}
+summary={&quot;APPO 提出一种面向智能体的程序化策略优化方法，试图把更结构化的程序或步骤轨迹纳入策略学习。其核心思路是让智能体的训练过程更贴近可分解、可执行的 procedural 结构，从而优化复杂任务中的决策质量。论文应当通过智能体任务实验来检验这种优化框架的有效性，并比较其相对基线的收益。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.14249&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.14249&quot;}
+summary={&quot;该工作提出 HarnessX，一个可组合、可自适应、可演化的 agent harness 生成与优化框架，用来统一管理提示词、工具、记忆和控制流。作者通过 substitution algebra 组合类型化 harness 原语，并用 AEGIS 从执行轨迹中驱动多智能体演化，同时把轨迹转化为 harness 更新和模型训练信号。方法在 ALFWorld、GAIA、WebShop、tau^3-Bench 和 SWE-bench Verified 五个基准上评测，平均提升 14.5%，最高提升 44.0%。结果表明，除了扩展模型本身，改进运行时接口与反馈闭环也是提升 agent 性能的有效途径。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-13</title><link>https://themaoqiu.github.io/blog/papers-2026-06-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-13</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Images&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
