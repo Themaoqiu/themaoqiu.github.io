@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-16</title><link>https://themaoqiu.github.io/blog/papers-2026-06-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-16</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-17</title><link>https://themaoqiu.github.io/blog/papers-2026-06-17</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-17</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;FastContext: Training Efficient Repository Explorer for Coding Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.14066&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.14066&quot;}
+summary={&quot;Large Language Model (LLM) coding agents have achieved strong results on software engineering tasks, yet repository exploration remains a major bottleneck: locating relevant code consumes substantial token budget and pollutes the agent&apos;s context with irrelevant snippets. In most agents, the same model explores the repository and solves the task, leaving exploratory reads and searches in the solver&apos;s history. We present FastContext, a dedicated exploration subagent that separates repository exploration from solving. Invoked on demand, FastContext issues parallel tool calls and returns concise file paths and line ranges as focused context. FastContext is powered by specialized exploration models spanning 4B--30B parameters. We bootstrap them from strong reference-model trajectories and refine them with task-grounded rewards for broad first-turn search, multi-turn evidence gathering, and precise citation generation. Across SWE-bench Multilingual, SWE-bench Pro, and SWE-QA, integrating FastContext into Mini-SWE-Agent improves end-to-end resolution rates up to 5.5\% while reducing coding-agent token consumption up to 60\%, with marginal overhead. These results show that repository exploration can be separated from solving and handled effectively by specialized models. Code and data: https://github.com/microsoft/fastcontext&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.11176&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.11176&quot;}
+summary={&quot;Data tells stories that shape society; the data journalist&apos;s job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for context, running statistics, choosing an angle, and designing visuals. Recent agents handle individual steps well: data-science agents close the analysis loop, while design agents synthesize beautiful websites. But can an agent serve as a data journalist end to end? We introduce Data Journalist Agent (Data2Story), a multi-agent framework that orchestrates specialized roles into a single virtual newsroom. Data2Story contributes two innovations. (i) Claims are evidence-grounded: an Inspector links every number, angle, and asset back to data, code, or an external reference. (ii) Articles are multimodally generative: rather than defaulting to plain text and static charts, Data2Story reasons about what readers will want to see, then deploys multimodal tools, such as interactive maps for geography and audio for music. We evaluate Data2Story on 18 articles, each paired with the originally published expert piece, along four axes: (a) human-agent angle coverage; (b) rubric evaluation with 53 participants across five dimensions; (c) computer-use agents as judges, a cost-saving proxy for how readers navigate interactive articles; and (d) verifiability, where a coding verifier re-executes statements against the data and checks claims against references. Data2Story produces competitive, evidence-traceable multimedia stories, with particular strength in transparency and auditability. Human articles retain an edge in editorial angle, creative design, and presentation. We position Data2Story as a collaborator for journalists, enabling more evidence-based, transparent, and verifiable reporting. Code and demos are available at https://data2story.github.io.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DreamX-World 1.0: A General-Purpose Interactive World Model&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.16993&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.16993&quot;}
+summary={&quot;DreamX-World 1.0 是一个通用交互式文本/图像到视频世界模型，支持长时程可控生成、镜头导航、回访已观察区域以及可提示事件。方法上，作者用 Unreal 渲染、游戏录屏和真实视频构建数据引擎，并通过 E-PRoPE、因果 forcing、DMD 式蒸馏、长滚动训练、记忆条件场景保持和残差复用来提升镜头控制、长程一致性与内容稳定性。实验结果显示，该模型在 5 秒评测中取得 73.75 的镜头控制分数和 84.76 的总分，整体优于 HY-WorldPlay 1.5 和 LingBot-World，同时在多项工程优化下可在 8 张 RTX 5090 上达到最高 16 FPS。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.17030&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.17030&quot;}
+summary={&quot;Qwen-RobotWorld 提出一种语言条件的视频世界模型，用统一的自然语言接口来预测机器人操控、自动驾驶、室内导航和人机迁移中的未来视觉轨迹。方法上，它结合了双流 MMDiT 与 MLLM 动作编码、包含 860 万视频文本样本的 Embodied World Knowledge 数据集，以及先学习通用视觉先验、再注入具身专长的渐进式训练策略。实验表明，该模型在 EWMBench 和 DreamGen Bench 上排名第一，并在 WorldModelBench 与 PBench 上优于所有开源模型。进一步的零样本分析也显示，它在 RoboTwin-IF 上具有较强的泛化能力和多视角一致性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;BadWorld: Adversarial Attacks on World Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.16519&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.16519&quot;}
+summary={&quot;这篇工作研究了视觉世界模型对对抗扰动的鲁棒性，提出了专门针对自回归世界模型的无标签攻击框架 BadWorld。作者用自监督的速度攻击来破坏早期去噪过程，并通过轨迹自适应的双层优化主动搜索困难控制序列，从而构造对用户动作更不敏感的扰动。实验在具有连续和离散控制的代表性视觉世界模型上表明，几乎不可见的对抗图像就能稳定引发未来滚动预测的严重退化。结果显示模型会出现去噪不完整、结构崩塌和控制不一致，说明这类世界模型在安全关键场景中存在明显脆弱性。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-16</title><link>https://themaoqiu.github.io/blog/papers-2026-06-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-16</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
