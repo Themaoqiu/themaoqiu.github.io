@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-17</title><link>https://themaoqiu.github.io/blog/papers-2026-06-17</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-17</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-19</title><link>https://themaoqiu.github.io/blog/papers-2026-06-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-19</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.18558&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.18558&quot;}
+summary={&quot;Motion forecasting is central to visual intelligence: agents must anticipate how objects will move in order to plan actions, reason about physical interactions, and synthesize realistic futures. We argue that 3D points in world coordinates provide a general representation that is class-agnostic, view-stable, compact, and directly useful for downstream tasks. We formalize the task of goal-conditioned 3D point motion forecasting: given a short visual history, a set of 3D query points on an object of interest, and a language description of the intended goal, the model predicts the future 3D trajectory of each point. We introduce a full stack to study this task at scale: (1) MolmoMotion-1M is a large corpus of action-described, object-grounded 3D point trajectories annotated from 1.16M unconstrained videos; (2) PointMotionBench is a human-verified benchmark spanning 111 object categories and 61 motion types; and (3) MolmoMotion is a general motion forecasting model that supports both autoregressive coordinate prediction and flow-matching-based trajectory generation. MolmoMotion accurately predicts diverse motion patterns with different language instructions, and significantly outperforms existing motion prediction baselines on PointMotionBench. Finally, we show that the learned 3D motion prior transfers well to downstream applications: it improves training efficiency and generalization for robot manipulation, and its predicted trajectories provide effective motion guidance for generative models to synthesize videos with more realistic object motion.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Guava: An Effective and Universal Harness for Embodied Manipulation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.18363&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.18363&quot;}
+summary={&quot;Language models trained on large-scale vision-language data have demonstrated strong potential for embodied agents. Harnessing models through embodied tools use offers a promising alternative to end-to-end vision-language-action systems by combining high-level reasoning with external modules for perception, planning, and control. However, it remains unclear what makes an effective harness for embodied manipulation, and to what extent such a harness can unlock embodied capabilities in a wide range of reasoning models. In this work, we present Guava, a harness framework for embodied tool use developed through systematic exploration of the design space of agent workflows, action spaces, and observation spaces. Our study identifies three key ingredients for effective embodied agents: iterative perception-reasoning-action loops, semantic action abstractions, and multimodal observations. To understand whether these design principles are universal even to small models, we develop an end-to-end training pipeline that distills embodied manipulation capabilities into a 4B open-source model using fewer than 2K trajectories collected entirely in simulation. Experimental results in both simulation and real-world environments show performance comparable to frontier proprietary models while exhibiting strong generalization to unseen objects, novel instructions, and long-horizon tasks. Results suggest that a well-designed harness can serve as a scalable, model-agnostic interface for embodied manipulation, enabling strong emergent embodied capabilities in compact open-source models with minimal training data.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.18967&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.18967&quot;}
+summary={&quot;这篇工作提出 EfficientRollout，用于加速强化学习中的 rollout 生成，目标是在不损失最终模型质量的前提下降低推理延迟。方法上，它采用从目标模型中诱导出的量化自投机解码器，让 drafter 始终与不断演化的策略保持耦合，并结合系统感知的 speculative decoding 开关策略与基于接受率的草稿长度自适应。作者强调 RL rollout 的瓶颈不仅在于自回归采样的串行性，还在于后期 batch 变小后系统从算力受限转向带宽受限，因此需要按运行态动态决定是否启用投机解码。实验表明，EfficientRollout 相比加速版 AR rollout baseline，rollout 延迟最高降低 19.6%，端到端延迟最高降低 12.7%，同时保持了最终模型质量。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Beyond Alignment: Value Diversity as a Collective Property in Multicultural Agent Systems&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.05985&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.05985&quot;}
+summary={&quot;这篇论文研究多文化多智能体系统中的“价值多样性”，提出它应作为区别于单体价值对齐的新系统级评估维度。作者基于 World Values Survey 构造了 19 种文化、18 个 backbone model 的系统配置，通过比较文化条件化智能体在共享价值问卷上的回答差异来度量多样性。实验发现，价值多样性与传统对齐指标几乎不相关，说明二者刻画的是互补性质，而当前 LLM 多智能体系统在价值多样性上显著低于人类社会。进一步分析显示，混合不同 backbone 可以缩小差距但无法消除，社交交互还会推动智能体向共识收敛，进而削弱集体决策的覆盖面。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;The Reward Was in Your Data All Along: Correcting Flow Matching with Discriminator-Guided RL&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.19162&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.19162&quot;}
+summary={&quot;Score- and flow-matching models often rely on preference-based reinforcement learning for two purposes: aligning with subjective preferences and, surprisingly, recovering properties such as visual realism and coherent object structure that matching-based training is intended to learn from the data itself. We argue that this reflects a structural mismatch. Matching losses measure $\ell_2$ regression error on the velocity or score field under training-time marginals, a proxy poorly aligned with the visual and semantic properties that determine sample quality at inference. Given a reward aligned with these properties, RL sidesteps the mismatch by evaluating the model on its own samples and following the reward landscape directly. The challenge is to obtain such a reward without relying on human preferences, which are expensive and conflate data realism with annotator inclinations. We propose Discriminator-Guided RL (DRL). DRL trains a discriminator to separate data from base-model samples in a pretrained representation space and uses its logit as the reward in KL-regularized RL. The pretrained space restricts the discriminator to perceptually meaningful directions, and the logit estimates the log-likelihood ratio between data and model, which is the optimal reward for targeting the data distribution. Across SiT, JiT, REPA, and RAE, DRL reduces guidance-free FID (e.g., $9.38 \to 2.62$ on SiT) and semantic-space FD (e.g., $88.2 \to 19.3$ on DINOv3 for SiT), with consistent gains across all backbones, and improves human-preference rewards without training on them. It also yields a better Pareto frontier between preference reward and image fidelity under subsequent preference-based post-training, increasing alignment while reducing low-level artifacts such as oversaturation and excessive brightness.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MaineCoon: Pursuing A Real-Time Audio-Visual Social World Model&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.17800&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.17800&quot;}
+summary={&quot;这篇论文面向社交平台上的视频生成，提出了一个实时音视频自回归世界模型 MaineCoon。作者将其定位为面向社交互动场景的首个实时音视频社会世界模型原型，重点解决长时程、低延迟和稳定交互的问题。方法上，模型采用自我重采样、跨模态表征对齐、领域感知偏好优化以及强化在线策略蒸馏等训练技巧，并配套了支持长时间生成的 agentic streaming inference 框架。实验结果表明，该模型在单卡上可实现最高 47.5 FPS 的实时流式生成，且能够支持上千秒乃至更长时长的交互生成，同时有效缓解漂移问题。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-18</title><link>https://themaoqiu.github.io/blog/papers-2026-06-18</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-18</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LectūraAgents: A Multi-Agent Framework for Adaptive Personalized AI-Assisted Learning and Embodied Teaching&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.16428&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.16428&quot;}
+summary={&quot;这篇论文提出 LectūraAgents，一个用于个性化 AI 辅助学习与具身教学的多智能体框架。系统以 ProfessorAgent 为核心，协同研究、规划、审阅等子代理生成面向特定学习者的课程内容，并在教学环境中执行手写、标注、下划线等可见教学动作。作者还设计了 TASA 算法，结合显著性启发式和时间语义分割，生成与学习者画像相匹配的教学动作序列。实验在高中、本科和研究生课程上进行，并由专家教师基于样本量表评估，结果表明该框架在课程质量、具身教学质量、测评表现和个性化程度上都优于已有方法。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.17861&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.17861&quot;}
+summary={&quot;这篇工作提出 GameCraft-Bench，用于评估编码代理能否在真实游戏引擎中端到端生成可玩的游戏。作者把任务定义为从自然语言规格生成完整游戏工件，并强调评测必须同时检查引擎对齐、工件完整性和交互式可验证性。基于这些标准，论文构建了一个包含 15 个游戏家族、140 个 Godot 任务的基准，并通过回放演示和多模态裁判来评估可执行玩法。实验显示，最强代理也只取得 41.46% 的成绩，大多数模型低于 40%，说明当前系统虽然常能写出可识别的机制，但仍难以交付内容足够、反馈完整且展示一致的成品游戏。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.17628&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.17628&quot;}
+summary={&quot;这篇工作提出 OPD-Evolver，用 on-policy self-distillation 来培养能够自我进化的 agent evolver。方法上采用快慢双循环：快循环让模型在四层记忆体系中完成读取、使用、写入和维护经验，慢循环则通过 outcome-calibrated memory attribution 和 privileged hindsight 把这四种能力蒸馏到可部署策略中。作者强调这种设计不仅让模型学会保留经验，还学会筛选高价值经验并将其转化为可复用知识。实验显示，在多个领域基准上，OPD-Evolver 相比 ReasoningBank 最多提升 11.5%，相比训练型方法约提升 5.8%，9B 版本还能接近更大的 Qwen3.5-397B-A17B 和 Step-3.5-Flash。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Self-Evolving Visual Questioner&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.13929&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.13929&quot;}
+summary={&quot;这篇工作提出了一个自演化的视觉提问框架，让视觉语言模型在没有外部监督的情况下持续提升自己提出问题的能力。方法上，它把同一个VLM同时用作提案器和过滤器，自动生成更难、更信息量更高、且更具视觉指向性的问题，并通过保持探索多样性来避免训练塌缩。随后，这些问题被用于同时训练模型的提问模式和回答模式。作者还设计了一个面向提问能力的 agentic 评测协议，从感知、推理和多样性三个维度衡量问题质量。实验表明，该方法在多个骨干VLM上都能显著提升自动提问质量，并扩大问题难度边界；在相同预算下也比静态源数据训练更有效，同时模型作为回答者仍保持竞争力，甚至更好。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-17</title><link>https://themaoqiu.github.io/blog/papers-2026-06-17</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-17</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
