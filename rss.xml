@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-19</title><link>https://themaoqiu.github.io/blog/papers-2026-06-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-19</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-20</title><link>https://themaoqiu.github.io/blog/papers-2026-06-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-20</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Playful Agentic Robot Learning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.19419&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.19419&quot;}
+summary={&quot;这篇工作研究具身代码智能体如何通过“玩耍式”自我探索来持续学习技能。作者提出 RATs，让机器人智能体在下游任务到来前，先主动生成可学习的探索任务、执行 Code-as-Policy 程序、检查中间结果、诊断失败并把成功经验沉淀到持久技能库中。测试时，智能体会从冻结技能库中检索相关技能来辅助新任务求解。实验在 LIBERO-PRO 和 MolmoSpaces 上表明，这种 play-learned 技能相比无玩耍和随机玩耍基线带来显著提升，并且把技能直接注入其他 inference-time Code-as-Policy 智能体后，也能在 RoboSuite 和真实世界迁移上继续提升表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.19531&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.19531&quot;}
+summary={&quot;这篇工作提出 ImageWAM，用图像编辑模型替代传统依赖视频生成的世界动作模型，用于机器人动作预测。作者认为图像编辑更适合建模从当前帧到目标帧的变化，因此能够聚焦与动作相关的视觉差异，并通过编辑预训练更好地对齐任务指令与局部变化。方法上，模型不在推理时解码目标帧，而是利用图像编辑去噪过程产生的 KV cache 作为紧凑的世界-动作上下文，再驱动动作专家进行流匹配预测。实验表明，ImageWAM 在模拟和真实世界任务上都优于常见 VLA 基线和有竞争力的 WAM，并且在不额外做 policy 预训练的情况下取得更好的表现。作者还报告其 FLOPs 约降到视频版 WAM 的 1/6、延迟降到 1/4，注意力分析也显示缓存主要关注任务相关的变化区域。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DF3DV-1K: A Large-Scale Dataset and Benchmark for Distractor-Free Novel View Synthesis&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2604.13416&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2604.13416&quot;}
+summary={&quot;这篇工作发布了一个用于无干扰新视角合成的大规模真实数据集 DF3DV-1K，并配套构建了基准评测。作者收集了 1,048 个场景、89,924 张图像，显式包含干净图像和含干扰物图像，以评估 radiance field 方法在复杂现实环境中的鲁棒性。论文还设计了 DF3DV-41 这一更具挑战性的子集，用来系统测试模型在困难场景下的表现。基于该数据集，作者评测了 9 种近期方法和 3D Gaussian Splatting，找出了最稳健的方法与最难处理的场景。进一步地，他们用 DF3DV-1K 微调一个扩散式 2D 增强器，在保留集上平均提升了 0.96 dB PSNR 和 0.057 LPIPS。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ENPIRE: Agentic Robot Policy Self-Improvement in the Real World&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.19980&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.19980&quot;}
+summary={&quot;这篇工作提出 ENPIRE，一个面向真实世界机器人策略自我改进的 harness 框架，目标是把策略优化变成可重复、可自动化的闭环流程。它将流程拆成四个模块：环境重置与验证、策略改进、并行实机 rollout 评测，以及由 coding agent 读取日志、查阅文献并修改训练代码和算法代码的演化环节。作者强调该框架把真实机器人学习从高人工依赖转成可控优化过程，并支持不同训练配方和 agent 版本的公平对比。实验中，借助 ENPIRE，前沿 coding agents 能够在整理针盒、系扎带和工具使用等复杂操作任务上把策略训练到 99% 成功率。结果还显示，当在机器人集群上分派 agent 团队时，整个自我改进过程会进一步加速。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-19</title><link>https://themaoqiu.github.io/blog/papers-2026-06-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-19</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
