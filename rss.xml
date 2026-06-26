@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-25</title><link>https://themaoqiu.github.io/blog/papers-2026-06-25</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-25</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-26</title><link>https://themaoqiu.github.io/blog/papers-2026-06-26</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-26</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ShutterMuse: Capture-Time Photography Guidance with MLLMs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.25763&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.25763&quot;}
+summary={&quot;这篇工作面向拍摄时的摄影指导，构建了一个基准和数据集来评测多模态大模型在构图与姿态建议上的能力。作者提出 CaptureGuide-Bench，分别评估摄影师侧的构图决策与细化，以及被摄者侧的场景条件化姿态推荐，并据此构建了含13万样本的 CaptureGuide-Dataset。基于这些数据，作者训练了统一的 ShutterMuse，并结合监督微调与强化微调来提升拍摄辅助能力。实验表明，ShutterMuse 在摄影师侧总体表现最好，在被摄者侧也能给出有竞争力的姿态建议，同时推理成本明显低于很多基线。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.18239&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.18239&quot;}
+summary={&quot;这篇工作提出了 EBench，用于对通用移动操作策略做细粒度诊断，而不只是看单一成功率。作者构建了一个包含 26 个任务的仿真基准，并将任务标注到 5 个能力维度和 4 个泛化维度上，以分析模型在不同技能与分布偏移下的表现。实验评测了 π0、π0.5、XVLA 和 InternVLA-A1 等代表性模型，发现它们即使总体成功率接近，能力画像也差异明显。结果表明，EBench 能揭示模型在整体分数之外的优势与短板，并为后续迭代提供更有针对性的诊断信号。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-25</title><link>https://themaoqiu.github.io/blog/papers-2026-06-25</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-25</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization&quot;}
