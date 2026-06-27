@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-26</title><link>https://themaoqiu.github.io/blog/papers-2026-06-26</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-26</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-27</title><link>https://themaoqiu.github.io/blog/papers-2026-06-27</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-27</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;The Verification Horizon: No Silver Bullet for Coding Agent Rewards&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.26300&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.26300&quot;}
+summary={&quot;这篇论文讨论编码智能体奖励设计中的“verification horizon”问题，指出随着模型与工程 harness 变强，真正困难的往往不再是生成解答，而是可靠验证人类意图。作者从可扩展性、忠实性和鲁棒性三个维度分析验证信号，并系统研究了代码测试、前端 rubric、用户作为 verifier 以及长时序自动 agent verifier 等四类奖励构造。实验表明，有针对性的验证设计能够有效抑制 reward hacking、提升任务完成质量，并在多个内部与公开基准上带来显著收益。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;GUI vs. CLI: Execution Bottlenecks in Screen-Only and Skill-Mediated Computer-Use Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.24551&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.24551&quot;}
+summary={&quot;这篇工作构建了一个匹配式桌面执行基准，用来公平比较纯GUI代理和技能驱动CLI代理的执行瓶颈。作者在440个桌面任务、18个应用和12类工作流上统一了目标、初始状态、验证器与动作约束，避免了以往评测中的混杂因素。结果显示，最强GUI代理的完整通过率为59.1%，优于最强原始技能CLI代理的48.2%。但当对CLI加入验证器引导的技能扩增后，成功率提升到69.3%，说明CLI侧的主要短板更多来自技能覆盖不足，而不完全是模型能力问题。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.26027&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.26027&quot;}
+summary={&quot;这篇工作研究了多步工具使用强化学习为何会崩溃，并提出用监督信号来稳定训练。作者发现，RL失效时会出现特定控制token概率突增，导致结构化工具调用被破坏，但底层工具能力其实仍然存在，只是被格式问题掩盖。为此，他们系统比较了离策略监督、提示引导、错误示例监督等多种监督信号，并分析同步与交错式训练方案。结果显示，将SFT与RL交错进行能明显提升训练稳定性，但在格式和内容分布外评测上仍会退化，说明监督设计对多步工具使用训练至关重要。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.14397&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.14397&quot;}
+summary={&quot;这篇工作提出GauntletBench，用于更严格地评估智能体在陌生环境中的泛化能力。基准覆盖视频编辑、工作流构建、3D建模、飞行分析和电路设计五类较少被关注的专业应用，并重点考察时间感知、图形理解和3D推理三种能力。作者提供了兼容开源与闭源智能体的模块化环境、任务集和自动评测引擎，共包含100个视觉密集任务。实验结果显示，最强智能体在该基准上的成功率只有19.1%，而非专家人工标注者可超过80%，说明当前前沿智能体在这些能力上的差距仍然很大。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-26</title><link>https://themaoqiu.github.io/blog/papers-2026-06-26</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-26</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
