@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-06-30</title><link>https://themaoqiu.github.io/blog/papers-2026-06-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-30</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-01</title><link>https://themaoqiu.github.io/blog/papers-2026-07-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-01</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.30616&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.30616&quot;}
+summary={&quot;这篇工作提出 Agents-A1，一种 35B MoE 代理模型，目标是通过扩展 agent horizon 而不是单纯扩参数，达到接近万亿参数模型的长程任务表现。作者构建了连接外部知识、动作、观察和验证结果的长链路轨迹数据，平均长度达到 45K tokens，并据此采用三阶段训练：全域监督微调、按领域训练教师模型、以及带显著词汇对齐的多教师域路由 on-policy 蒸馏。实验表明，Agents-A1 在多个长程代理基准上表现强劲，在 SEAL-0、IFBench、HiPhO、FrontierScience-Olympiad 和 MolBench-Bind 上取得领先结果，并在 SciCode、HLE、BrowseComp 等任务上保持很强竞争力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.28480&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.28480&quot;}
+summary={&quot;这篇论文提出 TUA-Bench，用于评估通用终端使用代理在真实终端环境中的能力，覆盖文档编辑、邮件管理、联网信息检索以及与博士级专家共同设计的科学工程工作流。基准包含120个真实任务，每个任务都有手工设计的确定性环境脚本，并通过执行结果进行评分。作者用该基准测试了 frontier agent，结果显示 Claude Code with Claude Opus 4.8 max reasoning effort 的总体成绩为 65.8%，但不同任务族之间仍存在明显差距。论文说明现有 shell 或 GUI 基准都不足以衡量这类通用 terminal-use agent，TUA-Bench 能更全面地推动其向可靠的通用数字助手演进。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.29445&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.29445&quot;}
+summary={&quot;Video understanding is a fundamental capability for multimodal intelligence, and recent Multimodal Large Language Models (MLLMs) have achieved remarkable performance on Video Question Answering (VideoQA) benchmarks. However, existing benchmarks primarily evaluate whether models can perceive shallow visual cues, while rarely examining whether MLLMs can learn deeper knowledge or procedural skills from video tutorials and generalize them to downstream long-horizon agentic tasks. To address this gap, we introduce VG-GUIBench (Video-Guided GUI Benchmark), a new benchmark designed to evaluate whether MLLM-based GUI agents can follow video tutorials to complete corresponding GUI interactive tasks. Furthermore, we observe that the performance of models on both VideoQA and video-guided agentic tasks critically depends on effective keyframe extraction. Based on this observation, we propose TASKER (Task-driven And Scene-aware Keyframe searchER), a keyframe extraction algorithm that jointly considers task relevance and scene dynamics to identify informative frames. Experimental results demonstrate that TASKER achieves significant performance improvements on both VideoQA and video-guided agentic task benchmarks, outperforming the best baseline by 2.0% on the EgoSchema fullset and 1.8% on the NExT-QA dataset, respectively. These results further highlight the potential of generalized keyframe extraction methods for video understanding tasks. Our code and data are available at https://github.com/VG-GUI-TASKER/VG-GUI-TASKER.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-06-30</title><link>https://themaoqiu.github.io/blog/papers-2026-06-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-06-30</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
