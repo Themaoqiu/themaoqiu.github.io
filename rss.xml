@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-01</title><link>https://themaoqiu.github.io/blog/papers-2026-07-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-01</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-02</title><link>https://themaoqiu.github.io/blog/papers-2026-07-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-02</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Evolution Fine-Tuning: Learning to Discover Across 371 Optimization Tasks&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.29082&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.29082&quot;}
+summary={&quot;这篇论文提出 Evolution Fine-Tuning，用于让语言模型学会跨任务的“进化式发现”能力。作者把进化搜索过程中的轨迹转换成监督信号，构建了包含10个领域、371个优化任务、156K轨迹的 Finch Collection，并据此对2B到9B参数的开源模型进行中期训练。实验显示，这种训练方式能带来明显的跨任务泛化，在22个保留任务上平均比基座模型提升10.22%。进一步结合 test-time RL 后，模型在两个圆形打包任务上达到SOTA水平，并在 Erdős minimum-overlap 问题上优于基座模型。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillHone: A Harness for Continual Agent Skill Evolution Through Persistent Decision History&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.08671&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.08671&quot;}
+summary={&quot;这篇工作提出 SkillHone，用于让代理技能在持续迭代中保留决策历史并不断进化。方法将技能修订与评测侧证据绑定，结构化记录诊断、修改、证据和结果，避免只保存最终产物而丢失中间推理。系统还使用角色分离的子代理在脱敏报告下运行候选技能，并根据历史决策提出下一轮修订。实验中，SkillHone 在 deep-research 基准上不带预集成搜索栈也优于商业 deep-research agent，在 GAIA 上提升15.8分，在 WebWalkerQA-EN 上提升3.2分，并在7个内部工具分析场景中平均提升18.8分。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.32032&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.32032&quot;}
+summary={&quot;这篇工作提出用元认知反馈来训练大模型，让模型更诚实地表达自身不确定性。作者设计了两项机制：基于自我判断质量来重排偏好优化的强化学习元认知反馈（RLMF），以及利用同类自我判断挑选高价值样本的数据选择方法。方法上先校准模型对任务表现的自评置信度，再通过定向输出编辑把置信度映射为更自然的语言化不确定性表达。实验表明，RLMF在多项任务上实现了更好的 faithful calibration，整体达到新的最优水平，同时保持准确率，并且相较标准强化学习最高提升达63%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MemLearner: Learning to Query Context memory for Video World Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.31734&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.31734&quot;}
+summary={&quot;这篇论文针对视频世界模型长时序生成中的记忆缺失问题，提出 MemLearner。作者设计了基于 query tokens 的自适应上下文查询机制，让模型从历史帧中动态检索有用信息，并用视频生成模型自身来完成上下文查询，而不是额外训练独立记忆模块。为训练与评估，论文构建了包含遮挡和动态物体的长视频数据集，并结合带相机位姿标注的渲染数据与真实世界无标注数据进行多数据集训练。实验结果表明，MemLearner 在场景一致性和记忆能力上显著优于此前的视频世界模型，尤其在遮挡和动态场景下优势更明显。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-01</title><link>https://themaoqiu.github.io/blog/papers-2026-07-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-01</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
