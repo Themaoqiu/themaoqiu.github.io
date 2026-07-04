@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-03</title><link>https://themaoqiu.github.io/blog/papers-2026-07-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-03</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-02</title><link>https://themaoqiu.github.io/blog/papers-2026-07-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-02</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-04</title><link>https://themaoqiu.github.io/blog/papers-2026-07-04</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-04</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.02440&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.02440&quot;}
+summary={&quot;这篇工作提出 EvoPolicyGym，用来评测自主 Agent 在交互式环境中如何在固定预算内反复修改可执行策略并逐步变好。作者把“自主策略进化”定义成一个受控评测设置，避免把它和泛化的软件工程进展混在一起。基准由多个紧凑的交互式强化学习环境组成，并提供轨迹级诊断来分析 Agent 如何分配预算、如何把反馈转化为参数调整。实验表明，GPT-5.5 在综合排名上表现最好，并在 16 个环境里都进入前二，说明该任务不仅看单次解题能力，也考验在有限反馈下持续改进策略的能力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AgenticDataBench: A Comprehensive Benchmark for Data Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.01647&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.01647&quot;}
+summary={&quot;这篇工作提出了 AgenticDataBench，一个面向数据智能体的综合评测基准，用于更细粒度地衡量数据科学工作流中的能力。作者从 15 个垂直领域收集真实数据集和任务，并引入基于技能的覆盖度刻画来去除冗余、提升任务质量。对于缺少真实任务的领域，论文还用 LLM 结合技能体系自动生成更贴近真实场景的工作流任务。实验部分对多种先进数据智能体进行了评测，给出了按技能维度拆解的详细分析，能更清楚地暴露不同系统在真实数据科学流程中的短板。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2606.31825&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2606.31825&quot;}
+summary={&quot;这篇工作针对医学多模态推理中的失败级联问题，提出了 Step-Aware Reinforcement Learning 方法 MRPO。它不是只看最终答案，而是引入逐步过程奖励，并在最终答案错误时对更早的无效推理步骤施加指数级更大的惩罚，从而打断错误在推理链中的传播。作者在三个多模态 LLM 骨干上验证了该方法，相比标准 GRPO 和近期 RL 基线都有稳定提升。实验中，Qwen3-VL-8B-Instruct 甚至比更大的 HuatuoGPT-Vision-34B 还高出 2.79 分，同时早期推理失败率从 64.0% 降到 13.0%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.01874&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.01874&quot;}
+summary={&quot;这篇论文提出 SkillCoach，用自演化的 rubric 来评估和增强智能体的技能使用能力。方法上，它从真实 rollout 中归纳出与技能相关的过程性评分标准，并从技能选择、技能遵循、技能组合和技能反思四个维度对轨迹进行评价，同时把外部 verifier 作为独立的结果信号保留。作者还把这些演化出来的 rubric 用作训练监督，筛选更高质量的轨迹。实验显示，这种方式能显著提升评测质量，揭示仅看最终准确率无法发现的失败模式，并提供比只做结果过滤更强的训练信号。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-03</title><link>https://themaoqiu.github.io/blog/papers-2026-07-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-03</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-02</title><link>https://themaoqiu.github.io/blog/papers-2026-07-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-02</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
