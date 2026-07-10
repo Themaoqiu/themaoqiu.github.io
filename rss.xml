@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-09</title><link>https://themaoqiu.github.io/blog/papers-2026-07-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-09</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-10</title><link>https://themaoqiu.github.io/blog/papers-2026-07-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-10</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.07675&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.07675&quot;}
+summary={&quot;Despite the recent promise in robot control, video generative models suffer from a domain mismatch due to their primary focus on content creation. For example, their design inherently prioritizes visual fidelity and creativity over computational efficiency and physical realism. In this work, we present LingBot-Video, a DiT-based video pretraining paradigm specifically tailored for embodied intelligence. From the architecture perspective, we adopt the Mixture-of-Experts (MoE), instead of dense, framework to achieve a better trade-off between modeling capacity and inference efficiency, and manage to scale it up from scratch. From the data perspective, we construct a data profiling engine that augments standard internet videos with extensive robot-oriented footage, encompassing manipulation, navigation, and egocentric perspectives, to equip the base model with an intrinsic understanding of actions and world dynamics. From the training perspective, we develop a multi-dimensional reward system to enforce the alignment regarding physical rationality and task completion, going beyond standard criteria such as aesthetics, prompt-following, and motion consistency. Comprehensive evaluations validate its performance and efficiency as a video foundation model. We contribute LingBot-Video as the inaugural large-scale, open-source MoE video foundation model to the community, in a pioneering effort to bridge digital creativity and physical actuation.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Infinite Worlds with Versatile Interactions&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.07534&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.07534&quot;}
+summary={&quot;We present LingBot-World 2.0 (also known as LingBot-World-Infinity), an advanced iteration of LingBot-World featuring four distinct upgrades. (1) Our model achieves an unbounded interaction horizon while maintaining consistent output quality, benefiting from a carefully crafted causal pretraining paradigm. (2) Through distilling a real-time variant from the base model, our system guarantees rapid response time, sufficient to drive 720p video streams at 60 fps. (3) Compared to the previous version, this update introduces highly diverse interactive elements, comprising a broader spectrum of actions (e.g., attacking, archery, spell-casting, and shooting) alongside a richer variety of text-driven events. (4) We pioneer the integration of an agentic harness within the domain of world modeling, wherein a pilot agent is tasked with planning and executing character behaviors, while a director agent is responsible for synthesizing novel environmental elements as the scene progresses. Additionally, to facilitate a shared experience, we develop an interface that permits multiple players to simultaneously immerse themselves in this vivid world simulator. We pair our primary 14B model with a lightweight 1.3B counterpart, which supports effortless deployment on a single GPU.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.03723&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.03723&quot;}
+summary={&quot;这篇工作提出 OmniTacTune，用触觉残差适配来增强预训练视觉策略在真实接触式操作中的表现。方法上采用两阶段流程：先用自主基础策略 rollout 进行触觉感知学习的预热，再通过在线交互训练轻量级触觉残差策略，对原有视觉策略做补偿。实验覆盖 4 个真实世界的接触丰富任务，结果显示它能将基础视觉策略的成功率从 5-40% 提升到 85-100%，并且在不同任务、基础策略和触觉表示之间具有较好的泛化性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;RoboTALES: Learning Reasoning-Guided Robot Policies via Task-Aligned Simulated Futures&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.06018&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.06018&quot;}
+summary={&quot;这篇工作提出 RoboTALES，用任务对齐的模拟未来来学习 reasoning-guided 机器人策略。方法上，它用层级 LLM 规划器把复杂任务拆成子目标来引导视频生成想象，再用 VLM critic 对想象出的未来进行评估，并通过基于奖励的反馈让内部表示保持与任务目标一致。这样可以得到更稳定的时序 rollout 和更连贯的动作决策。作者在 RoboCasa 和 LIBERO10 的多种操作任务上验证，结果显示该方法整体优于现有方法，尤其在长时程任务中提升更明显。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.06624&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.06624&quot;}
+summary={&quot;这篇工作提出 AgentLens，用于评估 coding agent 的完整交互轨迹，而不是只看任务是否最终通过。它把形式化验证、LLM 轨迹评审和成对比较结合起来，让每次运行都能得到可读的过程性解释，从而评估指令遵循、工具使用、自检、纠错和交互表现。作者将其作为开源基准发布，并用于分析模型行为、比较自家 agent 的不同版本，以及在 nightly 评测流水线中捕捉产品回归。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-09</title><link>https://themaoqiu.github.io/blog/papers-2026-07-09</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-09</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Vision as Unified Multimodal Generation&quot;}
