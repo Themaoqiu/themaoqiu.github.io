@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-10</title><link>https://themaoqiu.github.io/blog/papers-2026-07-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-10</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-11</title><link>https://themaoqiu.github.io/blog/papers-2026-07-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-11</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Why Can&apos;t I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2601.16211&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2601.16211&quot;}
+summary={&quot;这篇工作研究零样本组合动作识别中的对象驱动捷径问题，即模型往往依赖物体类别来猜测动词，而不是利用时序证据。作者提出 RCORE，包含组合共现先验正则化和时序顺序正则化两部分，分别用于抑制训练共现偏置并增强对动作时序的敏感性。实验在 Sth-com 和 EK100-com 上表明，该方法能够显著降低捷径相关指标，并提升对未见组合的泛化性能。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OpenCoF: Learning to Reason Through Video Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.08763&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.08763&quot;}
+summary={&quot;这篇工作提出 OpenCoF，用视频生成来承载推理过程，试图把推理从文本链式思考扩展到时序连续的 Chain-of-Frame 推理。作者构建了包含 11 类任务的 OpenCoF-17K 叙事/推理视频数据集，并基于 Wan2.2-I2V-A14B 微调得到 Wan-CoF。实验在 4 个视频推理基准上显示，Wan-CoF 相比基线取得了明显提升。进一步地，论文还引入视觉与文本推理 token 来分别建模低层视觉线索和高层语义先验，并通过性能对比与注意力分析验证这些中间状态设计对时空推理有帮助。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-10</title><link>https://themaoqiu.github.io/blog/papers-2026-07-10</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-10</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Automating the Design of Embodied Agent Architectures&quot;}
