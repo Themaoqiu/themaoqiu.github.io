@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-15</title><link>https://themaoqiu.github.io/blog/papers-2026-07-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-15</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-16</title><link>https://themaoqiu.github.io/blog/papers-2026-07-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-16</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.11111&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.11111&quot;}
+summary={&quot;这篇工作提出 ACQUIRE，用问答式知识获取来改进软件缺陷修复。它把修复前的仓库理解拆成两阶段：先由 Questioner 和 Answerer 通过自主探索生成带证据的结构化 QA 知识，再由 Resolver 基于这些知识生成补丁。这样做的核心是把隐性的知识缺口显式化，减少事实性错误并提升修复上下文质量。作者在 SWE-bench Verified 上验证了方法有效性，相比代表性预修复方法，Pass@1 最多提升 4.4 个百分点，同时增加的成本和时间较小。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Towards Autonomous and Auditable Medical Imaging Model Development&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.10522&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.10522&quot;}
+summary={&quot;这篇工作提出 AMID，用自治多智能体框架自动开发医学影像模型，并强调过程可审计。方法上，它先做 Data-Conditioned Method Planning，把任务级搜索空间细化成可执行、可并行的方法分支，再用 Verification-Guided Two-Stage Optimization 从广泛探索逐步转向选择性利用，同时严格检查验证协议、指标计算和预测产物。作者将其用于 20 个覆盖不同模态和预测类型的医学影像挑战任务。实验显示，AMID 优于评测的通用 MLE 系统，在若干任务上接近或达到强人工设计方案，说明医学影像建模可以被转化为高性能且可审计的 agentic 工作流。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-15</title><link>https://themaoqiu.github.io/blog/papers-2026-07-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-15</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory&quot;}
