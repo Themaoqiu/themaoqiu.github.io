@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-16</title><link>https://themaoqiu.github.io/blog/papers-2026-07-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-16</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
-&lt;h2&gt;3D LLM&lt;/h2&gt;
-&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
-&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2607.11111&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2607.11111&quot;}
-summary={&quot;这篇工作提出 ACQUIRE，用问答式知识获取来改进软件缺陷修复。它把修复前的仓库理解拆成两阶段：先由 Questioner 和 Answerer 通过自主探索生成带证据的结构化 QA 知识，再由 Resolver 基于这些知识生成补丁。这样做的核心是把隐性的知识缺口显式化，减少事实性错误并提升修复上下文质量。作者在 SWE-bench Verified 上验证了方法有效性，相比代表性预修复方法，Pass@1 最多提升 4.4 个百分点，同时增加的成本和时间较小。&quot;}
+title={&quot;Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.08317&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.08317&quot;}
+summary={&quot;Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\approx10\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.&quot;}
 /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Navigating the Mirage: A Dual-Path Agentic Framework for Robust Misleading Chart Question Answering&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2603.28583&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2603.28583&quot;}
+summary={&quot;这篇工作提出了 ChartCynics，用于应对带有误导性结构的图表问答。它采用双路径代理框架，将诊断式视觉路径和 OCR 驱动的数据路径分开处理，再由一个 Agentic Summarizer 统一推理与校验。训练上使用 Oracle-Informed SFT 进行推理蒸馏，并用 Deception-Aware GRPO 做对抗式对齐，从而增强对视觉陷阱的鲁棒性。作者在两个基准上取得了 74.43% 和 64.55% 的准确率，相比 Qwen3-VL-8B 基座模型提升约 29 个百分点，并超过了若干最强闭源模型。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.12463&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.12463&quot;}
+summary={&quot;Coding agents must integrate external tool returns into ongoing reasoning - a capability that standard left-to-right pretraining on code exposes only in its forward direction. We observe that the action-observation-continuation loop of a coding agent is structurally isomorphic to a function call site, where a caller binds arguments, a callee returns a value computed elsewhere, and downstream code consumes that value. This conditioning structure exists at internet scale in ordinary code. We exploit it through function-aware fill-in-the-middle (FIM) mid-training: a self-supervised objective that masks functions selected via program dependency graph analysis and a complexity-inferability double criterion. We mid-train Qwen2.5-Coder-Instruct (7B/14B) and Qwen3-8B on a 2.6B-token decontaminated corpus drawn from 968 GitHub repositories, then apply existing agentic post-training pipelines. Mid-training improves SWE-Bench-Verified by +2.8/+3.0 at 7B/14B and by +3.2 on Qwen3-8B; SWE-Bench-Lite gains are +3.7/+4.0/+5.4 on the same models. The improvement holds across two post-training pipelines (R2E-Gym, SWE-Smith) and on a non-Qwen2.5 base (Qwen3-8B with SWE-Lego). Beyond in-domain gains, mid-training also mitigates the capability erosion that agentic post-training otherwise inflicts on non-agent coding (e.g., LiveCodeBench) and non-coding tool-use benchmarks (tau-bench, BFCL): although the mid-training corpus contains Python code only, the function-call inductive bias survives post-training and yields consistent gains.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Towards Autonomous and Auditable Medical Imaging Model Development&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.10522&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.10522&quot;}
-summary={&quot;这篇工作提出 AMID，用自治多智能体框架自动开发医学影像模型，并强调过程可审计。方法上，它先做 Data-Conditioned Method Planning，把任务级搜索空间细化成可执行、可并行的方法分支，再用 Verification-Guided Two-Stage Optimization 从广泛探索逐步转向选择性利用，同时严格检查验证协议、指标计算和预测产物。作者将其用于 20 个覆盖不同模态和预测类型的医学影像挑战任务。实验显示，AMID 优于评测的通用 MLE 系统，在若干任务上接近或达到强人工设计方案，说明医学影像建模可以被转化为高性能且可审计的 agentic 工作流。&quot;}
-/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-15</title><link>https://themaoqiu.github.io/blog/papers-2026-07-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-15</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+summary={&quot;本文提出 AMID，一个面向医疗影像模型开发的自主多智能体框架，目标是在严格可验证的前提下自动完成建模、调试与优化。它先通过 Data-Conditioned Method Planning 将任务分析细化为可并行执行的方法路径，再用 Verification-Guided Two-Stage Optimization 在持续检查验证协议、指标计算和预测产物的基础上逐步筛选候选方案。作者在 20 个覆盖不同模态与预测类型的医疗影像挑战任务上进行了系统评测。结果表明，AMID 优于评测的通用 MLE 系统，并在若干任务上接近或达到强人类设计方案。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Principled Analysis of Deep Reinforcement Learning Evaluation and Design Paradigms&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.07769&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.07769&quot;}
+summary={&quot;本文对深度强化学习中的评测与设计范式做了系统分析，重点讨论了常见实验设置和结论推断中的理论问题。作者从 scaling laws 的角度出发，分析了性能、数据规模、模型容量与复杂度之间的关系，并指出渐近性能与不同数据区间下的排名并不呈单调一致。论文还通过大规模实验验证了这一点，显示在经典评测范式下，一些强化学习研究可能得出错误结论。整体上，作者给出了关于深度强化学习缩放、容量和复杂度的更原则性的分析框架。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-15</title><link>https://themaoqiu.github.io/blog/papers-2026-07-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-15</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory&quot;}
