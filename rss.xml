@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-16</title><link>https://themaoqiu.github.io/blog/papers-2026-07-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-16</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-17</title><link>https://themaoqiu.github.io/blog/papers-2026-07-17</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-17</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.12625&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.12625&quot;}
+summary={&quot;这篇论文提出 KnowAct-GUIClaw，用于构建具备自我演化记忆和技能库的个人 GUI 助手，目标是提升跨平台任务执行能力与长程任务成功率。方法上采用 Know-Route-Act-Reflect 框架，将历史交互经验、任务知识、可插拔 GUI 子代理和可扩展技能库结合起来，用于任务分解、工具调用和执行后的反思更新。作者在 Android、iOS、HarmonyOS 和 Windows 上进行了大量实验，结果显示该框架在效率、准确率和跨平台适应性上都优于现有方法。其中文件中提到的 Open-source Kimi-2.6 版本在 MobileWorld 长程基准上达到 64.1%，取得最佳成绩，并且记忆与技能机制还能迁移到不同底座模型上带来约 8.5% 的提升。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Self-Improvements in Modern Agentic Systems: A Survey&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.13104&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.13104&quot;}
+summary={&quot;这是一篇关于现代自改进智能体系统的综述，重点讨论智能体如何从经验中持续获得能力增益。文章提出了一个系统级框架，把智能体表示为基础模型与提示、记忆、工具和控制逻辑组成的运行栈，并将自改进形式化为对模型参数或脚手架组件的自驱动更新。作者按更新目标和驱动信号梳理了相关研究，并总结了应用场景与评测问题。实验部分不是单一基准实验，而是对现有方法证据和评价方式的系统归纳，并进一步指出了后续研究的开放问题。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-16</title><link>https://themaoqiu.github.io/blog/papers-2026-07-16</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-16</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models&quot;}
