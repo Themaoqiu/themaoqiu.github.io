@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-17</title><link>https://themaoqiu.github.io/blog/papers-2026-07-17</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-17</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-18</title><link>https://themaoqiu.github.io/blog/papers-2026-07-18</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-18</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;UniVR: Thinking in Visual Space for Unified Visual Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.12800&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.12800&quot;}
+summary={&quot;这篇论文提出 UniVR，探索仅通过纯视觉演示同时学习复杂推理、细粒度物理动力学和长时规划。作者设计了 VR-GRPO 强化学习范式，用全局奖励和步级奖励共同约束推理过程，从而在不依赖图文对或任务特定启发式的情况下维持逻辑一致性与物理一致性。为训练和评测，论文构建了 VR-X 大规模基准，覆盖长时程操作、空间谜题和物理推理等 16 个来源。实验显示 UniVR 在 VR-X 上最高提升 25%，并且其更强的视觉推理能力还能迁移提升多个多模态理解基准的表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.15257&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.15257&quot;}
+summary={&quot;这篇工作提出 SearchOS，一个面向开放域信息检索的多智能体协作框架，重点解决搜索过程里进展难跟踪、失败后容易重复循环的问题。方法上，它把搜索任务显式建模为带证据引用的关系表补全，并设计 SOCM，将前沿任务、证据图、覆盖图和失败记忆外显为共享状态；同时通过流水线式调度、搜索工具中间件和层级技能系统来提升利用率并避免重复失败。实验在 WideSearch 和 GISA 上都取得了所评估单/多智能体基线中的最佳表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.14952&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.14952&quot;}
+summary={&quot;这篇工作提出 LongStraw，一个面向百万级上下文 RL 后训练的执行栈，用于在固定 GPU 预算下扩展长上下文强化学习。它针对 GRPO 采用架构感知的执行策略，对共享 prompt 关闭 autograd，只保留后续 token 所需的模型状态，并把短响应分支逐个重放，从而显著压低训练图的峰值显存。实验在 H20 GPU 上把 Qwen3.6-27B 的分组评分和反向传播推进到 210 万 token 位置，并在更大的 stress test 中达到 446 万 token，验证了其执行容量。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.13399&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.13399&quot;}
+summary={&quot;这篇论文系统分析了 on-policy distillation（OPD）在大模型后训练中的作用、失效模式与约束手段。作者将 OPD 定位为一种探索催化器，核心价值是通过稠密的 token 级指导把学生模型引向正确推理路径，但不会提升能力上限。论文进一步揭示了两个主要问题：师生分布差异过大导致的 Student-Teacher Mismatch，以及 token 级目标引发的长度投机。为缓解这些问题，作者提出 advantage clipping 和 log-scale compression 等轻量约束来稳定指导信号。实验覆盖七个基准，结果表明这些约束能有效抑制长度投机，并稳定优于 OPD 变体和 RLVR 基线。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MultiRef-Compass: Towards Comprehensive Evaluation of Multi-Reference-to-Audio-Video Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.14189&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.14189&quot;}
+summary={&quot;这篇论文提出 MultiRef-Compass，用于评估多参考到音视频生成任务中的多参考绑定、主体保持与音画一致性。作者构建了 350 个样本的统一基准，覆盖多视角主体保持、多实体绑定以及人-物-场景组合等设置，并通过 14 个子指标组织成四个评测维度。评测协议结合自动指标与带复审增强的 MLLM-as-a-Judge 框架，使得对感知保真度和参考条件组合能力的分析更可解释、可审计。对 8 个代表性系统的实验显示，各维度仍有较大提升空间，尤其在复杂参考组合和音画协同方面表现不足。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;From Pixels to States: Rethinking Interactive World Models as Game Engines&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.14076&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.14076&quot;}
+summary={&quot;这篇论文从游戏引擎的视角重新审视交互式世界模型，讨论如何让生成式视频模型真正支持动作驱动、状态演化和长时程持久性。作者围绕玩家动作控制、游戏状态动力学、状态-观测持久性和实时交互生成四个维度梳理了现有方法，并分析了各类方案的优缺点。论文还提供了一个面向黑神话：悟空的数据引擎，收集了 90 多小时带有帧对齐动作、真实游戏状态和视觉观测的数据。作为综述与资源型工作，它给出了当前领域的能力边界和未来走向，并为状态感知的游戏世界建模提供了可复用数据基础。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-17</title><link>https://themaoqiu.github.io/blog/papers-2026-07-17</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-17</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
