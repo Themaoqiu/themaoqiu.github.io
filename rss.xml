@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-21</title><link>https://themaoqiu.github.io/blog/papers-2026-07-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-21</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-22</title><link>https://themaoqiu.github.io/blog/papers-2026-07-22</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-22</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.14183&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.14183&quot;}
+summary={&quot;这篇工作发布了 Open-AoE，一个面向具身学习的开放式第一人称操作数据集和工具链。数据集首发规模约 2000 小时，由 500 多名贡献者、400 多部手机在自然环境中采集，包含文本标注、基于 MANO 的手部姿态、相机轨迹和时间对齐的原子动作。作者还提供了从原始视频到结构化样本的处理流水线，覆盖动作分割、语义标注、手部重建和轨迹重建，并配套下游工具链支持可视化、跨具身重定向、数据转换和训练。整体上，这项工作降低了具身数据采集与复用门槛，为 VLA 策略、WAM 和世界模型训练提供了实用基础设施。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.07820&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.07820&quot;}
+summary={&quot;DeepSearch-World 面向可验证环境中的深度搜索智能体训练，重点解决工具使用智能体难以从自身经验中稳定进化的问题。它构建了一个确定性、可复现的搜索与读页环境，包含 42 万条多跳问答任务，并支持进度验证、 grounded reflection 和失败恢复等关键能力。基于该环境，DeepSearch-Evolve 通过轨迹生成、过滤、混合和再训练的自蒸馏流程不断提升模型能力。实验显示，DeepSearch-World-9B 在没有更强模型蒸馏的情况下即可取得有竞争力的成绩，在 BrowseComp、GAIA 和 HotpotQA 上分别达到 31.2%、61.5% 和 93.4%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SWE-Pruner Pro: The Coder LLM Already Knows What to Prune&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.18213&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.18213&quot;}
+summary={&quot;SWE-Pruner Pro 研究编码智能体在阅读工具输出时如何更高效地裁剪上下文，核心目标是减少无关 token 而尽量不损失任务性能。它不再依赖独立的代码分类器，而是直接利用智能体内部表征，通过一个轻量头为每一行输出预测保留或丢弃标签，并加入与工具输出长度相关的长度感知嵌入。作者在两个开源骨干和四个多轮基准上验证了方法有效性，最多可节省 39% 的提示和生成 token，同时保持任务质量。进一步地，在 MiMo-V2-Flash 上它还将 SWE-Bench Verified 的解决率提升 3.8%，并让长上下文 Oolong 准确率提升 2.2 个点。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Group Entropy-Controlled Policy Optimization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.16850&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.16850&quot;}
+summary={&quot;这篇工作提出 GEPO，用于解决 GRPO 在混合异质任务上因熵分布不同而带来的探索失衡和优势信号不可比问题。方法上，它利用同组样本估计组熵，并据此做熵条件化的非对称优势重整形：低熵组压低正优势以避免过度利用，高熵组保留负优势以维持探索，同时阈值由历史熵统计自适应确定。作者在两个基座模型、十三个覆盖数学、物理、科学、代码生成和指令跟随的基准上进行了系统实验。结果显示，GEPO 相比 GRPO 和近期熵控制方法都取得了更稳定的跨任务提升，并在训练过程中更好地保持了任务特定的探索水平。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-21</title><link>https://themaoqiu.github.io/blog/papers-2026-07-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-21</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
