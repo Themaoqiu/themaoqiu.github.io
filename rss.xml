@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-23</title><link>https://themaoqiu.github.io/blog/papers-2026-07-23</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-23</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2607.18754&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2607.18754&quot;}
-summary={&quot;这篇工作提出 AgentDebugX，一个面向 LLM Agents 的开源调试工具链，强调失败观测、归因和恢复的闭环流程。核心方法 DeepDebug 通过多轮根因诊断，结合全局轨迹理解、结构化检索和交叉质询，来定位真正导致失败的步骤，而不是只看报错表面。作者在 Who and When 基准上报告了更高的严格归因准确率，在 qwen3.5-9b 上达到 28.8% 的 exact agent-and-step accuracy。它还在 GAIA 上单次 rerun 修复了 73 个失败任务中的 13 个，把整体准确率从 55.8% 提升到 63.6%。&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2607.19322&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2607.19322&quot;}
-summary={&quot;这篇工作提出了用于评测开放式生成任务事实完整性的两级元评分量表框架，并据此构建了 Gamut 基准。它先用结构化的 meta-rubric 描述所需内容的组织方式、重要性和关系，再机械地编译成可由模型判分的扁平二值检查表，从而更系统地衡量“该答到的内容是否都答全了”。作者基于真实可穿戴图像构建了 1813 个问题，覆盖 10 个领域，并为每题配套经专家核验的证据型评分准则，同时还发布了文本版变体。实验评测了 14 个前沿与开源模型，结果显示该基准具有较强挑战性和区分度，最佳模型 Gemini 3.1 Pro 仅得到 58.7% 的得分。&quot;}
-/&gt;&lt;/p&gt;
 &lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Generative World Renderer at the Speed of Play&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.18703&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.18703&quot;}
+summary={&quot;这篇论文提出 AlayaRenderer-Flash，一个面向实时交互的生成式世界渲染器。它以物理引擎导出的结构化世界状态为输入，在不改变底层世界动力学的前提下合成 RGB 帧，从而支持可交互的可控生成。方法上，作者将原始渲染器改写为少步自回归流式模型，并引入轻量蒸馏 codec 来提升潜变量编码和帧重建效率。实验显示，模型将推理速度从 0.56 FPS 提升到 31.54 FPS，同时在内容保持、时间一致性、跨窗口稳定性和提示可控性上保留了教师模型的大部分能力。结合物理引擎后，系统可以实现 30 FPS 的可玩生成世界。&quot;}
+/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;AlayaWorld: Interactive Long-Horizon World Modeling -- Full Technical Report&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.18367&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.18367&quot;}
-summary={&quot;这篇工作提出了 AlayaWorld，用于交互式长时程视频世界建模，目标是从文本、图像或视频输入即时生成可交互、可持续演化的虚拟环境。方法上，它基于一个 15B 参数的视频扩散 Transformer，以短 latent chunk 的自回归方式生成，并结合持久 sink frame、压缩时序历史、几何对齐空间记忆和最近帧条件来维持长期一致性。为了缓解长程漂移，作者还引入了带污染历史和自回归残差的训练策略，并用离散自回归蒸馏把推理从约 30 个采样步降到每个 chunk 4 步。实验显示，该模型在 iWorld-Bench 上取得了长时程生成的最佳表现。&quot;}
+summary={&quot;这篇技术报告提出 AlayaWorld，用于交互式长时程世界建模，目标是在持续交互中维护环境状态并支持长跨度推演。方法上围绕多模态轨迹、长时序记忆和交互反馈来组织世界状态更新。论文以系统级实验和案例展示了该框架的可行性，并表明它在长时程建模与交互稳定性上具有优势。&quot;}
 /&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-22</title><link>https://themaoqiu.github.io/blog/papers-2026-07-22</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-22</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
