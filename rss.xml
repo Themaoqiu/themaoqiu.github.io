@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-28</title><link>https://themaoqiu.github.io/blog/papers-2026-07-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-28</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-29</title><link>https://themaoqiu.github.io/blog/papers-2026-07-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Data Pyramid for Embodied Manipulation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.24744&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24744&quot;}
+summary={&quot;这篇工作系统梳理了具身操作模型的数据生态，提出一个从真实机器人数据到通用视觉语言数据的“金字塔”框架。作者从可扩展性与机器人对齐的张力出发，将数据源分为真实机器人、UMI 风格、第一/第三视角、仿真以及通用视觉语言五类，并分析它们在质量、多样性、可复用性和物理保真度上的差异。论文进一步从数据配方角度回顾了近期具身基础模型，讨论不同数据如何影响感知、推理、规划、动作生成和世界预测能力。实验/分析部分主要是对现有方法和数据配方的系统比较，而不是提出单一模型指标提升，最后总结了触觉数据、失败恢复数据、跨 embodiment 对齐等六个开放问题。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.24280&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24280&quot;}
+summary={&quot;这篇工作提出 MAPD，用于把闭源教师模型的能力蒸馏到开源学生模型中，目标是缓解 agentic search 中监督稀疏和分布不匹配的问题。方法先由离线多智能体系统分解查询、检索证据、修复失败搜索，并将探索轨迹整理成结构化 JSON 协议，再把该协议作为中间表示提供给学生策略的特权分支，结合密集蒸馏信号与强化学习目标共同优化。作者认为这种协议化表示能减轻直接轨迹模仿带来的风格漂移和冗长问题。实验在 7 个问答基准上验证了方法有效性，Qwen3-1.7B 平均成功率达到 39.4%，Qwen3-4B 达到 44.4%，并且对不同闭源教师具有较好泛化性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.24720&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24720&quot;}
+summary={&quot;这篇论文研究了多轮、长视野规划能力是如何在基础模型代理中获得、塑形并整合的。作者构建了一个可控的多轮环境，把规划能力拆成预训练、后训练和多教师整合三个阶段系统分析，并用 CoT 状态转移建模来显式构造世界模型。实验表明，少量长视野数据比单纯原子技能更有助于组合泛化，而低质量轨迹会因为误差累积显著伤害性能。后训练阶段中，OPD 在低质量和长视野场景下比 GRPO 更稳定有效，多教师 on-policy distillation 还能通过对齐共享规划模式来实现跨环境泛化与持续学习。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-28</title><link>https://themaoqiu.github.io/blog/papers-2026-07-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-28</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D Agent&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
