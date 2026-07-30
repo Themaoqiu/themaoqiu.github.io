@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-29</title><link>https://themaoqiu.github.io/blog/papers-2026-07-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-30</title><link>https://themaoqiu.github.io/blog/papers-2026-07-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-30</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.24368&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24368&quot;}
+summary={&quot;Long-term memory systems store what a user says in an external store and retrieve it when a related query arrives. This interface rests on an assumption so natural that it is rarely stated: a memory that is needed will resemble the query that needs it. World knowledge breaks the assumption. A tree-nut allergy should change the answer to a macaron request through their almond-flour ingredient, yet the two texts share no cue a retriever can see. We call this failure mode the implicit-association blind spot and introduce InMind, a 125-task, expert-verified benchmark spanning ten life domains, with 113 tasks grounded in citable public sources. Its paired controls separate three explanations that existing evaluations conflate: the fact was never stored, the model lacks the bridging knowledge, or the fact was stored and never surfaced. The verdict is clean. With the decisive memory placed in context, the backbone answers 84.0 percent of indirect queries; when the same memory must be retrieved, six vector, graph, and agentic memory systems reach at most 14.4 percent, even though they recall the same facts on demand at up to 100 percent. An embedding with eight times the dimensionality raises answer-blind target recall for every system yet leaves the gap essentially intact. A minimal diagnostic probe that keeps memory visible before the query arrives recovers most of the gap, locating the failure in the query-conditioned interface itself and pointing to routing, deciding which facts must stay visible, as the open problem InMind is built to score.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;PerceptionBench: Evaluating Atomic Visual Perception in Multimodal Large Language Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.24957&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24957&quot;}
+summary={&quot;本文提出 PerceptionBench，用于评测多模态大语言模型的原子级视觉感知能力。作者先从 42 个现有基准中诊断模型早期错误，构建感知错误分类体系，再据此设计 3000 个经过验证的问题，每题只考察一个最基础的感知能力。该基准刻意让难点来自感知而非推理或知识，从而更准确地区分模型在视觉感知层面的边界。实验覆盖 16 个前沿 MLLM，结果显示原子感知整体仍未解决，没有模型达到 60% 准确率，且感知相关幻觉是最弱能力之一。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-29</title><link>https://themaoqiu.github.io/blog/papers-2026-07-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
@@ -6,20 +24,20 @@
 title={&quot;Data Pyramid for Embodied Manipulation&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.24744&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24744&quot;}
-summary={&quot;这篇工作系统梳理了具身操作模型的数据生态，提出一个从真实机器人数据到通用视觉语言数据的“金字塔”框架。作者从可扩展性与机器人对齐的张力出发，将数据源分为真实机器人、UMI 风格、第一/第三视角、仿真以及通用视觉语言五类，并分析它们在质量、多样性、可复用性和物理保真度上的差异。论文进一步从数据配方角度回顾了近期具身基础模型，讨论不同数据如何影响感知、推理、规划、动作生成和世界预测能力。实验/分析部分主要是对现有方法和数据配方的系统比较，而不是提出单一模型指标提升，最后总结了触觉数据、失败恢复数据、跨 embodiment 对齐等六个开放问题。&quot;}
+summary={&quot;这篇论文把具身操作数据系统性地整理为一个“五层金字塔”，覆盖真实机器人数据、UMI 风格数据、第一/第三视角数据、仿真数据以及通用视觉语言数据。作者围绕可扩展性与机器人对齐之间的权衡，分析了各类数据在质量、多样性、可复用性和物理保真度上的差异，并进一步梳理近期具身基础模型的数据配方。论文还从数据混合方式出发，讨论数据组成如何影响感知、推理、规划、动作生成和世界预测等能力。实验部分主要是对现有模型与数据策略的系统分析，而不是提出单一模型指标刷新。&quot;}
 /&gt;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.24280&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24280&quot;}
-summary={&quot;这篇工作提出 MAPD，用于把闭源教师模型的能力蒸馏到开源学生模型中，目标是缓解 agentic search 中监督稀疏和分布不匹配的问题。方法先由离线多智能体系统分解查询、检索证据、修复失败搜索，并将探索轨迹整理成结构化 JSON 协议，再把该协议作为中间表示提供给学生策略的特权分支，结合密集蒸馏信号与强化学习目标共同优化。作者认为这种协议化表示能减轻直接轨迹模仿带来的风格漂移和冗长问题。实验在 7 个问答基准上验证了方法有效性，Qwen3-1.7B 平均成功率达到 39.4%，Qwen3-4B 达到 44.4%，并且对不同闭源教师具有较好泛化性。&quot;}
+summary={&quot;这篇工作提出 Multi-Agent Protocol Distillation，用于把闭源教师模型的能力迁移到开源学生模型，重点面向 agentic search 场景。作者先用离线多智能体系统拆解查询、检索证据、修复失败搜索，并将探索轨迹整理成标准化 JSON 协议，再把该协议作为中间表示做蒸馏与强化学习联合训练。该设计绕开了无法直接匹配 logits 和原始轨迹风格漂移的问题，同时为学生策略提供更密集的监督信号。实验表明，MAPD 在 7 个问答基准上持续优于竞争性的蒸馏和 RL 方法，在 Qwen3-1.7B 与 Qwen3-4B 上分别达到 39.4% 和 44.4% 的平均成功率。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.24720&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24720&quot;}
-summary={&quot;这篇论文研究了多轮、长视野规划能力是如何在基础模型代理中获得、塑形并整合的。作者构建了一个可控的多轮环境，把规划能力拆成预训练、后训练和多教师整合三个阶段系统分析，并用 CoT 状态转移建模来显式构造世界模型。实验表明，少量长视野数据比单纯原子技能更有助于组合泛化，而低质量轨迹会因为误差累积显著伤害性能。后训练阶段中，OPD 在低质量和长视野场景下比 GRPO 更稳定有效，多教师 on-policy distillation 还能通过对齐共享规划模式来实现跨环境泛化与持续学习。&quot;}
+summary={&quot;这篇论文研究了多轮长程规划能力从预训练到后训练的形成机制，并提出了一个可控的多轮环境来系统分析 agent 的规划学习过程。作者分别考察了预训练阶段的数据格式、分布和质量，以及后训练阶段的 GRPO、OPD 和多教师在策略蒸馏中的作用。实验表明，显式的世界模型式 CoT 状态转移建模能显著提升长程泛化，而低质量或自相矛盾轨迹会在长链路上放大误差并明显伤害性能。进一步结果显示，OPD 在低质量和长程设置下比 GRPO 更稳定，多教师在线蒸馏能够通过共享规划模式提升跨环境泛化与持续学习能力。&quot;}
 /&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-28</title><link>https://themaoqiu.github.io/blog/papers-2026-07-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-28</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D Agent&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
