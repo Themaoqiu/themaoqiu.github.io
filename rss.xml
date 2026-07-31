@@ -1,22 +1,106 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-30</title><link>https://themaoqiu.github.io/blog/papers-2026-07-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-30</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
-&lt;h2&gt;Thinking with Images&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-07-31</title><link>https://themaoqiu.github.io/blog/papers-2026-07-31</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-31</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HumanCLAW: Can Vision-Language Models Act Through a Body?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.27180&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.27180&quot;}
+summary={&quot;这篇工作提出 HumanCLAW，用于评估视觉语言模型是否能够通过具身身体进行行动决策。它将高层决策与底层执行解耦，让模型每一步只发出原子技能指令，再映射到短时连续全身动作，从而把平衡和运动控制等执行噪声从评测中分离出去。基于该框架，作者构建了 HumanCLAW-Bench，包含 41 个室内场景中的 1,218 个长程、第一视角的找路-交互任务。实验测试 9 个最新 VLM，结果显示没有模型能真正解决该基准，最好成绩只有 16.8%，主要失败点在于具身自我感知不足。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CAST: Game Solvers as Turn-Level Teachers for LLM Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.25308&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.25308&quot;}
+summary={&quot;这篇工作提出 CAST，用游戏求解器的状态价值变化来为长时序 LLM Agent 提供更密集的 turn-level 信号，从而缓解仅依赖最终奖励的稀疏信用分配问题。方法上，它把求解器价值差转化为 solver advantage，并将其注入 RLVR 训练；在软最优求解器假设下，这一目标还可等价为仅需标量价值的 on-policy distillation。作者在 Sokoban、Minesweeper 和 Rush Hour 上验证了该方法，CAST 在所有游戏、域内和更难设置下都优于已训练基线。它在 ALFWorld 和 WebShop 上也取得了最高的零样本平均性能，说明该思路能稳定提升 Agent 的决策学习效果。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillRise: Agentic Reinforcement Learning for Cross-Task Skill Evolution&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.26784&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.26784&quot;}
+summary={&quot;这篇论文提出 SkillRise，用统一的强化学习框架来学习跨任务可迁移技能。它把相关任务组织成逐步变难的序列，并让同一个策略交替执行任务解答与技能文档整理，把生成的技能直接传给后续任务。训练时采用分离的信用分配：当前任务结果监督求解，折扣后的后续结果监督技能整理。作者在 ALFWorld、WebShop 和 ScienceWorld 上实验，SkillRise 的 Pass@1 在对比方法中最强，较最强基线提升 2.3 到 8.5 个百分点，同时还能降低多阶段技能流水线的运行开销。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MindForge: Teaching Small Language Models Whole-Life-Cycle Software Engineering via Source-Free Program Synthesis&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.27146&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.27146&quot;}
+summary={&quot;这篇工作提出 MindForge，把开源命令行程序自动转换为只暴露可执行文件和文档的无源码训练环境，用于从零构建软件程序的训练。它基于这些环境收集由 GLM-5.2 作为教师的程序合成轨迹，再用这些轨迹微调 Qwen3.6-27B。实验显示，微调后模型在 ProgramBench 上的平均通过率从 37.98% 提升到 49.51%，接近更大规模的前沿模型。作者还在七个未见软件工程基准上报告了稳定收益，包括仓库生成、翻译、缺陷修复、特性实现和跨语言问题解决。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SpecFirst: Behavioral Specification Elicitation as a First-Class Step in Agent-Based Program Synthesis from Scratch&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.27167&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.27167&quot;}
+summary={&quot;这篇论文提出 SpecFirst，强调在从零生成程序时应先做行为规格提取，再进入代码合成。它把流程拆成两阶段：先由 spec agent 结合文档和二进制交互探测，整理出结构化规格；再由代码合成 agent 依据该规格实现程序。这样可以先消解文档歧义，并在后续编码阶段保持稳定的行为参照。作者在 ProgramBench 的 200 个样本、四个模型上评估，结果显示 SpecFirst 相比单循环基线可将测试通过率提升 6.9% 到 21.3%，同时显著提高二进制探索覆盖率。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Can AI agents conduct open-ended AI research? Early evidence from two case studies&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.27191&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.27191&quot;}
+summary={&quot;这篇工作提出了“shadow evaluations”来评估 AI 代理是否真的能做开放式 AI 研究。方法上，代理接手一篇未发表高质量论文的核心研究问题，由原作者对输出进行评分，并在两篇 NeurIPS 2026 未发表投稿上测试了前沿代理，给了它们 6 天和大量算力。结果显示，代理可以独立完成全部工程实现，但无法在研究问题上取得实质性进展，最终两篇论文都被作者明确拒稿。作者还总结了五类常见失败模式，包括对发表门槛判断失准、面对设计缺陷缺乏创造性、遇到死胡同时回退能力差、资源意识不足和指令漂移。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.27155&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.27155&quot;}
+summary={&quot;这篇工作提出了 OmegaUse-OfficeVal，用于评测大模型代理在长程办公套件任务中的表现，并把经济成本纳入评价。数据集包含 100 个由从业者提出并经过隐私保护改写的办公任务，每个任务都标注了人力工时和任务价格代理，从而可以直接比较人工成本与模型推理成本。方法上，作者构建了基于细粒度评分标准的代码验证器，保证评测更稳定、可复现。实验结果显示，尽管所测前沿模型在速度和成本上显著优于人工，但任务产出质量仍未达到人类水平。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-30</title><link>https://themaoqiu.github.io/blog/papers-2026-07-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-30</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Mage-VL: An Efficient Codec-Native Streaming Multimodal Foundation Model&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.24904&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24904&quot;}
+summary={&quot;Standard vision-language models (VLMs) suffer from Moravec&apos;s paradox: they excel at complex offline visual reasoning but struggle with simple streaming perception tasks and process them inefficiently. We present Mage-VL, an efficient codec-native streaming foundation model for real-time multimodal understanding and interaction. At its core, our custom tokenizer, Mage-ViT, replaces uniform frame sampling by selectively encoding dynamic, entropy-rich regions using motion vectors and residual energy across sparse anchor (I) and predicted (P) frames. Operating at a 16 x 16 patch level, this reduces visual token consumption by over 75% while preserving spatiotemporal context. Trained from scratch on approximately 560M unlabeled images and 100M unlabeled video frames, Mage-ViT matches or outperforms flagship encoders trained on billions of image-text pairs. We establish AI4AI data pipelines encompassing prompt-code joint optimization for multimodal captioning and AI-driven performance diagnosis to guide training recipes. Furthermore, through a bio-inspired dual-system architecture - a lightweight System 1 event gate and a causal System 2 decoder - Mage-VL enables proactive streaming perception. Extensive evaluations show that Mage-VL-4B matches Qwen3-VL-4B on static tasks while achieving strong gains in video understanding and 2D/3D spatial reasoning, with up to a 3.5x wall-clock inference speedup, and comprehensively surpasses the 15B Phi-4-reasoning-vision baseline. Beyond model artifacts, we deliver seven key empirical findings covering pre-training data efficiency, variable-resolution scaling, codec system acceleration, VideoQA SFT redundancy, motion-spatial synergy, AI4AI data pipelines, and Zero-Vision SFT for multimodal RL.&quot;}
+/&gt;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.25565&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.25565&quot;}
+summary={&quot;Recovering an editable design file from a raster image is a common and costly bottleneck in modern design workflows, yet remains challenging since editability depends on recovering multi-modal attributes, such as typography, vector geometry, colors, grouping, and layer ordering. We present ReDesign, an agentic framework that grows an editable layer hierarchy by selecting and composing specialized tools across modalities. To keep this long decision process reliable despite imperfect tool outputs, we introduce graceful verification at each expansion, which provides local accept, prune, or retry feedback that prevents error accumulation and avoids large scale reruns. To evaluate editability at scale, we introduce the Figma Edit Replay Benchmark, consisting of 909 raw Figma files and 14,796 controlled edit instructions that replay edits on reconstructed outputs. Across this benchmark and standard reconstruction metrics, ReDesign achieves strong visual fidelity while delivering the highest editability across layout, color, and text edits, outperforming layered decomposition baselines and serial tool use pipelines.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CodeNib: A Multi-View Data System for Serving Repository Context to Coding Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.25431&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.25431&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.24368&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24368&quot;}
-summary={&quot;Long-term memory systems store what a user says in an external store and retrieve it when a related query arrives. This interface rests on an assumption so natural that it is rarely stated: a memory that is needed will resemble the query that needs it. World knowledge breaks the assumption. A tree-nut allergy should change the answer to a macaron request through their almond-flour ingredient, yet the two texts share no cue a retriever can see. We call this failure mode the implicit-association blind spot and introduce InMind, a 125-task, expert-verified benchmark spanning ten life domains, with 113 tasks grounded in citable public sources. Its paired controls separate three explanations that existing evaluations conflate: the fact was never stored, the model lacks the bridging knowledge, or the fact was stored and never surfaced. The verdict is clean. With the decisive memory placed in context, the backbone answers 84.0 percent of indirect queries; when the same memory must be retrieved, six vector, graph, and agentic memory systems reach at most 14.4 percent, even though they recall the same facts on demand at up to 100 percent. An embedding with eight times the dimensionality raises answer-blind target recall for every system yet leaves the gap essentially intact. A minimal diagnostic probe that keeps memory visible before the query arrives recovers most of the gap, locating the failure in the query-conditioned interface itself and pointing to routing, deciding which facts must stay visible, as the open problem InMind is built to score.&quot;}
+summary={&quot;No summary available.&quot;}
 /&gt;&lt;/p&gt;
-&lt;h2&gt;Embodied Agent&lt;/h2&gt;
-&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
-&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Novel Claim or Déjà Vu? Rethinking &quot;Contamination-Free&apos;&apos; Dynamic Evaluation for Multimodal Automated Fact-Checking&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.23514&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.23514&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Shieldstral&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.25857&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.25857&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Wonder: Video World Model Done Better&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.26037&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.26037&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Visual prompt engineering for video models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2607.25537&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2607.25537&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;PerceptionBench: Evaluating Atomic Visual Perception in Multimodal Large Language Models&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2607.24957&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2607.24957&quot;}
-summary={&quot;本文提出 PerceptionBench，用于评测多模态大语言模型的原子级视觉感知能力。作者先从 42 个现有基准中诊断模型早期错误，构建感知错误分类体系，再据此设计 3000 个经过验证的问题，每题只考察一个最基础的感知能力。该基准刻意让难点来自感知而非推理或知识，从而更准确地区分模型在视觉感知层面的边界。实验覆盖 16 个前沿 MLLM，结果显示原子感知整体仍未解决，没有模型达到 60% 准确率，且感知相关幻觉是最弱能力之一。&quot;}
-/&gt;&lt;/p&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-29</title><link>https://themaoqiu.github.io/blog/papers-2026-07-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-07-29</title><link>https://themaoqiu.github.io/blog/papers-2026-07-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-07-29</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
