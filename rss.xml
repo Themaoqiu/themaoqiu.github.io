@@ -4,33 +4,26 @@
 title={&quot;Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2608.03979&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2608.03979&quot;}
-summary={&quot;We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual search, and (2) parametric knowledge leakage, where models rely on internal memory rather than genuine tool-augmented execution. To address these challenges, we propose Video-DR, featuring a decoupled perception-exploration pipeline with stage-wise tool unlocking that compels exhaustive cross-frame visual grounding prior to web retrieval. Our framework adopts a two-stage training recipe: supervised fine-tuning followed by Group Relative Policy Optimization (GRPO), enabling autonomous exploration that breaks the imitation-learning ceiling. Furthermore, we curate Video-DR-Bench, a human-AI collaborative benchmark comprising 200 complex, multi-hop VQA instances. Empirical results demonstrate that our Video-DeepResearch-35B-A3B establishes a new state-of-the-art of 64.0% average accuracy, surpassing proprietary Claude-4.5-Sonnet (59.0%) by 5.0 points and significantly outperforming GPT-5 (52.5%) and Gemini 2.5 Pro (57.5%). The 30B-A3B variant achieves 59.3%, competitive with Claude-4.5-Sonnet and demonstrating the effectiveness of our training paradigm even at compact scale. Code: https://github.com/Osilly/Vision-DeepResearch.&quot;}
+summary={&quot;No summary available.&quot;}
 /&gt;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;PCSD: Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.01837&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.01837&quot;}
+summary={&quot;这篇工作提出 PCSD，用于解决 agent 强化学习中稀疏奖励下的自蒸馏训练问题。方法上，它从教师偏好信号的局部持续性出发，利用自适应窗口、指数衰减聚合和趋势感知调制来生成连续的 token 级蒸馏权重，并与 GRPO 联合优化。实验显示，在不依赖推理时技能的条件下，PCSD 在 ALFWorld 上取得所有基线中的最佳 Overall 结果，相比 GRPO 提升 15.6 和 13.3 分、相比 SDAR 提升 6.2 和 5.5 分，同时在 WebShop 上保持竞争力，并在未见过的 ALFWorld 划分上比 GRPO 高 15.8 分。&quot;}
+/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2608.04003&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2608.04003&quot;}
-summary={&quot;本文提出 PAST-Bench，用于系统评估个人智能体是否真的能把过往经验转化为后续性能提升。作者设计了按顺序执行的新会话任务序列，在相同条件下对比“保留经验”和“关闭经验”的表现，从而分离记忆、流程复用、信息检索和更新等能力。基准覆盖 26 个场景和 204 个 episode，并同时检查收益是否沿着预期的保存、检索和更新路径产生。实验在 7 个基础模型和 4 个 agent 框架上进行，结果显示提升确实存在但很不均衡，即使表面收益相同，不同系统在证据路径上也可能差异很大。基于这些发现，作者还提出 Hermes+，通过 5 个针对性改动提升经验复用效果，在需要替换过时状态的任务上改善最明显。&quot;}
-/&gt;&lt;/p&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.02602&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.02602&quot;}
-summary={&quot;Language remains an outlier in generative modeling: while images, video, and audio are increasingly modeled in continuous latent spaces, text generation still relies predominantly on discrete tokens. Existing continuous language models either inherit embedding spaces not designed for joint generation and decoding, or compress autoencoded latents to ease diffusion, sacrificing token-level fidelity. Instead of simplifying the representation to suit the generative model, we preserve a high-capacity, decodable text latent and design the diffusion model to learn its distribution directly. We introduce AURORA-LM, a continuous-latent diffusion language model that separates the construction of a decodable text representation from the modeling of its distribution. A Query-based Encoder-Decoder organizes text into a high-capacity, prefix-aligned latent sequence, and a Block-causal Diffusion Transformer learns its distribution through flow matching, generating blocks left to right while denoising positions within each block in parallel. Because such a latent is harder for diffusion to model, AURORA-LM restricts only the noisy-input pathway while retaining the full clean-latent prediction target, accommodating full-width latents without reducing decoder-facing capacity. We further calibrate the noise-level distribution to the latent width, and introduce self-trajectory consistency to bridge independently sampled training noise and iterative denoising at inference. AURORA-LM achieves the strongest performance among evaluated continuous and diffusion-based language models on OpenWebText free generation and XSum summarization. Scaling to 1B parameters with about 1500 EFLOPs of total compute yields further gains, surpassing a larger publicly released latent-diffusion language model under a matched evaluation protocol. All experiments are conducted on Ascend NPUs.&quot;}
+summary={&quot;这篇工作提出 PAST-Bench，用于系统评估个人智能体是否真的能把累积经验转化为后续性能提升。作者设计了 26 个场景、204 个 episode，并通过对照“开启/关闭”保留经验来隔离记忆、程序复用、信息收集和更新等能力路径，同时用 Hermes+ 在智能体循环中加入五项针对性改进。实验结果表明，不同基础模型和框架都能从保留经验中获益，但增益强弱和是否符合预期路径差异很大；Hermes+ 进一步提高了平均增益，并增强了对过时状态替换类任务的表现。&quot;}
 /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.02711&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.02711&quot;}
-summary={&quot;Recent advances in image generation have demonstrated the potential of unified multimodal models that integrate understanding, generation, and editing. However, unified 3D modeling remains constrained by scarce multimodal data, particularly the lack of large-scale and geometrically consistent editing data. To address this limitation, we propose Hunyuan3D-Buffalo 1.0, a unified framework supporting 3D understanding, text-to-3D generation, instruction-guided 3D editing, and text-grounded part generation within a single architecture. To enable scalable training, we construct an 87M-scale 3D multimodal corpus, comprising 25M understanding samples, 50M text-to-3D pairs, and 12M editing pairs generated using Nano3D-v2. Architecturally, the framework combines Hunyuan3D-VLM for semantic, structural, and spatial understanding with Hunyuan3D DiT for high-fidelity 3D synthesis. The VLM provides multimodal semantic conditions for generation, while editing and part generation additionally condition the diffusion process on the source object representation to preserve its overall structure and unedited regions. Extensive experiments show that Hunyuan3D-Buffalo 1.0 achieves state-of-the-art or leading performance on text-to-3D generation and 3D editing benchmarks, while exhibiting strong understanding and part-generation capabilities. Our analysis further shows that both generation and understanding improve editing, demonstrating the effectiveness of unified 3D multimodal training. Project Page: https://tencent-hunyuan.github.io/Hunyuan3D-Buffalo1.0/&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;Quo Vadis, World Modeling?&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.02713&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.02713&quot;}
-summary={&quot;这篇论文重新定义了世界模型在 agent 中的作用，提出面向 agent 的交互式世界代理（Agent-Centric Interactive World Proxies）框架。作者认为，比起只预测物理状态转移，更有价值的是提供 agent 可直接使用的信息转移，例如执行结果、检索到的经验或技能、以及验证信号。论文系统梳理了六类世界代理形式：动力学、空间、执行、记忆/经验、技能，以及奖励/验证，并进一步从推理时引导、训练时优化、以及代理与世界代理协同进化三个层次讨论其作用。文章主要贡献是概念框架与设计空间整理，没有以单一模型为主的实证对比，而是通过系统分析给出面向持续改进 agent 的路线图。&quot;}
+title={&quot;CAPEval: A Decoupled Caption Evaluation across Understanding and Generation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.02589&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.02589&quot;}
+summary={&quot;这篇论文提出了 CAPEval，一个将图像描述评测拆分为 Coverage 和 Precision 的基准，用来分别衡量描述对事实内容的覆盖程度和陈述是否忠实于图像。作者构建了人写参考描述和人工核验的原子级检查项，从而把原来混在一起的单一分数拆解成两个更可解释的维度。实验中，他们评测了 10 个 captioner，并进一步在四类模型家族上做了受控端到端实验，确保只比较 caption 来源带来的影响。结果表明，Coverage 与下游理解任务相关性更强，而 Precision 更能预测生成任务表现。该工作为选择和优化 captioner 提供了更细粒度、面向任务的评测依据。&quot;}
 /&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-05</title><link>https://themaoqiu.github.io/blog/papers-2026-08-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-05</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
