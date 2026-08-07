@@ -1,44 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-07</title><link>https://themaoqiu.github.io/blog/papers-2026-08-07</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-07</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.05013&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.05013&quot;}
-summary={&quot;LLM agents are increasingly applied to open-ended everyday requests that span work, study, and life. These tasks are long-horizon, cross-environment, and multimodal, forcing the agent to preserve goals and constraints across many steps while navigating heterogeneous tools and attachments. While prior work has addressed individual failure modes such as goals drift, states loss, and context overflow, whether a single harness can manage them jointly and remain effective across backends has received less study. We present OneDayAgent, a long-horizon harness for autonomous agents. OneDayAgent turns an open-ended request into a managed execution process that decomposes tasks into bounded subtasks, maintains execution memory under context pressure, and verifies and repairs the final deliverable. We evaluate OneDayAgent on AgentIF-OneDay across 104 tasks. With the GLM-5.2 backend, OneDayAgent sets a new state of the art with an overall score of 0.821. The same harness runs across five backend LLMs from three model families, indicating the harness generalizes across backends without tuning, even as different models induce distinct execution styles under the same workflow.&quot;}
-/&gt;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2608.05102&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2608.05102&quot;}
-summary={&quot;Long-horizon search agents must make multiple sequential actions (steps) to search, retrieve, verify, and integrate evidence to reach a final answer. However, existing methods for training these agents typically treat all steps within a trajectory uniformly during both supervised fine-tuning (SFT) and reinforcement learning (RL), failing to distinguish useful actions from erroneous or redundant ones. In this paper, we propose Answer-Backtracked Credit Assignment (ABC), a fine-grained credit assignment framework for training long-horizon search agents by converting sparse trajectory-level outcomes into dense step-level supervision that rewards useful actions (even in failed trajectories) while suppressing erroneous or redundant actions. Specifically, given a potentially obscure query and its corresponding ground-truth answer, ABC first performs Answer-Backtracked Clue Recovery, which traces back from the answer to recover intermediate clues required to solve the question. It then applies Clue-Anchored Step Scoring to evaluate each search step against these clues, converting sparse binary outcome supervision into dense step-level rewards. Based on these rewards, we develop ABC-SFT, which reweights the loss of each turn, and ABC-GRPO, which uses the step-level scores as rewards in GRPO. Building on this framework, we train ABSeeker based on Qwen3.5-4B with only 8.5k examples. ABSeeker achieves 37.3% on BrowseComp and 39.1% on BrowseComp-ZH. With context management, the scores further improve to 55.3% and 52.9%, respectively, significantly outperforming same-scale (4B) agents and even matching the performance of larger ones (approximately 30B). These results demonstrate the effectiveness of answer-backtracked step-level credit assignment for training long-horizon search agents.&quot;}
+summary={&quot;这篇工作提出 ABSeeker，目标是通过答案回溯式信用分配训练长链路搜索代理。方法先从正确答案反向恢复中间线索，再用这些线索对每一步搜索进行评分，把稀疏的轨迹级结果转成稠密的步级监督。基于此，作者构造了 ABC-SFT 和 ABC-GRPO，分别用于重加权微调和带步级奖励的强化学习。实验中，ABSeeker 仅用 8.5k 样本就在 BrowseComp 和 BrowseComp-ZH 上分别达到 37.3% 和 39.1%，加入上下文管理后进一步提升到 55.3% 和 52.9%，接近甚至达到更大规模代理的表现。&quot;}
 /&gt;&lt;/p&gt;
-&lt;h2&gt;Embodied Agent&lt;/h2&gt;
-&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.03764&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.03764&quot;}
+summary={&quot;这篇工作提出 GDPevo，用于评估智能体在真实企业任务上的自我进化能力。它把企业工作流拆成原子业务规则，再通过规则混合把训练任务与留出测试任务关联起来，从而让测试阶段的提升能够归因于训练经验。作者还构建了覆盖 CRM、ERP、金融、医疗、法律和数据流程的自动化数据生成管线，V1 包含 120 个任务，V2 可扩展到 240 个任务。实验在四类智能体与四种监督设置上显示，自我进化能将留出集准确率最多提升 16.44 个百分点，但最优结果仍远低于 91.6% 的 oracle 上限，说明当前智能体的自我进化能力仍未充分发挥。&quot;}
+/&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning&quot;}
 arxivUrl={&quot;https://arxiv.org/abs/2608.05139&quot;}
 hjfyUrl={&quot;https://hjfy.top/arxiv/2608.05139&quot;}
-summary={&quot;这篇工作研究长程推理中跨技能切换的问题，提出用 Skill Entropy 来度量从一种技能切换到另一种技能的难度。作者进一步构建了 Skill^2-Bench，覆盖 558 个技能和 9 个可验证或开放式领域，并按技能熵给任务分级。对 8 个前沿模型和 4 个开源模型的评测显示，技能切换难度越高，准确率越低，说明现有模型在跨技能推理上存在明显短板。为训练侧提供信号后，作者提出 Skill-Entropy RL，让模型同时预测答案和所用技能，并用正确性与技能熵对齐共同构成奖励。实验表明，该方法在 Qwen3-4B-Instruct 和 Qwen3-1.7B 上将 Skill^2-Bench 分数分别从 34.4% 提升到 68.4% 和从 14.6% 提升到 40.1%。&quot;}
+summary={&quot;这篇工作关注长程推理中不同技能之间的切换问题，提出用 Skill Entropy 来刻画跨技能任务的切换难度。作者进一步构建了 Skill^2-Bench，覆盖 9 个领域、558 种技能，并为任务标注技能熵与难度等级，用于系统评测模型的跨技能推理能力。实验表明，随着技能熵升高，8 个前沿模型和 4 个开源模型的准确率都会下降，验证了技能切换瓶颈。为缓解这一问题，作者提出 Skill-Entropy RL，让模型在每一步不仅预测答案，还预测所用技能，并结合正确性与技能序列对齐奖励进行训练。该方法在 Qwen3-4B-Instruct 和 Qwen3-1.7B 上分别将 Skill^2-Bench 分数从 34.4% 提升到 68.4% 和从 14.6% 提升到 40.1%，明显优于基线。&quot;}
 /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.03632&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.03632&quot;}
-summary={&quot;这篇工作指出 On-Policy Distillation 中的教师 token 监督可能被与输入无关的语言先验、格式习惯或模板化推理所误导。作者把这类“优化上有影响但证据上不 grounded”的监督称为 spurious signals，并提出 SA-OPD 来识别和过滤它们。方法先用轻量级输入 groundedness 代理判断 token 级蒸馏信号是否真正依赖输入，再只保留同时满足低 groundedness 和极端蒸馏偏差的 token，从而削弱高影响的错误更新。实验在 LLM 和 VLM 场景中都显示，SA-OPD 稳定优于 Vanilla OPD 和其他选择式方法。结果说明，输入 groundedness 是选择蒸馏监督时的重要维度。&quot;}
-/&gt;&lt;/p&gt;
-&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.04570&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.04570&quot;}
-summary={&quot;Personalized LLMs with persistent memory are increasingly deployed, yet the faithfulness of their user models remains unexamined. We study over-inference (OI): the phenomenon where LLMs fabricate user attributes beyond what evidence supports. We introduce MirageBench, comprising 150 personas balanced across stereotypical, counter-stereotypical, and neutral profiles, 6 personalization tasks spanning an ``imagination gradient&apos;&apos;, a four-way faithfulness taxonomy operationalized by an independent judge (validated against a blind human annotator on 400 claims: Cohen&apos;s kappa = 0.863 four-class, kappa = 0.900 binary), and a leaderboard of 12 models across 7 families on 143616 judged claims. We find that over-inference is pervasive: every one of the 12 models over-infers 35%--49% of its claims (cross-model mean 41.6%; claim-weighted 41.8%), with no model in this evaluation escaping it. Most strikingly, we surface a Self-Monitoring Inversion: at the model-selection level, models&apos; self-assessed OI is negatively rank-correlated with their judge-measured OI (rho = -0.60, p = 0.044; exploratory, wide bootstrap CI [-0.90, +0.06], n = 12). The models that report the least over-inference tend to be flagged as fabricating the most, so self-reported confidence is a misleading signal for comparing models, even though within a single model self-audit still ranks that model&apos;s own claims moderately well (AUROC 0.58--0.83). We further show that OI is task-dependent (27%--59%) and that, in a multi-turn pilot, inferred attributes accumulate approximately linearly with little revision. MirageBench positions external verification, rather than model self-report, as a more reliable foundation for trustworthy personalization.&quot;}
-/&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#x3C;PaperCard
-title={&quot;HelloWorld: Enabling Socially Interactive Characters in Video World Models&quot;}
-arxivUrl={&quot;https://arxiv.org/abs/2608.05070&quot;}
-hjfyUrl={&quot;https://hjfy.top/arxiv/2608.05070&quot;}
-summary={&quot;这篇工作提出 HelloWorld，用于在视频世界模型中实现与画面内角色的社交互动。方法上，它通过自蒸馏流程微调视频生成模型，利用模型自身合成同时包含社交动作和相机运动的数据，以学习相机位姿条件而不牺牲互动质量。推理时又引入一个无需训练的时序定位模块，在按钮触发后通过调节 DiT 的交叉注意力掩码，让互动文本只作用于触发窗口内的帧，从而把角色响应精确限定在需要的时间段。作者还构建了 HelloWorldBench，包含 400 个样本和三类社交互动指标及三类常规指标。实验表明，HelloWorld 在互动质量上优于多种基线，同时保持了较好的画面美感和相机姿态跟随能力。&quot;}
-/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-06</title><link>https://themaoqiu.github.io/blog/papers-2026-08-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-06</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-06</title><link>https://themaoqiu.github.io/blog/papers-2026-08-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-06</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent&quot;}
