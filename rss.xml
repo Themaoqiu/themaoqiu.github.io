@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-11</title><link>https://themaoqiu.github.io/blog/papers-2026-08-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-11</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-12</title><link>https://themaoqiu.github.io/blog/papers-2026-08-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-12</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.09802&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.09802&quot;}
+summary={&quot;这篇论文提出 SWE-Bench ProMax，一个面向大规模、多语言代码重构的基准，用来评测软件工程智能体在长程、跨文件修改任务上的能力。作者从真实提交中精选了 170 个实例，覆盖 Python、Java、TypeScript、Go、C、C++ 和 Rust，并通过多阶段人工整理重写题面、审查测试，尽量去除过窄或过宽的评测缺陷。基准任务平均涉及 11.4 个被修改文件和 261.6 行代码，明显高于现有基准的规模。实验显示，在两种 agent scaffold 下最强模型的解决率也只有 41.2%，说明该基准仍然具有较强挑战性。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.08311&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.08311&quot;}
+summary={&quot;这篇工作提出 Ouroboros，一个会通过审查后的提交不断演化自身核心实现的自开发编码智能体。方法上，它让工具、提示词、上下文组装和核心代码都能在“递归自由演化”和“经验驱动核心演化”两种模式下持续改进，并把下一轮演化也纳入工作流。作者还讨论了长周期 live deployment 中的人机交互如何暴露缺陷并推动结构性修改，以及自我修改系统必须面对的安全与治理问题。实验结果显示，Opus 5 版本在 Terminal-Bench 2.1 上达到 86.74%，在 OSWorld-Verified 上达到 90.69%，CL-Bench 五次 rollout 的归一化奖励为 0.2301，均为已报告的强结果。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.07169&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.07169&quot;}
+summary={&quot;本文提出 Agent Memory Distillation（AMD），用层次化记忆把大模型教师代理的成功轨迹知识迁移给小模型代理，而且不需要额外训练。它构造了三类记忆：Workflow 记忆描述任务级策略，Subtask 记忆提供中粒度行为示例，Function 记忆总结函数调用约定和常见错误。前两类记忆在任务开始时主动注入，Function 记忆则在工具调用出错时按需检索，以提升工具使用稳定性。作者在 AppWorld、BFCL V3 和 ToolSandbox 上用 4B 到 8B 的学生模型验证，平均分别提升 27.2、11.2 和 3.4 个百分点，并且整体优于已有记忆式基线。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-11</title><link>https://themaoqiu.github.io/blog/papers-2026-08-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-11</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family&quot;}
