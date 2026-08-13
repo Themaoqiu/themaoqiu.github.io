@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-12</title><link>https://themaoqiu.github.io/blog/papers-2026-08-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-12</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-13</title><link>https://themaoqiu.github.io/blog/papers-2026-08-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-13</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;VibeLifeBench: Can Your Life Agent Be Proactive and Persistent in a Living World?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.10875&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.10875&quot;}
+summary={&quot;这篇论文提出 VibeLifeBench，用来评测生活类 LLM 智能体在长时间、动态变化环境中的主动性和持续性。基准包含 200 个跨十个日常领域的长时任务，任务在由 22 个模拟服务组成的世界中按多周时间线推进，且许多变化是静默发生的，以考察智能体是否会主动重新检查环境。评测采用细粒度加权规则，分别衡量最终状态、行动时效性以及是否遵守隐含约束。作者用 7 个前沿模型做了测试，结果整体分数都较低，说明当前智能体离真实生活助理还有明显差距。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Not Worth Another Token: Marginal Value Estimation for Efficient Deep Research Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.08389&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.08389&quot;}
+summary={&quot;这篇工作研究深度研究智能体在长链路检索与综合过程中，如何估计上下文中新增证据的边际价值以减少无效 token 消耗。作者系统比较了预检索、检索后和综合前三个阶段的剪枝策略，包括轻量启发式方法和学习式价值模型。实验显示，剪枝位置比具体打分规则更关键，越早剪枝带来的端到端节省越大。轻量启发式最多可减少 73% token 使用且质量损失很小，学习式方法在部分权衡点上也保持竞争力，但不存在在质量、效率和忠实性上全面最优的单一方案。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.11079&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.11079&quot;}
+summary={&quot;这篇工作提出 SkillZip，用于对自我进化智能体不断积累的技能进行无评测压缩。它把技能表示为带类型约束的结构化契约与残差，基于最小描述长度目标寻找“最短且忠实”的结构解释，并通过覆盖触发条件、工作流边、工具需求和输出字段来保证语义完整。方法支持一次性抽取和持续的 Zip-on-Write 更新，不需要回放任务或依赖压缩时的评测集。实验表明，SkillZip 在压缩效果、泛化能力和成本开销上都优于基线。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-12</title><link>https://themaoqiu.github.io/blog/papers-2026-08-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-12</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring&quot;}
