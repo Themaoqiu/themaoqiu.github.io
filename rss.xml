@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-13</title><link>https://themaoqiu.github.io/blog/papers-2026-08-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-13</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-14</title><link>https://themaoqiu.github.io/blog/papers-2026-08-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-14</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.11924&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.11924&quot;}
+summary={&quot;这篇文章提出 Spark-to-Paper，将研究论文生成视为一个可组合的端到端技能。方法上，它强调把论文生成拆解并组织成可复用的技能模块，以支持从构思到成稿的自动化流程。由于当前给出的摘要为空，论文的具体实验设置无法从这里完全确认，但标题明确指向研究写作/生成的 agent 能力建模与技能组合。整体上它更偏向智能体能力构建与评测，因此纳入代理训练与评测方向。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.12307&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.12307&quot;}
+summary={&quot;这篇论文研究测试时的强到弱能力迁移，提出由强模型为弱模型构造推理 harness，从而在不更新参数的情况下提升弱模型表现。作者在四个 Theory-of-Mind 基准上让 builder model 用 5% 验证集迭代优化 harness，再在完整测试集上评估。方法的核心是把不稳定的推理外包给确定性代码、任务路由和严格的答案格式约束，而不是让目标模型单纯增加推理长度。实验结果显示，目标模型平均性能几乎翻倍，从 0.49 提升到 0.91，且较弱模型收益最大。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.12036&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.12036&quot;}
+summary={&quot;这篇工作提出 Mechanist，一个把 AI 作为“科学仪器”来自动发现智能机制的 agentic 系统。它构建了面向可解释性的知识图谱，整合约 13000 篇论文和覆盖 26 个领域的 4300 万篇论文数据库，并整理了 32 种机制分析、因果干预和验证方法。系统不仅能生成更有价值的机制假设，还能更可靠地执行实验，相比 Claude Code 和现有 AI-scientist 系统表现更强。论文进一步展示了它从发现模型行为、解释世界知识表征，到提出可干预机制理论并改进模型性能的完整流程。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillZip: Contract-Preserving Graph Compression for Scalable Agent Skill Libraries&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.05604&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.05604&quot;}
+summary={&quot;这篇论文提出 SkillZip，用于在受限上下文预算下压缩和复用智能体技能库，同时保持可执行性与契约约束。作者把技能压缩从纯文本层面推进到带合同信息的过程图层面，使用 contract-preserving compression、可逆宏和依赖闭包来保留边界签名、验证器可达性以及源级展开能力。ReZip 进一步利用执行证据更新新技能并修正有风险的宏。实验表明，SkillZip 在技术类和具身智能基准上相较最强基线最高提升 12.2 分，压缩率达到 3.46 倍，同时依赖保留率和验证器可达性分别达到 99.2% 和 98.7%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.08160&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.08160&quot;}
+summary={&quot;这篇论文把交互叙事中的长期一致性问题形式化为 Narrative Commitment Preservation，并提出 NCP-Bench 作为评测基准。基准包含 100 个由电影梗概构造的叙事环境，每个环境都带有结构化的叙事规范、承诺和初始事实，可在多轮交互中自动检查模型是否违背设定。方法上，它用对抗式用户干预来测试 LLM 叙事代理的长程约束保持能力。实验显示，当前强模型虽然语言流畅，但在长回合下仍频繁出现事实冲突，最佳模型在 20 轮后存活率也只有 42%，且不同模型的冲突率仍然很高。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.11216&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.11216&quot;}
+summary={&quot;这篇论文提出 AutoWorldModel-Bench，用来评测自动化研究代理在世界模型方向上的闭环改进能力。基准提供统一的结构化状态表示和八个游戏环境，让编码代理在固定算力预算下自主改进世界模型 starter，从而将 perception 与 dynamics 建模解耦。方法上，它考察代理是否能提出新的目标、表示、 rollout 流程或架构改动，而不只是调参。实验在 64 次会话中显示，Codex-5.4 和 Claude Opus 4.6 都能在大多数会话中带来改进，且赢得胜利的编辑多为非平凡的研究型修改。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.11878&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.11878&quot;}
+summary={&quot;这篇论文提出 ToolHazard，一个用于构造对抗性环境的可扩展框架，用来评测基于工具的 LLM 智能体在间接提示注入下的安全性。方法上，它由环境模拟器、攻击者智能体和用户模拟器组成，可以自动生成可执行的、有状态的环境，发现可注入位置并构造任务相关载荷。作者进一步基于该框架构建了 ToolHazard-Bench，用于在复杂工作流和多样环境攻击下测试智能体。实验表明，现有智能体存在明显漏洞，且注入时机与位置会显著影响攻击效果。利用 ToolHazard 生成的对齐数据还能提升 ToolHazard-Bench 和 AgentDojo 上的安全性，同时基本保持原有良性任务能力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Learning How the World Evolves: Extrapolative Video World Models via Latent Dynamics Reasoning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.09926&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.09926&quot;}
+summary={&quot;这篇论文提出 Latent Dynamics Reasoning（LDR），用于构建能够外推物理规律的视频世界模型。方法上，LDR 在结构化潜变量空间中显式做动力学积分，将低阶动力学数值积分，并只回归驱动展开的三阶及更高阶残差，从而提升长时预测的外推能力。作者在 PhyWorld 的五个受控物理任务上进行了评测，重点考察分布外场景。实验显示，LDR 的分布内与分布外误差差距比视频扩散基线小 20 倍以上，同时参数量少 26 倍、推理速度快 143 倍。它还展示了更强的泛化能力，例如只见过红球左到右运动，也能预测蓝色方块右到左运动。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-13</title><link>https://themaoqiu.github.io/blog/papers-2026-08-13</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-13</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;VibeLifeBench: Can Your Life Agent Be Proactive and Persistent in a Living World?&quot;}
