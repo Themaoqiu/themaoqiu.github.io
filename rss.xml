@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-18</title><link>https://themaoqiu.github.io/blog/papers-2026-08-18</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-18</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-19</title><link>https://themaoqiu.github.io/blog/papers-2026-08-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-19</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;3D Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;HarnessEval-W: Agentifying the Evaluation of Visual Worlds&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.16859&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.16859&quot;}
+summary={&quot;这篇论文提出 HarnessEval-W，用代理化的方法来评测视觉世界中的模型与系统。作者将原本偏静态的视觉评测流程改造成可交互的 agent 评测框架，使系统能够在环境反馈下完成多步判断与操作。方法上重点是把评测流程工具化、任务化，并让代理在视觉世界中进行可复现的交互执行。实验表明，这种方式能更全面暴露视觉世界任务中的能力差异，也比传统静态指标更适合评估代理行为。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MOSS-VL Technical Report&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.15045&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.15045&quot;}
+summary={&quot;这篇工作提出了 MOSS-VL，一个面向实时交互的开源视觉语言模型家族，核心目标是在生成回答的同时持续感知新输入。方法上，它用门控跨注意力让语言解码器只通过受控通路接收视觉信息，并通过合成的交互式数据监督模型学习何时发言、何时保持沉默以及何时修正回答，同时采用分阶段课程把实时相关训练集中到最后一阶段。实验显示，离线版本在相近规模下具有竞争力，并在时序推理视频数据集上表现领先。在线流式评测中，MOSS-VL-Realtime 在四个基准里有三个拿到最佳平均成绩，在强调主动行为的子集上明显优于基线。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ClawGym II: Exploring Black-Box RL on Agent Harness&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.16798&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.16798&quot;}
+summary={&quot;这篇论文提出了一个用于复杂 agent harness 的黑盒强化学习框架，旨在稳定、可扩展地优化通用智能体。方法上，它构建了沙箱化执行基础设施来隔离任务环境与 harness，并在模型边界放置代理服务以捕获调用；随后把多轮轨迹重建为前缀树结构，并在该树上改造 PPO 和 GRPO 进行优化，同时保持训练与推理一致性。作者还引入了 mix-harness training，使单一模型可以联合适配不同 harness。实验中，使用 Qwen3-30A3B 在 ClawGym-Bench 上通过 OpenClaw 和 Claude Code 分别提升 Pass@1 9.98 和 14.81 个百分点，且在 200 到 400 步优化中保持稳定，并在 JobBench 和 OfficeQA 等更难任务上也带来一致收益。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Agentic Transaction: Towards ACID-Compliant Agent Systems&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.13900&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.13900&quot;}
+summary={&quot;这篇论文提出了“agentic transaction”概念，并给出一个 ACID-compliant 的 agent 系统框架，用事务化思想来提升长链路智能体的可靠性。方法上，作者将传统 ACID 重新解释为语义原子性、一致性、隔离性和持久性，并据此构建一个数据智能体：它通过事务化的探索-执行-验证循环、事务式技能库、基于置信度分歧的验证、语义依赖感知的隔离以及事务感知的状态管理来保证执行质量。实验部分在常用基准上验证了该框架，相比当前最强智能体系统取得了 10.6% 的提升。结果说明，将数据库事务原则迁移到 agent 执行层能够为可靠、可扩展的智能体系统提供系统化基础。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-18</title><link>https://themaoqiu.github.io/blog/papers-2026-08-18</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-18</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
