@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-19</title><link>https://themaoqiu.github.io/blog/papers-2026-08-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-19</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-20</title><link>https://themaoqiu.github.io/blog/papers-2026-08-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-20</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Agent Lightning v1.0: Towards Harnessed Agentic RL&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.17528&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.17528&quot;}
+summary={&quot;这篇工作提出 Agent Lightning v1.0，用于支撑 harnessed agentic RL，也就是让部署时的 agent harness 直接参与后训练。作者把任意代理通过 LLM endpoint proxy 接入 RL 训练，并专门处理重分词、样本合并、优势估计、loss 归一化和后端调度等工程与算法问题。框架代码量约 3500 行，强调可复现和可迁移到不同的 agent harness。实验覆盖指令遵循、搜索和代码代理；在仅用 6K 训练样本和较少算力下，Qwen3.5-9B 在 SWE-bench Verified 上从 41.8% 提升到 56.4%，绝对提升 14.6 个百分点。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-19</title><link>https://themaoqiu.github.io/blog/papers-2026-08-19</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-19</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;3D Agent&lt;/h2&gt;
