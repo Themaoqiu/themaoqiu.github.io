@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-20</title><link>https://themaoqiu.github.io/blog/papers-2026-08-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-20</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-21</title><link>https://themaoqiu.github.io/blog/papers-2026-08-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-21</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.17253&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.17253&quot;}
+summary={&quot;这篇论文研究多智能体强化学习中，异质且多样化的 cohort 如何促成无监督推理能力的涌现。作者从群体构成和交互学习的角度分析 reasoning emergence，而不是依赖显式标注推理数据。工作重点在于证明通过多智能体协作与对抗式学习，推理能力可以在训练过程中自然出现，因此更适合放在 agent 训练与评估方向。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SPADE: Self-Play in Adaptive Synthetic Executable Environments&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.19197&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.19197&quot;}
+summary={&quot;这篇工作提出 SPADE，一个通过自博弈持续生成训练环境的强化学习框架，用于提升语言代理的自我改进能力。其核心做法是让同一个 LLM 同时扮演环境设计器和推理代理，前者用可执行代码构造带有状态转移、奖励和验证逻辑的长程环境，后者在其中学习行动。作者还用“有无特权提示”之间的回报差距来估计后悔值，并据此驱动环境设计器生成更贴近模型能力边界的任务。实验表明，关键设计包括从大规模预训练语料中检索文档来约束环境设计，以及为环境设计器提供累积记忆。扩展到 30B 参数后，SPADE 在八个保留的数学、科学、代码与推理基准上平均优于最强固定环境基线 5.3 分，在 BFCL-v4 多轮工具调用上提升 5.7 分，在 ACEBench-Agent 上提升 13.9 分。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Looped Language Models Improve Compositional Tool Calling&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.18171&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.18171&quot;}
+summary={&quot;这篇工作研究了循环式语言模型在组合式工具调用中的作用，重点考察其在多步 API 交互中的规划、依赖维护与状态管理能力。作者比较了原生和改造后的 looped language models，并在 API-Bank、BFCL 和 NESTful 上进行评测，同时控制监督微调配方和推理时递归深度。实验结果表明，递归计算通常能提升组合型、依赖感知型的工具使用能力，而对单次 API 调用的收益较小且更依赖模型规模。作者还发现，随着递归深度增加，多步工具调用准确率通常提升，但自适应推理能在性能和计算量之间取得更好的折中。整体结论是，looped language models 是面向可靠 agentic 工具使用的一条有前景的架构路线。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Decision-Metric Alignment in Latent World Models: Diagnostics and Action-Conditioned Objectives for MPC Planning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.18746&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.18746&quot;}
+summary={&quot;这篇论文研究潜在世界模型中的决策度量对齐问题，指出仅有良好的任务变量解码并不意味着基于潜在距离的 MPC 能正确排序动作序列。作者提出了 Plan-Real Spearman 和 CEM-stage Spearman 两个诊断指标，用来衡量潜在空间与真实任务进度在随机规划和 CEM 搜索过程中的秩相关一致性。理论分析进一步分解了影响对齐的关键因素，包括编码器扭曲、终止回滚误差和候选动作间隔。基于这些观察，作者提出 DA-LeWM，在 LeWM 上加入逆动力学和示范条件目标-动作头以改善几何结构。实验显示，DA-LeWM 在所有实验中都比 LeWM 收敛更快、在线成功率更高，而探针分数保持相近，说明动作条件化目标能有效改善用于欧氏代价 MPC 的潜在空间。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-20</title><link>https://themaoqiu.github.io/blog/papers-2026-08-20</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-20</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
