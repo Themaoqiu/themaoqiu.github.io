@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-21</title><link>https://themaoqiu.github.io/blog/papers-2026-08-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-21</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-22</title><link>https://themaoqiu.github.io/blog/papers-2026-08-22</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-22</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.18580&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.18580&quot;}
+summary={&quot;这篇工作提出 FACET，用于合成可执行的终端任务，并同时解决源意图保留与跨工件一致性问题。方法上，它先把相关 agent 技能重构为信息密集的场景，再构建并修复执行环境，最后在共享的容器状态上生成指令、参考解答和验证器，并通过执行式校验与定向修复减少工件不一致。作者强调这种“环境落地”的共享状态能让任务、解答和验证器更对齐。实验表明，FACET 生成的复杂终端任务能提供密集的可执行监督，利用这些成功轨迹进行微调后，在 Terminal-Bench 2.1 上能稳定提升不同规模模型的表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.20202&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.20202&quot;}
+summary={&quot;这篇工作提出 MemTrapBench，用来评测 LLM 在使用记忆时是否会陷入认知陷阱，而不只是考察记忆能否被正确检索。作者把失败模式归纳为两类：Reasoning Fixation 和 Belief Distortion，并据此系统测试了两类模型与五种代表性记忆框架。实验显示该基准很难，所有评测的记忆策略都不如不使用记忆的设定，最强方法也会带来超过 10% 的性能下降。为缓解这一问题，论文提出 AdaptiveMem 作为推理时方法，在标准记忆基准上保持或提升性能的同时减轻认知陷阱。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.13120&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.13120&quot;}
+summary={&quot;这篇工作提出 SkillEvo，用多轮交互反馈来驱动 agent skill 的自我演化，解决只靠单轮问答反馈导致改进停滞的问题。方法上，它把多轮用户模拟改造成持续产生进化梯度的反馈器，并加入独立的治理层，对事实退化和结构膨胀进行修复与约束。作者在 6 类云服务、9 个生产级技能和 98 个技能参考文件上进行评测，结果显示 SkillEvo 比自反式演化提升 23.0 分，比单轮 QA 驱动的演化提升 15.4 分。实验还表明，多轮反馈能持续暴露更深层缺陷，从而推动更稳定的技能迭代。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-21</title><link>https://themaoqiu.github.io/blog/papers-2026-08-21</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-21</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
