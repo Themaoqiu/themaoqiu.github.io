@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-25</title><link>https://themaoqiu.github.io/blog/papers-2026-08-25</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-25</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 25 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-27</title><link>https://themaoqiu.github.io/blog/papers-2026-08-27</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-27</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;From Seeing to Acting: Smart Glasses as First-Person Intelligence Platforms&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.24877&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.24877&quot;}
+summary={&quot;这篇论文系统梳理了智能眼镜作为第一人称智能平台的发展，强调其需要在受限硬件下持续完成感知、状态、交互到行动的闭环。方法上，作者提出统一框架来刻画第一人称数据流、硬件能力轴、基础能力层级，以及从采集到受控行动再到具身耦合的 L0-L5 体系，并进一步给出部署框架、声明条件评估协议和证据等级体系。论文主要贡献是综述与框架化整理，而非提出单一模型。文中还横向连接了九类应用场景、对应数据集与系统，并指出当前研究在长期验证、可控性和可审计性方面仍存在明显空白。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.23041&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.23041&quot;}
+summary={&quot;本文提出 AutoSaddler，用离线学习方式自动优化 LLM agent 的 harness。它结合失败轨迹诊断、把 harness 当作代码进行结构化补丁生成，以及基于验证的更新选择，从而把手工调参式的 harness 设计转化为可迭代优化流程。作者在 GAIA2、SWE-Bench Pro 和 Terminal-Bench 2.0 上验证了方法有效性，相比各自基线 harness 分别提升 9.0、9.6 和 10.0 个百分点。消融实验表明，深度调试、定向修改和泛化感知选择是性能提升的关键来源。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.23181&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.23181&quot;}
+summary={&quot;本文提出 CyberFactory，一个把真实漏洞转化为可执行、可验证任务实例的开源框架，用来训练网络安全代理模型 Aegis。该框架连接数据构造、轨迹合成和模型训练，覆盖 PoC 生成、漏洞修补与 CyberQA，并通过可复用的漏洞分析技能生成 agentic 监督数据。实验中，Aegis 在 CyberGym 上以一小时预算达到 52.4% Pass@1，比 Qwen 3.5 基座提升 22.8 个百分点，并优于评测中的通用底座模型。结果说明，来自真实漏洞的实例化训练数据能够有效提升开放权重模型的安全能力。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.24876&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.24876&quot;}
+summary={&quot;该工作提出 Recuris，用递归的 Experiential-Working Memory 框架来解决长时程 agent harness 中历史过长、状态被稀释和技能调用错位的问题。方法上，Working Memory 负责跟踪当前进度并从 Experiential Memory 中选择技能，执行过程再被转化为结构化证据，用来定位失败来源。之后固定的 Meta-Agent 会基于这些证据，对 Skill Memory 做带验证门控的局部更新，形成一个受约束的递归记忆进化闭环。在 4 个长时程基准和 10 个模型上，Recuris 在 37 个已完成的模型-基准组合里有 35 个带来提升，并在 tau-bench、SkillFlow 等任务上取得显著增益，最长任务上的优势可扩大到 32.2 分，常见失败模式最多减少 80%。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;On-policy Distillation with Verifiable Reward&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.24696&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.24696&quot;}
+summary={&quot;该工作提出 OPDVR，把 on-policy distillation 和可验证奖励结合起来，目标是在不增加额外超参数的前提下同时获得密集 token 级监督和任务级正确性信号。方法上，它先把 sampled-token OPD 的隐式奖励按轨迹正确性重写，再用 ReLU gating 让正确轨迹得到非负奖励、错误轨迹得到非正奖励。这样一来，采样式 OPD 被改造成可直接接入任意策略梯度算法的 RLVR 形式。在 6 个推理基准上，OPDVR 持续优于标准 OPD，并且在实验中证明了它比简单的加权组合或启发式切换更稳定、更有效。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Best Practice Critic Optimization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.23566&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.23566&quot;}
+summary={&quot;该工作提出 Best-Practice Critic Optimization（BPCO），目的是稳定且高效地训练 LLM 的 critic，用单次采样替代多样本 group 方法。方法上，它组合了 DPPO、有界价值预测、Monte Carlo 价值目标、未归一化策略优势和长度自适应 GAE，并允许 critic 在训练时使用参考答案或 rubric 等策略不可见的特权信息。作者通过控制实验逐项验证这些设计选择的作用，说明不稳定主要来自 critic 训练配方而不只是算法框架本身。在 1.5B 到 30B-A3B 的模型和数学推理任务上，BPCO 持续改进强 critic baseline，并在每个 prompt 只采样 1 个响应时达到或超过 group-based baseline，同时也提升了 rubric 奖励学习效果。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Meta$^n$: Recursive Self-Improvement through Emergent Depth&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.24735&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.24735&quot;}
+summary={&quot;这篇工作提出 Meta^n，用一个固定的元操作 Ω 递归作用于不断增长的输入，从而把自我改进从“改答案”推进到“改过程”。方法上，它保持元操作本身不变，通过读取下层求解轨迹与生成代码来逐层构建更高层的推理与工具辅助，并用进化式档案搜索不同层级链路。实验显示，在两个不同骨干模型上，Meta^n 在 8 个基准族上都超过了先前的自改进智能体。作者还报告它在 ARC-AGI-2 上取得了唯一高于零的分数，说明递归深度对困难任务确有帮助。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-25</title><link>https://themaoqiu.github.io/blog/papers-2026-08-25</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-25</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 25 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
 &lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
