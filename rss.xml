@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-27</title><link>https://themaoqiu.github.io/blog/papers-2026-08-27</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-27</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-08-28</title><link>https://themaoqiu.github.io/blog/papers-2026-08-28</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-28</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.25593&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.25593&quot;}
+summary={&quot;这篇工作提出 JIT-Agent，一个可训练的 harness intelligence 模型，用来为任意现成 LLM 按任务即时生成自适应的 agent harness。方法上，作者把 harness 形式化为由记忆管理、规划策略、动作协议和工具/技能编排组成的可组合工件，并训练模型在执行过程中进行定制、修复和自我演化。实验表明，借助 JIT-Agent，DeepSeek-V4-Flash 在 DeepSearchQA 和 OdysseyBench 上分别超过 GPT-5.6 9.1 分和 4.3 分，GLM-5.2 最高提升 20.2 分。控制实验还显示，JIT-Agent 生成的 harness 在多种模型族上都能稳定增益，并与成熟 agent runtime 相当。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;D$^3$-MOPD: Adaptive Dynamic Domain ScheDuling for Efficient Multi-Teacher Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.24987&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.24987&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Is Next-Chunk Reasoning RL Really Better than SFT? Revisiting Training Strategies under no-CoT Data&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.23256&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.23256&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Open-MOPD: Diagnosing and Fixing Capability Imbalance in Multi-Teacher On-Policy Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.19098&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.19098&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Video-IFBench: Evaluating Instruction Following of Multimodal LLMs in Video Understanding Scenarios&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.25529&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.25529&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Code World Model: Coding Agent as World Brain&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.25927&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.25927&quot;}
+summary={&quot;本文提出 Code World Model，把代码代理作为“世界大脑”，将世界演化和视觉生成解耦，以支持可持续、开放式的世界建模。方法上，它让语言模型生成可执行代码来维护世界状态与规则一致的演化，再把状态编译成 proxy 表示和 proxy video 送入视频模型生成高保真观测，同时还构建了来自游戏和真实视频的对齐 proxy-observation 数据。作者进一步说明这种分层设计能让模型既保留逻辑一致性，又保持丰富的视觉细节和动态。实验表明，在 paired gameplay data 上微调后，MiniMax-H3 能遵循代理中的时空约束，在简单交互世界中持续演化并保持高质量视觉效果。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-08-27</title><link>https://themaoqiu.github.io/blog/papers-2026-08-27</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-08-27</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;From Seeing to Acting: Smart Glasses as First-Person Intelligence Platforms&quot;}
