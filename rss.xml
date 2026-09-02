@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-01</title><link>https://themaoqiu.github.io/blog/papers-2026-09-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-01</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-02</title><link>https://themaoqiu.github.io/blog/papers-2026-09-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-02</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.30935&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.30935&quot;}
+summary={&quot;LightNav-0 提出一个紧凑的通用具身导航模型，把预训练视觉语言模型里的空间推理能力直接用于机器人控制。它用双通道 pointing token 表达与任务、场景和机体无关的空间意图，并结合残差向量量化动作 tokenizer、时间感知视觉历史压缩、ER 中训练、监督微调和强化学习，把指令跟随、开放词汇目标导航和视觉跟踪统一到一个框架里。作者用覆盖 2K+ 场景、4K+ 小时的具身导航数据进行训练，LightNav-ER 在 8 个具身推理基准上取得最高完整集平均分。LightNav-0 在 10 个公开仿真导航设置上达到单目 SOTA，并在真实机器人实验中展示了跨机体、跨场景以及静态/动态目标的零样本泛化。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Super Library Agent: Joint Generation and Maintenance of Multiple Applications Beyond the Single Codebase&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.29310&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.29310&quot;}
+summary={&quot;这篇工作提出 Super Library Agent 问题，研究 LLM 编码代理在连续生成并维护一组相关应用时，如何把跨应用的共享逻辑抽取到一个可复用的 Super Library 中，从而减少重复代码和结构退化。作者提出候选引导式抽取、预抽取代码库整合，以及结合抽取轨迹和调用图的上下文感知迁移，以提高共享组件抽取率和依赖迁移的稳定性。在 WebGen-Bench 和 PaperBench 上，方法在保持功能正确的同时显著降低冗余、token 占用、代码行数和 MDL，并优于零样本基线与朴素库构建方案。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-01</title><link>https://themaoqiu.github.io/blog/papers-2026-09-01</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-01</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D/Space Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
