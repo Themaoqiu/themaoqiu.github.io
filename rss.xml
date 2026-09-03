@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-02</title><link>https://themaoqiu.github.io/blog/papers-2026-09-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-02</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-03</title><link>https://themaoqiu.github.io/blog/papers-2026-09-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-03</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Multimodal Agent&lt;/h2&gt;
+&lt;h2&gt;3D Agent&lt;/h2&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.00188&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.00188&quot;}
+summary={&quot;本文提出 ZimaBlue，用大规模视频预训练学习可泛化的 World Action Model，并将其用于机器人操控。方法上采用三阶段课程：先在大规模人类和机器人第一视角视频上做因果式具身视频预训练，再用统一动作表示把视觉动力学与机器人轨迹对齐，最后针对目标机器人进行专项适配。为满足实时控制，作者还设计了 Slow-Fast 双系统架构，让高容量慢分支学习时空表征、轻量快分支实现 30 Hz 动作预测。真实机器人零样本实验显示，从仅用目标机器人数据扩展到超过 12 万小时具身视频后，成功率由 36.1% 提升到 77.8%，并在多个基准尤其是未见任务上取得更强表现。&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-02</title><link>https://themaoqiu.github.io/blog/papers-2026-09-02</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-02</guid><description>吾能观之数千而面色如故</description><pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
 title={&quot;LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation&quot;}
