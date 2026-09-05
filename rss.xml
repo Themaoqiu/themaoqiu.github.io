@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-03</title><link>https://themaoqiu.github.io/blog/papers-2026-09-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-03</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-05</title><link>https://themaoqiu.github.io/blog/papers-2026-09-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-05</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
+&lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Beyond Retrieval: Progressive Latent Memory Evolution for Streaming Video Understanding&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.04131&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.04131&quot;}
+summary={&quot;论文提出 LatentStream，用于流式视频理解，在严格因果约束和有限记忆下，把历史视觉证据从外部检索推进为检索并内化的潜在记忆。方法上，它设计了查询无关的层级流式记忆压缩、分组 latent memory 的层级演化机制，以及基于置信度的潜在记忆优化，以更紧凑的固定长度记忆持续支撑推理。作者在多个在线和离线视频基准上做了广泛实验。结果表明，该方法取得了新的 state-of-the-art。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.26730&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.26730&quot;}
+summary={&quot;本文研究自治 LLM 后训练中的经验复用问题，指出历史更新证据在模型继续训练后可能失效，直接复用会带来算力浪费甚至引入有害更新。作者提出 BCIT（Boundary-Calibrated Intervention Transfer），在权重更新前为经验绑定来源上下文、检查适用条件、显式拒绝硬冲突候选，并在必要时通过受限训练试验获取当前状态证据。实验覆盖一个 4B 模型在 finance reasoning、text-to-SQL 和 function calling 等任务上的持续适配，显示不同上下文下历史更新的目标和保留效应差异显著。与对比方法相比，BCIT 能授权更少的有害更新，并在相同预算下取得更高的最终模型质量。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-03</title><link>https://themaoqiu.github.io/blog/papers-2026-09-03</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-03</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Multimodal Agent&lt;/h2&gt;
 &lt;h2&gt;3D Agent&lt;/h2&gt;
 &lt;h2&gt;Embodied Agent&lt;/h2&gt;
