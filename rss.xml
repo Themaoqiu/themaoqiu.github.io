@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-06</title><link>https://themaoqiu.github.io/blog/papers-2026-09-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-06</guid><description>吾能观之数千而面色如故</description><pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-05</title><link>https://themaoqiu.github.io/blog/papers-2026-09-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-05</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-08</title><link>https://themaoqiu.github.io/blog/papers-2026-09-08</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-08</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 08 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Embodied Agent&lt;/h2&gt;
+&lt;h2&gt;4D Understanding and Generation&lt;/h2&gt;
+&lt;h2&gt;Agent Training and Evaluation&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Iris: Climbing to the Search Frontier&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.04304&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.04304&quot;}
+summary={&quot;本文提出 Iris-mini 和 Iris-pro 两个搜索智能体，并给出围绕网页超链接结构构造训练数据、以及 SFT-RL climbing 的训练流程。作者把多跳问题逆向构造成轨迹，过滤高质量轨迹后先做监督微调，再用在线搜索环境中的强化学习继续优化，训练时还把奖励判别器和摘要器放在集群内。实验在 BrowseComp、BrowseComp-ZH、DeepSearchQA 和 HLE 上取得 82.2/84.8/86.9/52.3 与 88.6/85.1/92.9/56.4 的成绩，在各自参数规模内达到开源搜索智能体中的最强整体表现。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;RISE: Recursive Improvement via Self-Extrapolating Policy Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.05295&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.05295&quot;}
+summary={&quot;这篇工作提出 RISE，通过把当前模型与一个尾随锚点之间的位移递推外推，构造来自自身 RLVR 轨迹的合成教师，从而实现递归式改进。它把参数空间或输出 logit 空间中的外推结果转成 token 级密集监督，结合 RLVR 的结果奖励与 OPD 的逐 token 蒸馏信号。与依赖外部教师或受上下文容量限制的自蒸馏不同，RISE 不需要外部模型或额外的特权条件。实验覆盖数学推理、多领域 STEM、代码生成和多轮 agent 任务，结果显示它在所有设置下都优于仅用 RLVR 训练和在线自蒸馏。&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;MaxKernel: Agentic Kernel Generation for TPUs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.04523&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.04523&quot;}
+summary={&quot;这篇工作提出 MaxKernel，一个用于 TPU 内核生成的多智能体系统，目标是在高性能内核设计中把大语言模型与实时编译器反馈结合起来。系统实现了三种范式：人类在回路协作、完全自动化的度量/轨迹驱动优化，以及可扩展全局搜索的图搜索式自动化方案，并通过共享的专门子代理处理规划、实现、自调试、测试和硬件画像。作者在包含 50 个 TPU 内核任务的 JaxBench 以及若干真实开源模型工作负载上进行评测，结果表明该系统能够稳定产出高度优化的实现，达到专家手工调优基线，并带来显著性能提升。&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-06</title><link>https://themaoqiu.github.io/blog/papers-2026-09-06</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-06</guid><description>吾能观之数千而面色如故</description><pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-05</title><link>https://themaoqiu.github.io/blog/papers-2026-09-05</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-05</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Thinking with Code/Structure&lt;/h2&gt;
 &lt;h2&gt;Spatial Intelligence (Image/Video)&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
