@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-11</title><link>https://themaoqiu.github.io/blog/papers-2026-09-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-11</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-14</title><link>https://themaoqiu.github.io/blog/papers-2026-09-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-14</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-12</title><link>https://themaoqiu.github.io/blog/papers-2026-09-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-12</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SenseNova-U1.5: Towards Native Unified Visual Intelligence&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11929&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11929&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SpatialBlock: Enhancing Spatial Intelligence in LVLMs via Synthetic Block-Stacking Problem&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.07064&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.07064&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Mi-Ripple: Restoring Images Degraded by Iterative AI Editing&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11317&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11317&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11412&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11412&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Memory as Plans: World-Action Modeling with Memory-Grounded Planning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11561&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11561&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11499&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11499&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;TempCloze: Can Video-LLMs Identify the Missing Middle?&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.01515&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.01515&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.10712&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.10712&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;FreeFlow: A Bias-free Hierarchical Transformer for Optical Flow Estimation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11486&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11486&quot;}
+summary={&quot;Optical flow methods typically rely on task-specific inductive biases, such as correlation volumes, feature warping, and iterative refinement, among others, to reach high accuracy. While effective, such biases constrain the model to predefined heuristics, which can limit its expressivity and lead to more complex pipelines and additional computational cost. We present FreeFlow, a hierarchical transformer built without any flow-specific components, using instead a single feed-forward encoder--decoder. FreeFlow combines three attention variants: window attention for local processing, shifted-window attention for cross-window information exchange, and a global attention operating at a reduced resolution. The resulting architecture scales naturally with model capacity, enabling a consistent accuracy gain from small to large variants. Despite the absence of standard inductive biases, FreeFlow achieves state-of-the-art results on major benchmarks, including Sintel (0.68/1.48 EPE on Clean/Final), KITTI-2015 (3.23 Fl-all), and Spring (3.192 1px), while remaining memory efficient at 1080p inference.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;World in World: Explore the World with World Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11548&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11548&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-11</title><link>https://themaoqiu.github.io/blog/papers-2026-09-11</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-11</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
