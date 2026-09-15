@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-14</title><link>https://themaoqiu.github.io/blog/papers-2026-09-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-14</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-12</title><link>https://themaoqiu.github.io/blog/papers-2026-09-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-12</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-09-15</title><link>https://themaoqiu.github.io/blog/papers-2026-09-15</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-15</guid><description>吾能观之数千而面色如故</description><pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.10895&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.10895&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Beyond Top-$k$ Skill Retrieval: Diversity-Aware Skill Routing for LLM Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.05824&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.05824&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.11115&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.11115&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Feyospace-v1: How the Cyber Mercury Seven Trained Frontier Cyber Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.08418&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.08418&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.12641&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.12641&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.13141&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.13141&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;StepAudio 3 Gen Technical Report&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.12945&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.12945&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;PLC-DPO: Posterior Label Correction in Noisy and Ambiguous Preference Optimization&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2608.30597&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2608.30597&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Online Learning with LLM Experts from Limited Feedback&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.05820&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.05820&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;ActionSplice: In-Flight Action Editing for Interactive World Models&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2609.08230&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2609.08230&quot;}
+summary={&quot;Chunk-autoregressive video world models typically condition each generated chunk on one action. An action received during sampling must therefore wait for the next chunk, condition future solver evaluations on a state produced under the previous action, or trigger rollback that repeats completed evaluations. We introduce ActionSplice, an inference framework that formulates this problem as Counterfactual State Transport (CST). A lightweight corrector transports the interrupted backbone-native representation toward the matched state induced by the revised action at the same solver step. The world model and sampler remain frozen, and sampling resumes without replaying completed evaluations. The retargeting variant $\mathrm{CST}&lt;em&gt;{R}$ updates the entire active chunk, while the temporal-splicing variant $\mathrm{CST}&lt;/em&gt;{T}$ preserves a temporal prefix and updates only the suffix. Across minWM-Wan Action2V and HY-WM1.5, $\mathrm{CST}&lt;em&gt;{R}$ reduces rollback-relative LPIPS by 61.5% and 75.9% relative to direct condition swapping. $\mathrm{CST}&lt;/em&gt;{T}$ reduces suffix LPIPS by 56.1% and 77.5%, respectively, while providing $2.73\times$ and $1.69\times$ pixel-ready speedups over waiting. Under the HY-WorldPlay protocol, $\mathrm{CST}_{R}$ obtains a PSNR of 25.66 dB, an SSIM of 0.6902, and an LPIPS of 0.1337 against the original rollout.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-14</title><link>https://themaoqiu.github.io/blog/papers-2026-09-14</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-14</guid><description>吾能观之数千而面色如故</description><pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-09-12</title><link>https://themaoqiu.github.io/blog/papers-2026-09-12</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-09-12</guid><description>吾能观之数千而面色如故</description><pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;h2&gt;Multimodal World Model&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
