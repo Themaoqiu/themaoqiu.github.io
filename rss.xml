@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-10-29</title><link>https://themaoqiu.github.io/blog/papers-2026-10-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-10-29</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>Xingjian Wang</title><description>Xingjian Wang Personal Page</description><link>https://themaoqiu.github.io</link><item><title>Papers - 2026-10-30</title><link>https://themaoqiu.github.io/blog/papers-2026-10-30</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-10-30</guid><description>吾能观之数千而面色如故</description><pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
+&lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
+&lt;h2&gt;3D LLM&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.37230&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.37230&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.22507&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.22507&quot;}
+summary={&quot;Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score ($J_{\mathrm{collab}}$), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.30161&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.30161&quot;}
+summary={&quot;Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank&apos;s rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;CausGround: Causal Interaction Grounding for Adaptive Embodied Planning&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.29702&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.29702&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;h2&gt;Multimodal World Model&lt;/h2&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.35684&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.35684&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Amortizing Sequential Experimental Design in Reasoning LLMs&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.20832&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.20832&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.30132&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.30132&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.35671&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.35671&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;PaperCard
+title={&quot;Instruction Capacity: Behavior and Degradation of Language Models under Controlled Load&quot;}
+arxivUrl={&quot;https://arxiv.org/abs/2610.36095&quot;}
+hjfyUrl={&quot;https://hjfy.top/arxiv/2610.36095&quot;}
+summary={&quot;No summary available.&quot;}
+/&gt;&lt;/p&gt;</content:encoded><h:img src="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/><enclosure url="https://cdn.someacg.top/graph/origin/142795457_p0.jpg"/></item><item><title>Papers - 2026-10-29</title><link>https://themaoqiu.github.io/blog/papers-2026-10-29</link><guid isPermaLink="true">https://themaoqiu.github.io/blog/papers-2026-10-29</guid><description>吾能观之数千而面色如故</description><pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import PaperCard from &apos;@/components/papers/PaperCard.astro&apos;&lt;/p&gt;
 &lt;h2&gt;Grounding-driven Visual Reasoning&lt;/h2&gt;
 &lt;h2&gt;3D LLM&lt;/h2&gt;
 &lt;p&gt;&amp;#x3C;PaperCard
